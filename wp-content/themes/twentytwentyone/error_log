@@ -1,0 +1,4 @@
+[10-Jul-2021 04:53:50 Europe/Minsk] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/coolsite/rb_matras/wp-content/themes/twentytwentyone/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/coolsite/rb_matras/wp-content/themes/twentytwentyone/index.php on line 17

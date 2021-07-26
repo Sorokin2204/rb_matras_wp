@@ -1,0 +1,24 @@
+2021-07-22T06:52:11+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::the_content() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php:43
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php на строке 43
+
+2021-07-22T06:52:17+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_content() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php:43
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php на строке 43
+
+2021-07-22T07:03:08+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_excerpt() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php:43
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php на строке 43
+

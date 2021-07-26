@@ -1,0 +1,59 @@
+.need-help {
+  display: grid;
+  grid-template-columns: 280px auto;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $green-light;
+  border-radius: 10px;
+  padding: 50px 30px;
+  margin-top: 60px;
+  &__content {
+  }
+
+  &__title {
+    @include medium-26-resize-20;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include regular-15-resize-11;
+    max-width: 320px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns:
+      minmax(auto, 255px) minmax(auto, 255px)
+      166px;
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+  &__label {
+    @include regular-11;
+    display: flex;
+    align-items: center;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    color: #505654;
+  }
+
+  &__checkbox {
+    background-color: $white;
+    border-radius: 2px;
+    margin-top: 0;
+  }
+
+  &__input {
+    background-color: $white;
+    border: 1px solid #d8d4d4;
+    &::placeholder {
+      color: #d8d4d4;
+    }
+  }
+
+  &__btn {
+    border-radius: 5px;
+  }
+}

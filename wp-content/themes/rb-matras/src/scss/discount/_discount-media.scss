@@ -1,0 +1,42 @@
+@media (max-width: 769px) {
+  .discount {
+    .container {
+      padding: 0;
+    }
+    .product-list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__banner-content {
+      &::after {
+        display: block;
+      }
+    }
+
+    &__banner-inner {
+    }
+    &__banner-content {
+      background-size: cover;
+      background-position: 55% 0%;
+      padding: 60px 20px;
+    }
+
+    &__banner-title {
+      @include bold-40-resize-20;
+      margin-bottom: 15px;
+      max-width: 345px;
+    }
+
+    &__product-list {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .discount {
+    &__banner-title {
+      max-width: 280px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.about-us {
+  &__inner {
+  }
+
+  &__title-h2 {
+    margin-bottom: 30px;
+  }
+
+  &__video {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9*/
+    position: relative;
+    iframe {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  &__box {
+  }
+
+  &__text {
+    @include regular-15-resize-12;
+    display: inline-block;
+    margin-bottom: 30px;
+    p {
+      &:not(:first-of-type) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include regular-15;
+    span {
+      @include medium-15;
+    }
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}

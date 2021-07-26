@@ -1,0 +1,106 @@
+@@include('parts/_header.html')
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <span class="breadcrumbs__item">Главная</span>
+      <span class="breadcrumbs__item">Гарантия</span>
+    </div>
+  </div>
+</div>
+
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee__inner inner">
+      <h2 class="guarantee__title-h2 title-h2">Гарантия</h2>
+      <div class="guarantee__content">
+        <picture>
+          <source
+            media="(max-width: 634px)"
+            srcset="img/guarantee_img_320.webp"
+          />
+          <source
+            media="(max-width: 1030px)"
+            srcset="img/guarantee_img_769.webp"
+          />
+
+          <img src="img/guarantee_img.webp" class="guarantee__img" />
+        </picture>
+
+        <div class="guarantee__box">
+          <p class="guarantee__text">
+            Компания «Record Bedding» предлагает анатомические матрасы высокого
+            качества. Приобретая нашу продукцию, будьте уверены: ваш матрас
+            будет работать для вас долгие годы, обеспечивая крепкий сон и
+            прекрасный отдых.
+          </p>
+          <span class="guarantee__box-title"
+            >Гарантия на наши матрасы – 2 года.</span
+          >
+          <ul class="guarantee__accardion accardion">
+            <div class="guarantee__accardion-item accardion__item">
+              <button
+                class="guarantee__accardion-head accardion__head"
+                aria-expanded="false"
+              >
+                Гарантийные случаи
+              </button>
+              <div
+                class="guarantee__accardion-content accardion__content"
+                aria-hidden="true"
+              >
+                <ul class="guarantee__list list">
+                  <li class="guarantee__item list__item">
+                    Разрушение или сильное ослабевание пружин, производственный
+                    брак пружин.
+                  </li>
+                  <li class="guarantee__item list__item">
+                    Брак покрытия из ткани, его порча по вине изготовителя.
+                  </li>
+                  <li class="guarantee__item list__item">
+                    Впадины на матрасе при высоком качестве основания или
+                    поверхности. К впадинам относятся углубления более 3 см,
+                    имеющиеся с обеих сторон изделия. Не относятся к дефектам
+                    мелкие углубления, которые относятся к приработке матраса.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="guarantee__accardion-item accardion__item">
+              <button
+                class="guarantee__accardion-head accardion__head"
+                aria-expanded="false"
+              >
+                Негарантийные случаи
+              </button>
+              <div
+                class="guarantee__accardion-content accardion__content"
+                aria-hidden="true"
+              >
+                <ul class="guarantee__item-list list">
+                  <li class="guarantee__item list__item">
+                    Разрушение или сильное ослабевание пружин, производственный
+                    брак пружин.
+                  </li>
+                  <li class="guarantee__item list__item">
+                    Брак покрытия из ткани, его порча по вине изготовителя.
+                  </li>
+                  <li class="guarantee__item list__item">
+                    Впадины на матрасе при высоком качестве основания или
+                    поверхности. К впадинам относятся углубления более 3 см,
+                    имеющиеся с обеих сторон изделия. Не относятся к дефектам
+                    мелкие углубления, которые относятся к приработке матраса.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      @@include('parts/_need-help.html')
+    </div>
+  </div>
+</section>
+<div class="modals">
+  <div class="modal-overlay">@@include('parts/modals/_test-thanks.html/')</div>
+</div>
+@@include('parts/_footer.html')

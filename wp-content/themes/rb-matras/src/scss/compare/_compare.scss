@@ -1,0 +1,231 @@
+.compare {
+  &__container {
+  }
+
+  &__grid {
+    display: grid;
+
+    grid-template-columns: 168px repeat(4, 240px);
+    grid-template-rows: repeat(9, auto);
+    grid-auto-flow: column;
+    grid-gap: 1px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    div {
+      &:first-child {
+        border-top-left-radius: 10px;
+      }
+
+      &:nth-child(9) {
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 10px;
+      }
+      &:nth-last-child(9) {
+        border-top-right-radius: 10px;
+      }
+      box-shadow: 0 0 0 1px #dfdfdf;
+    }
+  }
+
+  &__grid-mask {
+    position: relative;
+  }
+
+  &__grid-mask-blur {
+    pointer-events: none;
+    z-index: 1;
+    opacity: 1;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 87px;
+    height: 100%;
+    background: linear-gradient(
+      91.2deg,
+      rgba(255, 255, 255, 0) 0.95%,
+      rgba(255, 255, 255, 0.81) 55.12%,
+      rgba(255, 255, 255, 0.9) 98.16%
+    );
+    mix-blend-mode: normal;
+    transition: all 0.2s;
+    &--disabled {
+      transition: all 0.2s;
+      opacity: 0;
+    }
+  }
+
+  &__grid-prop {
+    @include medium-15;
+    color: $gray;
+    padding: 10px 20px;
+    &:first-child {
+      padding: 30px 20px;
+    }
+
+    &:nth-child(9) {
+      padding-top: 30px;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icon/question-big.svg) no-repeat;
+    background-size: cover;
+    margin-left: 8px;
+    margin-bottom: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  &__grid-title {
+    @include medium-15;
+    color: #000;
+    padding: 30px 20px 20px 20px;
+  }
+
+  &__grid-data {
+    @include regular-15;
+    color: $black;
+    padding: 20px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+
+  &__grid-list {
+    align-self: flex-start;
+  }
+
+  .list {
+    &__item {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__grid-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    span {
+      @include medium-17;
+      color: #000;
+    }
+  }
+
+  &__grid-btn-cart {
+    padding: 9px 17px;
+    border-radius: 5px;
+  }
+
+  &__grid-btn-remove {
+    align-self: flex-end;
+
+    @include medium-13;
+    color: $gray;
+    position: relative;
+    margin-left: auto;
+    padding-left: 25px;
+    text-decoration: underline;
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   bottom: 1px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   background-color: $gray;
+    // }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%);
+      -webkit-mask-image: url(../img/icon/cross-small.svg);
+      mask-image: url(../img/icon/cross-small.svg);
+      mask-size: 10px 10px;
+      background-color: $gray;
+    }
+    margin-top: 20px;
+  }
+
+  &__scroll {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__scroll-progress-bar-container {
+    width: 160px;
+    height: 3px;
+    background-color: $brown-light;
+    border-radius: 5px;
+  }
+
+  &__scroll-progress-bar {
+    width: 0%;
+    height: 3px;
+    background-color: $green;
+    border-radius: 5px;
+  }
+
+  &__scroll-btn {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: $green-light;
+    border-radius: 50%;
+    transition: all 0.2s;
+    &::after {
+      transition: all 0.2s;
+      content: '';
+      display: block;
+      position: absolute;
+      -webkit-mask-image: url(../img/icon/chevron-right-3.svg);
+      mask-image: url(../img/icon/chevron-right-3.svg);
+      background-color: $green;
+      width: 8px;
+      height: 14px;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--disabled {
+      pointer-events: none;
+      transition: all 0.2s;
+      background-color: $brown-light;
+      &::after {
+        transition: all 0.2s;
+        background-color: $gray;
+      }
+    }
+  }
+  &__scroll-btn-left {
+    margin: 0 25px;
+  }
+
+  &__scroll-btn-right {
+    &::after {
+      transform: translate(-20%, -50%) rotate(180deg);
+    }
+  }
+}

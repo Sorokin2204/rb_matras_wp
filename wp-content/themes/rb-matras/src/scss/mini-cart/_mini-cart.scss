@@ -1,0 +1,172 @@
+.mini-cart {
+  max-height: calc(100vh - 195px);
+  overflow: scroll;
+  position: absolute;
+  top: calc(100% - 28px);
+  right: 0;
+  background-color: $white;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translateY(-7%);
+  &--active {
+    transition: all 0.2s ease-out;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%) !important;
+  }
+  &__inner {
+    max-height: calc(100vh - 104px);
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  &__head-title {
+  }
+
+  &__head-btn-close {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icon/cross.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+  }
+
+  &__product {
+    padding: 30px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  &__product-content {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__product-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid $green-light;
+    padding: 25px 10px;
+    background: $white;
+    margin-right: 15px;
+    align-self: stretch;
+  }
+
+  &__product-img {
+    width: 145px;
+    height: 90px;
+  }
+
+  &__product-box {
+  }
+
+  &__product-title {
+    @include medium-15;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  &__product-list {
+  }
+
+  &__product-list-item {
+    @include regular-15;
+    & + & {
+      margin-top: 5px;
+    }
+    span {
+      color: #505654;
+    }
+  }
+
+  &__product-price-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__product-btn-remove {
+    position: relative;
+    @include medium-13;
+    text-decoration-line: underline;
+    padding-left: 25px;
+    color: #eca2a2;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      transform: translateY(-50%);
+      -webkit-mask-image: url(../img/icon/cross-small.svg);
+      mask-image: url(../img/icon/cross-small.svg);
+      mask-size: 12px 12px;
+      background-color: #eca2a2;
+    }
+  }
+
+  &__product-price {
+    @include medium-20;
+  }
+
+  &__total {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 100px;
+    border-top: 1px solid #dfdfdf;
+  }
+
+  &__total-title {
+    @include regular-20;
+    color: #505654;
+  }
+
+  &__total-price {
+    display: inline-block;
+    margin-left: auto;
+    @include medium-26;
+  }
+
+  &__btn-continue {
+    justify-self: start;
+    position: relative;
+    @include medium-15;
+    text-decoration-line: underline;
+    padding-left: 24px;
+    color: $gray;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      transform: translateY(-50%) rotate(90deg);
+      -webkit-mask-image: url(../img/icon/chevron-down-1.svg);
+      mask-image: url(../img/icon/chevron-down-1.svg);
+      mask-size: 12px 12px;
+      background-color: $gray;
+    }
+  }
+
+  &__btn-ordering {
+    justify-self: end;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+}

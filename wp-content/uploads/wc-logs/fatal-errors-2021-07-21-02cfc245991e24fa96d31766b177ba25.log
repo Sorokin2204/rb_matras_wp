@@ -1,0 +1,136 @@
+2021-07-21T07:48:33+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 605
+
+2021-07-21T07:48:33+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 605
+
+2021-07-21T07:49:12+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 601
+
+2021-07-21T07:49:14+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 601
+
+2021-07-21T07:49:17+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 601
+
+2021-07-21T07:49:19+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 601
+
+2021-07-21T14:08:09+00:00 CRITICAL Cannot use empty array elements in arrays в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 402
+
+2021-07-21T14:20:06+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(474): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+
+2021-07-21T14:20:26+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(474): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+
+2021-07-21T14:21:57+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(495): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+
+2021-07-21T14:22:41+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php(193): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_templat в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+
+2021-07-21T14:27:22+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(486): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+
+2021-07-21T14:28:01+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:394
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 394
+
+2021-07-21T14:29:04+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:397
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(477): get_product_html()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 397
+
+2021-07-21T14:29:35+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:397
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(470): get_product_html()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 397
+
+2021-07-21T15:29:22+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 551
+
+2021-07-21T15:29:22+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 551
+
+2021-07-21T15:39:06+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:533
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_loadmore_ajax_handler()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(202): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 533
+
+2021-07-21T15:46:45+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 484
+
+2021-07-21T15:46:47+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 484
+
+2021-07-21T17:29:49+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php:28
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single.php(19): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-product.php на строке 28
+

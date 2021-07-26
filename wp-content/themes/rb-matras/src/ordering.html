@@ -1,0 +1,323 @@
+@@include('parts/_header.html')
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <span class="breadcrumbs__item">Главная</span>
+      <span class="breadcrumbs__item">Корзина покупок</span>
+      <span class="breadcrumbs__item">Офорлмение заказа</span>
+    </div>
+  </div>
+</div>
+
+<section class="ordering">
+  <div class="container">
+    <div class="ordering__inner inner">
+      <h2 class="ordering__title-h2 title-h2">Оформление заказа</h2>
+      <div class="ordering-product">
+        <div class="ordering-product__img-box">
+          <img src="img/product_01.webp" alt="" class="ordering-product__img" />
+        </div>
+        <div class="ordering-product__box">
+          <span class="ordering-product__title"
+            >Мазурка стандарт Кормфорт+</span
+          >
+          <select
+            class="ordering-product__select"
+            id="select_size"
+            data-name-option="Размер: "
+          >
+            <option value="80х190"></option>
+            <option value="90х190"></option>
+            <option value="120х190"></option>
+            <option value="140х190"></option>
+            <option value="160х190"></option>
+            <option value="180х190"></option>
+          </select>
+          <select class="ordering-product__select" data-name-option="Чехол: ">
+            <option value="Хлопковый жаккард, несъемный"></option>
+            <option value="Трикотаж, несъемный"></option>
+            <option value="Трикотаж, съемный"></option>
+            <option value="Велюр брендовый, съемный"></option>
+            <option value="Чехол"></option>
+            <option value="Велюр брендовый, несъемный"></option>
+          </select>
+        </div>
+        <div class="ordering-product__price-box">
+          <span class="ordering-product__price-text">Стоимость</span>
+          <div class="ordering-product__price">25 426 р.</div>
+        </div>
+        <button class="ordering-product__btn-remove">
+          <span>Удалить</span>
+        </button>
+      </div>
+      <div class="ordering-discount">
+        <div class="ordering-discount__head">
+          <h3 class="ordering-discount__head-title">
+            Больше товаров - больше скидка!
+          </h3>
+          <p class="ordering-discount__head-text">
+            За каждую единицу товара дополнительная скидка: за 2 - 2%; за 3 -
+            3%; за 4 и более - 6%;
+          </p>
+        </div>
+
+        <ul class="ordering-discount__list">
+          <li class="ordering-discount__list-item">
+            <div class="ordering-discount__img-box">
+              <img
+                src="img/product_02.webp"
+                alt=""
+                class="ordering-discount__img"
+              />
+            </div>
+            <div class="ordering-discount__content">
+              <span class="ordering-discount__title">
+                Подушка ортопедическая "Лебяжий пух"
+              </span>
+              <span class="ordering-discount__price">1 684 р.</span>
+              <select
+                class="ordering-discount__select"
+                data-name-option="Размер: "
+              >
+                <option value="80х190"></option>
+                <option value="90х190"></option>
+                <option value="120х190"></option>
+                <option value="140х190"></option>
+                <option value="160х190"></option>
+                <option value="180х190"></option>
+              </select>
+              <button class="ordering-discount__btn-add btn btn-sm">
+                Добавить
+              </button>
+            </div>
+          </li>
+          <li class="ordering-discount__list-item">
+            <div class="ordering-discount__img-box">
+              <img
+                src="img/product_02.webp"
+                alt=""
+                class="ordering-discount__img"
+              />
+            </div>
+            <div class="ordering-discount__content">
+              <span class="ordering-discount__title">
+                Подушка ортопедическая "Лебяжий пух"
+              </span>
+              <span class="ordering-discount__price">1 684 р.</span>
+              <select
+                class="ordering-discount__select"
+                data-name-option="Размер: "
+              >
+                <option value="80х190"></option>
+                <option value="90х190"></option>
+                <option value="120х190"></option>
+                <option value="140х190"></option>
+                <option value="160х190"></option>
+                <option value="180х190"></option>
+              </select>
+              <button class="ordering-discount__btn-add btn btn-sm">
+                Добавить
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ordering-steps">
+        <ul class="ordering-steps__list">
+          <li class="ordering-steps__list-item">
+            <h3 class="ordering-steps__title">1. Информация о покупателе</h3>
+            <div class="ordering-steps__info">
+              <div class="ordering-steps__info-name input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Имя*"
+                  name="info-name"
+                  required
+                />
+                <label for="info-name" class="input-label">Имя*</label>
+                <span>Обязательное поле</span>
+              </div>
+              <div class="ordering-steps__info-tel input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Номер телефона*"
+                  name="info-tel"
+                  required
+                />
+                <label for="info-tel" class="input-label"
+                  >Номер телефона*</label
+                >
+                <span>Обязательное поле</span>
+              </div>
+              <div class="ordering-steps__info-email input-box">
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="Имя*"
+                  name="info-email"
+                  required
+                />
+                <label for="info-email" class="input-label">Email</label>
+                <span>Не корректное значение</span>
+              </div>
+            </div>
+          </li>
+          <li class="ordering-steps__list-item">
+            <h3 class="ordering-steps__title">2. Доставка</h3>
+            <div class="ordering-steps__delivery">
+              <div class="ordering-steps__delivery-city input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Город*"
+                  name="delivery-city"
+                  value=""
+                  onchange="this.setAttribute('value', this.value);"
+                />
+                <label for="delivery-city" class="input-label">Город</label>
+              </div>
+              <div class="ordering-steps__delivery-city input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Улица, микрорайон, жк и тд.*"
+                  name="delivery-street"
+                  value=""
+                  onchange="this.setAttribute('value', this.value);"
+                />
+                <label for="delivery-street" class="input-label"
+                  >Улица, микрорайон, жк и тд.</label
+                >
+              </div>
+              <div class="ordering-steps__delivery-city input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Дом, строение*"
+                  name="delivery-building"
+                  value=""
+                  onchange="this.setAttribute('value', this.value);"
+                />
+                <label for="delivery-building" class="input-label"
+                  >Дом, строение</label
+                >
+              </div>
+              <div class="ordering-steps__delivery-city input-box">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Квартира, офис"
+                  name="delivery-apartment"
+                  value=""
+                  onchange="this.setAttribute('value', this.value);"
+                />
+                <label for="delivery-apartment" class="input-label"
+                  >Квартира, офис</label
+                >
+              </div>
+            </div>
+          </li>
+          <li class="ordering-steps__list-item">
+            <div class="ordering-steps__payment">
+              <div class="ordering-steps__payment-type">
+                <h3 class="ordering-steps__title">3. Оплата</h3>
+                <div class="ordering-steps__payment-type-list">
+                  <input
+                    type="radio"
+                    name="payment_radio"
+                    id="payment_online-pay"
+                  />
+                  <label for="payment_online-pay">Онлайн оплата</label>
+                  <input type="radio" name="payment_radio" id="payment_cash" />
+                  <label for="payment_cash">Наличными при доставке</label>
+                  <input type="radio" name="payment_radio" id="payment_parts" />
+                  <label for="payment_parts">Покупка частями</label>
+                  <input
+                    type="radio"
+                    name="payment_radio"
+                    id="payment_credit"
+                  />
+                  <label for="payment_credit">В кредит без предоплаты</label>
+                  <input
+                    type="radio"
+                    name="payment_radio"
+                    id="payment_installment"
+                  />
+                  <label for="payment_installment"
+                    >Рассрочка от Сбербанка</label
+                  >
+                </div>
+              </div>
+              <div class="ordering-steps__payment-comment">
+                <h3 class="ordering-steps__payment-comment-title">
+                  Комментарий к заказу
+                </h3>
+
+                <div class="ordering-steps__payment-comment-textarea input-box">
+                  <textarea
+                    class="input"
+                    placeholder="Комментарии к заказу (по желанию)"
+                    cols="30"
+                    rows="4"
+                    value=""
+                    onchange="this.setAttribute('value', this.value);"
+                  ></textarea>
+                  <label for="delivery-apartment" class="input-label"
+                    >Квартира, офис</label
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ordering-footer">
+        <div class="ordering-footer__promocode">
+          <div class="input-box">
+            <input
+              type="text"
+              class="input"
+              placeholder="У меня есть промокод"
+              name="delivery-apartment"
+              value=""
+              onchange="this.setAttribute('value', this.value);"
+            />
+            <label for="delivery-apartment" class="input-label"
+              >У меня есть промокод</label
+            >
+          </div>
+
+          <!-- <input type="text" class="input" placeholder="У меня есть промокод" /> -->
+          <button class="ordering-footer__btn-apply btn btn-md btn--hide-icon">
+            Применить
+          </button>
+        </div>
+        <div class="ordering-footer__total">
+          <ul class="ordering-footer__total-list">
+            <li class="ordering-footer__total-list-item">
+              <span>Сумма заказа:</span>25 426 р.
+            </li>
+            <li class="ordering-footer__total-list-item">
+              <span>Доставка:</span>500 р.
+            </li>
+            <li class="ordering-footer__total-list-item">
+              <span>Скидка:</span>0 р.
+            </li>
+            <li class="ordering-footer__total-list-item">
+              <span>Итого:</span>25 926 р.
+            </li>
+          </ul>
+          <a href="order-accepted.html" class="ordering-footer__btn btn"
+            >Оформить заказ</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('parts/_footer.html')

@@ -1,0 +1,36 @@
+.material {
+  &__inner {
+  }
+
+  &__title-h2 {
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+  }
+
+  &__img {
+  }
+
+  &__box {
+  }
+
+  &__text {
+    @include regular-15-resize-12;
+    margin-bottom: 30px;
+  }
+
+  &__accardion {
+  }
+
+  &__accardion-item {
+  }
+
+  &__accardion-head {
+  }
+
+  &__accardion-content {
+  }
+}

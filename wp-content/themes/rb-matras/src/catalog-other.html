@@ -1,0 +1,23 @@
+@@include('parts/_header.html')
+
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <span class="breadcrumbs__item">Главная</span>
+      <span class="breadcrumbs__item">Каталог</span>
+      <span class="breadcrumbs__item">Подушки</span>
+    </div>
+  </div>
+</div>
+
+<div class="modals">
+  <div class="modal-overlay">@@include('parts/modals/_add-cart.html/')</div>
+</div>
+<div class="catalog-footer">
+  <div class="catalog__overlay"></div>
+  <section class="catalog catalog--disable-filter">
+    @@include('parts/_catalog.html')
+  </section>
+
+  @@include('parts/_footer.html')
+</div>

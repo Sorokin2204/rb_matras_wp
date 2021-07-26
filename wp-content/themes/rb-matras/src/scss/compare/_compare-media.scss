@@ -1,0 +1,134 @@
+@media (max-width: 1240px) {
+  .compare {
+    &__grid-title {
+      padding-top: 25px;
+    }
+
+    &__grid-prop {
+      &:first-child {
+        padding-top: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .compare {
+    &__grid {
+      border: 1px solid #dfdfdf;
+      grid-template-columns: 126px repeat(4, 205px);
+      border-radius: 0px;
+      div {
+        &:first-child {
+          border-top-left-radius: 0px;
+        }
+
+        &:nth-child(9) {
+          border-bottom-left-radius: 0px;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: 0px;
+        }
+        &:nth-last-child(9) {
+          border-top-right-radius: 0px;
+        }
+      }
+    }
+
+    &__grid-title {
+      padding: 20px 20px 15px 10px;
+    }
+
+    &__grid-data {
+      padding: 15px 10px 15px 10px;
+    }
+
+    &__grid-price {
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__grid-btn-remove {
+      align-self: flex-start;
+      margin-left: 0;
+    }
+
+    &__grid-btn-cart {
+      padding: 13px 0;
+      width: 100%;
+    }
+
+    &__grid-btn-remove {
+      color: #eca2a2;
+      padding-left: 25px;
+      &::after {
+        width: 15px;
+        height: 15px;
+        -webkit-mask-image: url(../img/icon/delete.svg);
+        mask-image: url(../img/icon/delete.svg);
+        mask-size: 15px 15px;
+        background-color: #eca2a2;
+      }
+    }
+
+    &__grid-data {
+      @include regular-12;
+    }
+
+    &__grid-prop {
+      @include medium-12;
+      //   display: flex;
+      //   align-items: center;
+      padding: 15px 10px 15px 20px;
+      &:nth-child(1) {
+        padding: 20px 20px 15px 20px;
+      }
+      &:nth-child(6) {
+        display: grid;
+        grid-template-columns: 70px auto;
+        .compare__info {
+          align-self: center;
+        }
+      }
+
+      &:nth-child(9) {
+        padding: 17px 11px 17px 20px;
+      }
+    }
+
+    &__grid-price {
+      padding: 15px 10px;
+    }
+
+    &__info {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      margin-left: 5px;
+      margin-bottom: 2px;
+    }
+
+    &__container {
+      padding: 0;
+    }
+
+    &__scroll {
+      padding: 0 20px;
+    }
+
+    &__grid-mask-blur {
+      display: none !important;
+    }
+  }
+
+  .list {
+    &__item {
+      padding-left: 15px;
+      @include regular-12;
+    }
+  }
+}

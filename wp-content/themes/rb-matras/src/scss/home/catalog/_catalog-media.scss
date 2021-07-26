@@ -1,0 +1,249 @@
+@media (max-width: 1174px) {
+  .catalog {
+    &--disable-filter {
+      .catalog__sort-box-mobile {
+        display: flex;
+      }
+      .choices:last-of-type,
+      .catalog__sort-filter {
+        display: none;
+      }
+    }
+    &__fast-filter {
+      display: none;
+    }
+    &__reset {
+      display: none;
+    }
+
+    &__filter {
+      background-color: $white;
+      position: absolute;
+      top: 134px;
+      right: 0;
+      border-radius: 10px;
+      transform: translateX(120%);
+      transition: transform 0.3s;
+      max-width: 340px;
+      width: 100%;
+      overflow: scroll;
+      &--active {
+        transform: translateX(0%);
+        transition: transform 0.3s;
+      }
+    }
+
+    &__filter-header {
+      display: block;
+      background-color: $white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &__filter-title {
+      @include medium-20;
+      text-align: left;
+    }
+
+    &__filter-list {
+      box-shadow: none;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+      margin-bottom: 40px;
+    }
+
+    &__filter-btn-close {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon/cross.svg);
+    }
+
+    &__filter-item {
+      border-radius: 0px;
+    }
+
+    &__filter-btn-box {
+      display: flex;
+      padding: 0 30px 20px 30px;
+      flex-direction: column;
+    }
+
+    &__filter-btn-apply {
+      margin-bottom: 15px;
+    }
+
+    ///FILTER END
+    &__content {
+      grid-column: 12 span;
+      align-items: center;
+      justify-content: center;
+    }
+    &__sort {
+      flex-direction: column;
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+    }
+    &__sort-box {
+      display: none;
+    }
+    &__sort-box-mobile {
+      display: grid;
+    }
+
+    &__sort-title {
+      margin-bottom: 20px;
+    }
+    &__sort {
+      padding: 0;
+    }
+    &__inner {
+      position: relative;
+    }
+
+    &__filter {
+      z-index: 8;
+    }
+  }
+
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product {
+    // margin: 0 auto;
+    max-height: none;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product {
+    &__img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .catalog {
+    &__content {
+    }
+  }
+  .product-list {
+    grid-template-columns: repeat(3, minmax(162px, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog {
+    &__btn-more {
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 10px;
+    }
+  }
+  .product-list {
+    grid-template-columns: repeat(2, minmax(162px, 1fr));
+  }
+}
+
+@media (max-width: 634px) {
+  .catalog {
+    &__filter {
+      z-index: 10;
+      position: fixed;
+      top: 134px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $white;
+      overflow-y: scroll;
+      max-width: none;
+      transform: translateX(100%);
+      transition: transform 0.3s;
+      border-radius: 0;
+      &--active {
+        transform: translateX(0%);
+        transition: transform 0.3s;
+      }
+    }
+
+    &__filter-list {
+      margin-bottom: 40px;
+    }
+
+    &__filter-btn-box {
+      display: flex;
+      padding: 0 20px 20px 20px;
+      flex-direction: column;
+    }
+
+    &__filter-btn-apply {
+      margin-bottom: 15px;
+    }
+
+    &__filter-btn-reset {
+    }
+    &__filter-list {
+      box-shadow: none;
+    }
+
+    &__filter-item:last-child {
+      border-radius: 0px;
+    }
+
+    &__filter-header {
+      display: block;
+      background-color: $white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__filter-title {
+      text-align: left;
+    }
+
+    &__filter-btn-close {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon/cross.svg);
+    }
+
+    &__sort-box-mobile {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__sort-filter {
+      order: 2;
+    }
+
+    .choices {
+      &:nth-child(2) {
+        order: 3;
+        grid-column: 2 span;
+      }
+      &:nth-child(1) {
+        order: 1;
+      }
+    }
+  }
+
+  .choices__list--dropdown {
+    //visibility: visible;
+    top: 68px !important;
+  }
+}

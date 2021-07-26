@@ -1,0 +1,142 @@
+@@include('parts/_header.html')
+<section class="banner">
+  <div class="container-fluid">
+    <div class="banner__inner">
+      <div class="banner__container swiper-container swiper-container-banner">
+        <div class="banner__wrapper swiper-wrapper">
+          <div
+            class="banner__item swiper-slide"
+            style="background-image: url('img/banner_01.webp')"
+          >
+            <div class="container grid">
+              <div class="banner__item-inner">
+                <span class="banner__item-date">01 / 03</span>
+                <h1 class="banner__item-title">
+                  Скидка&nbsp;<span>20%</span> на&nbsp;матрасы серии Анданте
+                </h1>
+                <span class="banner__item-subtitle"
+                  >Акция действует до 15 апреля</span
+                >
+                <a href="discount.html" class="banner__item-btn btn btn-lg"
+                  >Смотреть подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="banner__item swiper-slide"
+            style="background-image: url('img/banner_02.webp')"
+          >
+            <div class="container grid">
+              <div class="banner__item-inner">
+                <span class="banner__item-date">02 / 03</span>
+                <h1 class="banner__item-title">
+                  Скидка&nbsp;<span>10%</span> на&nbsp; матрасы серии Крещендо
+                </h1>
+                <span class="banner__item-subtitle"
+                  >Акция действует до 15 апреля</span
+                >
+                <a href="discount.html" class="banner__item-btn btn btn-lg"
+                  >Смотреть подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="banner__item swiper-slide"
+            style="background-image: url('img/banner_03.webp')"
+          >
+            <div class="container grid">
+              <div class="banner__item-inner">
+                <span class="banner__item-date">03 / 03</span>
+                <h1 class="banner__item-title">
+                  Скидка&nbsp;<span>30%</span> на&nbsp;матрасы серии Морендо
+                </h1>
+                <span class="banner__item-subtitle"
+                  >Акция действует до 15 апреля</span
+                >
+                <a href="discount.html" class="banner__item-btn btn btn-lg"
+                  >Смотреть подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-banner"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <div class="container">
+    <div class="category__inner">
+      <h2 class="category__title-h2 title-h2">Наша продукция</h2>
+      <div
+        class="category__container swiper-container swiper-container-category"
+      >
+        <div class="category__wrapper swiper-wrapper">
+          <div
+            class="category__item swiper-slide"
+            style="background-image: url(img/category_01.webp)"
+          >
+            <a href="catalog.html" class="category__btn btn btn-md">Матрасы</a>
+          </div>
+
+          <div
+            class="category__item swiper-slide"
+            style="background-image: url(img/category_02.webp)"
+          >
+            <a href="catalog.html" class="category__btn btn btn-md"
+              >Наматрасники и чехлы</a
+            >
+          </div>
+          <div
+            class="category__item swiper-slide"
+            style="background-image: url(img/category_03.webp)"
+          >
+            <a href="catalog.html" class="category__btn btn btn-md"
+              >Ортопедические <br />
+              подушки и одеяла</a
+            >
+          </div>
+          <div
+            class="category__item swiper-slide"
+            style="background-image: url(img/category_04.webp)"
+          >
+            <a href="catalog.html" class="category__btn btn btn-md"
+              >Ортопедические основания</a
+            >
+          </div>
+          <div
+            class="category__item swiper-slide"
+            style="background-image: url(img/category_05.webp)"
+          >
+            <a href="catalog.html" class="category__btn btn btn-md"
+              >Наполнители (материалы)</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="category__box">
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-pagination swiper-pagination-category"></div>
+        <div class="category__btn-box">
+          <div class="swiper-button-prev swiper-button-prev-category"></div>
+          <div class="swiper-button-next swiper-button-next-category"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modals">
+  <div class="modal-overlay">@@include('parts/modals/_add-cart.html/')</div>
+</div>
+
+<div class="catalog-footer">
+  <div class="catalog__overlay"></div>
+  <section class="catalog">@@include('parts/_catalog.html')</section>
+
+  @@include('parts/_footer.html')
+</div>

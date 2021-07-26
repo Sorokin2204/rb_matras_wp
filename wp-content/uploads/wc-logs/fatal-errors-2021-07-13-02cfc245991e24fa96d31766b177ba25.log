@@ -1,0 +1,21 @@
+2021-07-13T13:26:41+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-delivery.php на строке 84
+
+2021-07-13T13:26:42+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-delivery.php на строке 84
+
+2021-07-13T14:42:27+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-guarantee.php на строке 25
+
+2021-07-13T14:42:27+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-guarantee.php на строке 25
+
+2021-07-13T17:52:01+00:00 CRITICAL syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-about-us.php на строке 40
+
+2021-07-13T17:52:02+00:00 CRITICAL syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-about-us.php на строке 40
+
+2021-07-13T18:45:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-contact.php on line 23 and at least 1 expected in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:79
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-contact.php(23): the_field()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php на строке 79
+

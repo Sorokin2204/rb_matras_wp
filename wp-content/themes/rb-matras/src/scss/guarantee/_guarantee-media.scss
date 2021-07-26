@@ -1,0 +1,26 @@
+@media (max-width: 634px) {
+  .guarantee {
+    &__img {
+      display: block;
+      width: auto;
+      object-fit: none;
+      height: auto;
+      margin: 0 auto;
+      //   width: auto;margin: 0 auto;
+      //   height: 180px;
+    }
+
+    &__content {
+      grid-gap: 20px;
+      grid-template-columns: 1fr;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+
+    &__box-title {
+      margin-bottom: 20px;
+    }
+  }
+}

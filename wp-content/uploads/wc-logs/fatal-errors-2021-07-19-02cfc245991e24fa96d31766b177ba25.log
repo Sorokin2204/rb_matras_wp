@@ -1,0 +1,238 @@
+2021-07-19T06:02:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:02:07+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:02:14+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:10+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:15+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:18+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:21+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-19T06:21:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_variation_parent_ids_from_term() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:324
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 324
+
+2021-07-19T06:25:20+00:00 CRITICAL syntax error, unexpected 'while' (T_WHILE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-19T06:41:14+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:190
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 190
+
+2021-07-19T07:52:10+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 319
+
+2021-07-19T07:53:53+00:00 CRITICAL syntax error, unexpected ''post_parent__in'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 318
+
+2021-07-19T07:53:56+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-19T07:53:59+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-19T07:54:07+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-19T07:57:23+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 349
+
+2021-07-19T07:58:17+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-19T08:21:51+00:00 CRITICAL syntax error, unexpected '$loop' (T_VARIABLE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 351
+
+2021-07-19T08:41:22+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:10
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 10
+
+2021-07-19T09:00:35+00:00 CRITICAL syntax error, unexpected 'as' (T_AS), expecting variable (T_VARIABLE) or '{' or '$' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 178
+
+2021-07-19T09:39:40+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 294
+
+2021-07-19T12:32:39+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:276
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 276
+
+2021-07-19T12:33:05+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:276
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 276
+
+2021-07-19T12:36:23+00:00 CRITICAL syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 229
+
+2021-07-19T12:36:31+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:275
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 275
+
+2021-07-19T13:15:06+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 328
+
+2021-07-19T13:15:14+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 328
+
+2021-07-19T13:56:03+00:00 CRITICAL syntax error, unexpected '=', expecting ';' or ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 158
+
+2021-07-19T13:56:04+00:00 CRITICAL syntax error, unexpected '=', expecting ';' or ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 158
+
+2021-07-19T15:09:28+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 270
+
+2021-07-19T15:09:29+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 270
+
+2021-07-19T15:58:35+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 350
+
+2021-07-19T15:58:40+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 350
+
+2021-07-19T16:34:35+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 276
+
+2021-07-19T16:34:37+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 276
+
+2021-07-19T17:04:29+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:04:30+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:05:06+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:07:07+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:08:07+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:09:08+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 297
+
+2021-07-19T17:11:21+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 382
+
+2021-07-19T17:11:22+00:00 CRITICAL syntax error, unexpected '}' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 382
+

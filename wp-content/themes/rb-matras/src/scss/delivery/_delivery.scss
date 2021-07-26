@@ -1,0 +1,25 @@
+.delivery {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__box {
+  }
+
+  &__list-title {
+    @include medium-17-resize-15;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    @include regular-15-resize-12;
+    & + & {
+      margin-top: 15px;
+    }
+  }
+}

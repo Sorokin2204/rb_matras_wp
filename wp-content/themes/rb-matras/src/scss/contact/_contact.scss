@@ -1,0 +1,155 @@
+.contact {
+  &__map {
+    width: 100%;
+    max-width: 674px;
+    margin-right: 30px;
+    max-height: 513px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__box {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    & + & {
+      margin-top: 35px;
+    }
+    &:nth-child(1) {
+      .contact__item-title {
+        &::before {
+          background-image: url(../img/icon/location.svg);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .contact__item-title {
+        &::before {
+          background-image: url(../img/icon/time.svg);
+        }
+      }
+    }
+    &:nth-child(3) {
+      .contact__item-title {
+        &::before {
+          background-image: url(../img/icon/call.svg);
+        }
+      }
+    }
+    &:nth-child(4) {
+      .contact__item-title {
+        &::before {
+          background-image: url(../img/icon/edit.svg);
+        }
+      }
+    }
+  }
+
+  &__item-title {
+    @include medium-15;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 28px;
+      padding: 8px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $green-light;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  &__item-content {
+  }
+
+  &__item-text {
+    @include regular-15;
+    max-width: 260px;
+  }
+
+  &__item-worktime {
+    display: inline-block;
+    &:first-child {
+      margin-right: 30px;
+    }
+    p {
+      &:first-child {
+        @include regular-15;
+      }
+      &:last-child {
+        @include regular-13;
+        margin-top: 3px;
+      }
+      color: rgba(5, 14, 12, 0.8);
+    }
+  }
+
+  &__item-tel-box {
+    display: inline-block;
+    margin-right: 68px;
+  }
+
+  &__item-tel {
+    @include regular-15;
+    display: block;
+    color: $black;
+  }
+
+  &__item-tel-link {
+    margin-top: 3px;
+  }
+
+  &__item-mail-box {
+    display: inline-block;
+  }
+
+  &__itme-mail {
+    @include regular-15;
+    color: $black;
+  }
+
+  &__item-mail-text {
+    @include regular-13;
+    margin-top: 3px;
+    color: rgba(5, 14, 12, 0.8);
+  }
+
+  &__item-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  &__item-input {
+  }
+
+  &__item-textarea {
+    resize: none;
+    grid-column: 1/3;
+  }
+
+  &__item-btn {
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-self: start;
+    justify-self: start;
+  }
+}

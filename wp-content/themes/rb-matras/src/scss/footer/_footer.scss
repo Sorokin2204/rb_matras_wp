@@ -1,0 +1,106 @@
+///FOOTER
+.footer {
+  border-top: 1px solid #dfdfdf;
+  &__inner {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+  }
+
+  &__img {
+    margin-bottom: 44px;
+  }
+
+  &__copy {
+    @include medium-15;
+
+    color: $gray;
+    max-width: 165px;
+  }
+
+  &__title {
+    display: inline-block;
+    @include medium-15;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  &__list-link {
+    color: rgba(5, 14, 12, 0.8);
+    @include regular-15;
+    transition: all 0.3s ease-out;
+    position: relative;
+    &::after {
+      position: absolute;
+      display: inline-block;
+      bottom: 0px;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 0px;
+      background-color: #28be9a;
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      transition: all 0.3s ease-out;
+      color: #28be9a;
+      &::after {
+        transition: all 0.3s ease-out;
+        width: 100%;
+      }
+    }
+  }
+
+  &__info {
+  }
+
+  &__info-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__info-img {
+    padding: 8px;
+    background-color: $green-light;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  &__info-bold {
+    color: $black;
+    display: inline-block;
+    white-space: nowrap;
+    @include medium-15;
+  }
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  &__info-link {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  &__info-text {
+    display: inline-block;
+    margin-top: 5px;
+    white-space: nowrap;
+  }
+}

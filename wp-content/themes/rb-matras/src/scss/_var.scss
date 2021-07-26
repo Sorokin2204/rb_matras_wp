@@ -1,0 +1,200 @@
+/* Color styles */
+
+$green: #0e9675;
+$black: #050e0c;
+$brown-light: #f9f4f5;
+$gray: #afafaf;
+$white: #fefefe;
+$green-light: #e4f2ef;
+
+$shadow-small: 1px 1px 5px rgba(0, 0, 0, 0.05);
+$shadow: 3px 3px 25px rgba(0, 0, 0, 0.05);
+
+$grid-gap: 30px;
+
+// $regular-11: 400 11px / 13px $font-family;
+// $regular-12: 400 12px / 15px $font-family;
+// $regular-13: 400 13px / 15px $font-family;
+// $regular-15: 400 15px / 18px $font-family;
+// $regular-20-resize-17: 400 20px / 18px $font-family;
+
+// $medium-13: 500 13px / 15px $font-family;
+// $medium-15: 500 15px / 18px $font-family;
+// $medium-20: 500 20px / 24px $font-family;
+// $medium-26: 500 26px / 24px $font-family;
+
+$font-family: 'Rubik', sans-serif;
+$screen-min: 320;
+$screen-max: 1440;
+
+@mixin regular-11 {
+  @include fluid-type(400, 11, 13, $screen-min, $screen-max);
+}
+@mixin regular-12 {
+  @include fluid-type(400, 12, 15, $screen-min, $screen-max);
+}
+@mixin regular-13 {
+  @include fluid-type(400, 13, 15, $screen-min, $screen-max);
+}
+@mixin regular-15 {
+  @include fluid-type(400, 15, 18, $screen-min, $screen-max);
+}
+@mixin regular-15-resize-11 {
+  @include fluid-type(400, 15, 18, $screen-min, $screen-max, 11, 13);
+}
+@mixin regular-15-resize-12 {
+  @include fluid-type(400, 15, 18, $screen-min, $screen-max, 12, 14);
+}
+
+@mixin regular-20-resize-15 {
+  @include fluid-type(400, 20, 24, $screen-min, $screen-max, 15, 18);
+}
+
+@mixin regular-20-resize-17 {
+  @include fluid-type(400, 20, 24, $screen-min, $screen-max, 17, 18);
+}
+
+@mixin regular-20 {
+  @include fluid-type(400, 20, 24, $screen-min, $screen-max);
+}
+@mixin medium-7 {
+  @include fluid-type(500, 9, 8, $screen-min, $screen-max);
+}
+@mixin medium-11 {
+  @include fluid-type(500, 11, 13, $screen-min, $screen-max);
+}
+
+@mixin medium-12 {
+  @include fluid-type(500, 12, 14, $screen-min, $screen-max);
+}
+
+@mixin medium-13 {
+  @include fluid-type(500, 13, 15, $screen-min, $screen-max);
+}
+@mixin medium-13-resize-12 {
+  @include fluid-type(500, 13, 15, $screen-min, $screen-max, 12, 14);
+}
+@mixin medium-15 {
+  @include fluid-type(500, 15, 18, $screen-min, $screen-max);
+}
+
+@mixin medium-15-resize-11 {
+  @include fluid-type(500, 15, 18, $screen-min, $screen-max, 11, 13);
+}
+
+@mixin medium-15-resize-12 {
+  @include fluid-type(500, 15, 18, $screen-min, $screen-max, 12, 14);
+}
+
+@mixin medium-17 {
+  @include fluid-type(500, 17, 20, $screen-min, $screen-max);
+}
+
+@mixin medium-17-resize-15 {
+  @include fluid-type(500, 17, 20, $screen-min, $screen-max, 15, 18);
+}
+
+@mixin medium-20 {
+  @include fluid-type(500, 20, 24, $screen-min, $screen-max);
+}
+
+@mixin medium-20-resize-17 {
+  @include fluid-type(500, 20, 24, $screen-min, $screen-max, 17, 20);
+}
+
+@mixin medium-20-resize-15 {
+  @include fluid-type(500, 20, 24, 1060, 1174, 15, 18);
+}
+
+@mixin medium-26 {
+  @include fluid-type(500, 26, 24, $screen-min, $screen-max);
+}
+@mixin medium-26-resize-20 {
+  @include fluid-type(500, 26, 24, $screen-min, 769, 20, 24);
+}
+
+@mixin medium-26-resize-17 {
+  @include fluid-type(500, 26, 24, 769, $screen-max, 17, 20);
+}
+@mixin bold-40 {
+  @include fluid-type(700, 40, 47, $screen-min, $screen-max);
+}
+
+@mixin bold-40-resize-20 {
+  @include fluid-type(700, 40, 47, $screen-min, $screen-max, 20, 24);
+}
+@mixin bold-60 {
+  @include fluid-type(700, 60, 71, $screen-min, $screen-max, 20, 24);
+}
+
+@mixin fluid-type(
+  $font-weight,
+  $font-max,
+  $line-height-max,
+  $screen-min,
+  $screen-max,
+  $font-min: '',
+  $line-height-min: ''
+) {
+  font-weight: #{$font-weight};
+  font-family: $font-family;
+
+  @if $font-min != '' {
+    font-size: #{$font-min}px;
+  } @else {
+    font-size: #{$font-max}px;
+  }
+
+  @if $line-height-min != '' {
+    line-height: #{$line-height-min}px;
+  } @else {
+    line-height: #{$line-height-max}px;
+  }
+
+  @media (min-width: #{$screen-min}px) {
+    @if $font-min != '' {
+      font-size: calc(
+        #{$font-min}px +
+          #{($font-max - $font-min)} *
+          (100vw - #{$screen-min}px) /
+          (#{$screen-max} - #{$screen-min})
+      );
+    }
+    @if $line-height-min != '' {
+      line-height: calc(
+        #{$line-height-min}px +
+          #{($line-height-max - $line-height-min)} *
+          (100vw - #{$screen-min}px) /
+          (#{$screen-max} - #{$screen-min})
+      );
+    }
+  }
+
+  @media (min-width: #{$screen-max}px) {
+    font-size: #{$font-max}px;
+    line-height: #{$line-height-max}px;
+  }
+}
+
+@mixin fluid-value(
+  $name-prop,
+  $prop-max,
+  $prop-min,
+  $screen-max-loc: '',
+  $screen-min-loc: ''
+) {
+  @if $screen-min-loc == '' {
+    $screen-min-loc: $screen-min;
+  }
+  @if $screen-max-loc == '' {
+    $screen-max-loc: $screen-max;
+  }
+  #{$name-prop}: calc(
+    #{$prop-min}px + #{($prop-max - $prop-min)} * (100vw - #{$screen-min-loc}px) /
+      (#{$screen-max-loc} - #{$screen-min-loc})
+  );
+
+  @media (min-width: #{$screen-max}px) {
+    #{$name-prop}: #{$prop-max}px;
+  }
+}

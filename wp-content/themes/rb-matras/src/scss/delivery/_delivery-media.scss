@@ -1,0 +1,16 @@
+@media (max-width: 1030px) {
+  .delivery {
+    &__content {
+      grid-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .delivery {
+    &__content {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+}

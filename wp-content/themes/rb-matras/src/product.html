@@ -1,0 +1,364 @@
+@@include('parts/_header.html')
+
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <span class="breadcrumbs__item">Главная</span>
+      <span class="breadcrumbs__item">Каталог</span>
+      <span class="breadcrumbs__item">Матрасы</span>
+      <span class="breadcrumbs__item">Эконом класс</span>
+      <span class="breadcrumbs__item">Мазурка Кормфорт+</span>
+    </div>
+  </div>
+</div>
+
+<section class="product-one">
+  <div class="container">
+    <div class="product-one__inner">
+      <div class="product-one__img-box">
+        <img src="img/product_full_01.webp" alt="" class="product-one__img" />
+      </div>
+      <div class="product-one__content">
+        <div class="product-one__head">
+          <h2 class="product-one__title">Мазурка стандарт Кормфорт+</h2>
+          <button class="product-one__btn-diff" data-path="modal-material">
+            В чем отличие?
+          </button>
+        </div>
+        <p class="product-one__text">
+          Серия матрасов &laquo;Мазурка стандарт&raquo; подходит как для
+          взрослых, так и&nbsp;для детей. <br /><br />
+          Нагрузка равномерно распределяется по&nbsp;всей поверхности матраса
+          и&nbsp;обеспечивает направленную поддержку позвоночника.
+          <br /><br />
+          Данная модель оснащена 5-зонным независимым пружинным блоком (255
+          пружин на&nbsp;кв.м).
+        </p>
+        <div class="product-one__tabs">
+          <ul class="product-one__tabs-list">
+            <li class="product-one__tabs-item">
+              <button
+                class="product-one__tabs-btn product-one__tabs-btn--active"
+                data-tabs-path="details"
+              >
+                Детали и размеры
+              </button>
+            </li>
+            <li class="product-one__tabs-item">
+              <button class="product-one__tabs-btn" data-tabs-path="char">
+                Характеристики
+              </button>
+            </li>
+            <li class="product-one__tabs-item">
+              <button
+                class="product-one__tabs-btn"
+                data-tabs-path="composition"
+              >
+                Состав
+              </button>
+            </li>
+          </ul>
+
+          <div
+            class="product-one__tabs-content product-one__tabs-content--active"
+            data-tabs-target="details"
+          >
+            <div class="product-one__tabs-content-inner">
+              <select
+                name="select_size"
+                id="select_size"
+                class="product-one__select select select--disable"
+              >
+                <option value="80х190"></option>
+                <option value="90х190"></option>
+                <option value="120х190"></option>
+                <option value="140х190"></option>
+                <option value="160х190"></option>
+                <option value="180х190"></option>
+                <option value="200х190"></option>
+                <option value="80х195"></option>
+                <option value="90х195"></option>
+                <option value="120х195"></option>
+                <option value="140х195"></option>
+                <option value="160х195"></option>
+                <option value="180х195"></option>
+                <option value="200х195"></option>
+                <option value="80х200"></option>
+                <option value="90х200"></option>
+                <option value="120х200"></option>
+                <option value="140х200"></option>
+                <option value="160х200"></option>
+                <option value="180х200"></option>
+                <option value="200х200"></option>
+              </select>
+
+              <select
+                name="select_chehol"
+                id="select_chehol"
+                class="product-one__select select_size"
+              >
+                <option value="Хлопковый жаккард, несъемный"></option>
+                <option value="Трикотаж, несъемный"></option>
+                <option value="Трикотаж, съемный"></option>
+                <option value="Велюр брендовый, съемный"></option>
+                <option value="Чехол"></option>
+                <option value="Велюр брендовый, несъемный"></option>
+              </select>
+            </div>
+          </div>
+          <div class="product-one__tabs-content" data-tabs-target="char">
+            <div class="product-one__tabs-content-inner">
+              <ul class="product-one__list list">
+                <li class="list__item">Natural Foam 2,5см</li>
+                <li class="list__item">Войлок</li>
+                <li class="list__item">Кокос 3см (Н=21)</li>
+                <li class="list__item">
+                  Независимый пакетно – пружинный блок (255 пр./м2)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-one__tabs-content" data-tabs-target="composition">
+            <div class="product-one__tabs-content-inner">
+              <ul class="product-one__list list">
+                <li class="list__item">
+                  <span>Жёсткость:</span> Мягкая/Жесткая
+                  <button>
+                    <span class="info">
+                      <div class="info-popup">
+                        Жесткость матраса с первой и второй стороны
+                      </div></span
+                    >
+                  </button>
+                </li>
+                <li class="list__item"><span>Вес:</span> до 100кг</li>
+                <li class="list__item"><span>Зоны жесткости:</span> 5 зон</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-one__info">
+          <span class="product-one__info-price">14 960 р.</span>
+          <button
+            class="product-one__cart-btn btn btn-md btn--hide-icon"
+            data-path="modal-add-cart"
+          >
+            В корзину
+          </button>
+
+          <button
+            data-graph-path="first"
+            class="product-one__test-btn btn btn-md btn--hide-icon btn--outline"
+            data-path="modal-test"
+          >
+            Тест<span>ировать</span>
+          </button>
+          <button class="product-one__favorites-btn"></button>
+          <button class="product-one__compare-btn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-similar">
+  <div class="container">
+    <div class="product-similar__inner">
+      <h2 class="product-similar__title-h2 title-h2">Похожие товары</h2>
+      <div
+        class="
+          product-similar__container
+          swiper-container swiper-container-product-similar
+        "
+      >
+        <div class="product-similar__wrapper product-list swiper-wrapper">
+          @@include('parts/_product.html') @@include('parts/_product.html')
+          @@include('parts/_product.html') @@include('parts/_product.html')
+          @@include('parts/_product.html') @@include('parts/_product.html')
+          <!-- <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div>
+          <div class="product swiper-slide">
+            <div class="product__btn-icon-box">
+              <div class="product__sale">30%</div>
+              <button class="product__btn-icon-compare"></button>
+              <button class="product__btn-icon-favorites"></button>
+            </div>
+
+            <img src="img/product_01.webp" alt="" class="product__img" />
+            <span class="product__title">Мазурка Кормфорт+</span>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <span> Жёсткость:</span> Мягкая/Жесткая
+              </li>
+              <li class="product__list-item"><span>Вес:</span> до 100кг</li>
+
+              <li class="product__list-item">
+                <span> Размеры:</span> от 80х200
+              </li>
+            </ul>
+            <div class="product__box">
+              <span class="product__price">14 960 р.</span>
+              <button class="product__btn-cart btn btn-sm">В корзину</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-next-product-similar"></div>
+      <div class="swiper-button-prev swiper-button-prev-product-similar"></div>
+    </div>
+  </div>
+</section>
+
+<div class="modals">
+  <div class="modal-overlay">
+    @@include('parts/modals/_add-cart.html')
+    @@include('parts/modals/_material.html')
+    @@include('parts/modals/_test.html')
+    @@include('parts/modals/_test-thanks.html')
+  </div>
+</div>
+
+@@include('parts/_footer.html')

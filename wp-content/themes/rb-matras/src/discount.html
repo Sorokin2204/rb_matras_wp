@@ -1,0 +1,125 @@
+@@include('parts/_header.html')
+
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <span class="breadcrumbs__item">Главная</span>
+      <span class="breadcrumbs__item">Акции</span>
+    </div>
+  </div>
+</div>
+
+<section class="discount">
+  <div class="container">
+    <div class="discount__inner inner">
+      <h2 class="discount__title-h2 title-h2">Акции</h2>
+      <div class="discount__banner-inner">
+        <div
+          class="
+            discount__banner-container
+            swiper-container swiper-container-discount
+          "
+        >
+          <div
+            class="
+              discount__banner-wrapper
+              swiper-wrapper swiper-wrapper-discount
+            "
+          >
+            <div
+              class="discount__banner-item swiper-slide swiper-slide-discount"
+            >
+              <div class="discount__banner-content">
+                <picture>
+                  <source
+                    srcset="img/banner_01.webp"
+                    media="(max-width: 769px)"
+                  />
+                  <img
+                    class="discount__banner-img"
+                    src="img/discount_banner_01.webp"
+                    alt=""
+                  />
+                </picture>
+                <h1 class="discount__banner-title">
+                  Скидка <span>20% </span>на матрасы серии Анданте
+                </h1>
+                <span class="discount__banner-subtitle"
+                  >На все матрасы в июне</span
+                >
+              </div>
+            </div>
+            <div
+              class="discount__banner-item swiper-slide swiper-slide-discount"
+            >
+              <div class="discount__banner-content">
+                <picture>
+                  <source
+                    srcset="img/banner_02.webp"
+                    media="(max-width: 769px)"
+                  />
+                  <img
+                    class="discount__banner-img"
+                    src="img/discount_banner_02.webp"
+                    alt=""
+                  />
+                </picture>
+                <h1 class="discount__banner-title">
+                  Скидка <span>10%</span> на матрасы серии Крещендо
+                </h1>
+                <span class="discount__banner-subtitle"
+                  >На все матрасы в июне</span
+                >
+              </div>
+            </div>
+            <div
+              class="discount__banner-item swiper-slide swiper-slide-discount"
+            >
+              <div class="discount__banner-content">
+                <picture>
+                  <source
+                    srcset="img/banner_03.webp"
+                    media="(max-width: 769px)"
+                  />
+                  <img
+                    class="discount__banner-img"
+                    src="img/discount_banner_03.webp"
+                    alt=""
+                  />
+                </picture>
+                <h1 class="discount__banner-title">
+                  Скидка <span>30%</span> на матрасы серии Морендо
+                </h1>
+                <span class="discount__banner-subtitle"
+                  >На все матрасы в июне</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-prev swiper-button-prev-discount"></div>
+        <div class="swiper-button-next swiper-button-next-discount"></div> -->
+        <div class="category__box">
+          <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="swiper-pagination swiper-pagination-category"></div>
+          <div class="category__btn-box">
+            <div class="swiper-button-prev swiper-button-prev-discount"></div>
+            <div class="swiper-button-next swiper-button-next-discount"></div>
+          </div>
+        </div>
+      </div>
+      <div class="discount__product-list product-list product-list--full">
+        @@include('parts/_product-sale.html')
+        @@include('parts/_product-sale.html')
+        @@include('parts/_product-sale.html')
+        @@include('parts/_product-sale.html')
+      </div>
+
+      @@include('parts/_need-help.html')
+    </div>
+  </div>
+</section>
+<div class="modals">
+  <div class="modal-overlay">@@include('parts/modals/_add-cart.html/')</div>
+</div>
+@@include('parts/_footer.html')

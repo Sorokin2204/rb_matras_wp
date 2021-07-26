@@ -1,0 +1,29 @@
+@media (max-width: 1030px) {
+  .about-us {
+    &__inner {
+    }
+    &__content {
+      grid-template-columns: 1fr;
+    }
+    &__title-h2 {
+    }
+
+    &__video {
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .about-us {
+    &__video {
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .about-us {
+    &__content {
+      row-gap: 25px;
+    }
+  }
+}

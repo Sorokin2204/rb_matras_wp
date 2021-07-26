@@ -1,0 +1,97 @@
+2021-07-23T07:07:50+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-cron.php(44): require_once('D:\\OpenServer\\O...')
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:50+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-cron.php(44): require_once('D:\\OpenServer\\O...')
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:50+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-cron.php(44): require_once('D:\\OpenServer\\O...')
+#8 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:50+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#8 D:\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:52+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#8 D:\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:55+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#8 D:\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T07:07:56+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php:29
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(408): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#8 D:\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-mini-product.php на строке 29
+
+2021-07-23T17:31:55+00:00 CRITICAL Uncaught Error: Call to a member function get_cart() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php:31
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3100): wc_get_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): woocommerce_single_variation_add_to_cart_button()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(195): do_action()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\Open в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php на строке 31
+

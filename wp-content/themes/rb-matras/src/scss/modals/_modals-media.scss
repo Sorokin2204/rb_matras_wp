@@ -1,0 +1,136 @@
+@media (max-width: 769px) {
+  .modal {
+    padding: 30px 20px;
+    &__btn-close {
+      min-width: 20px;
+      min-height: 20px;
+      mask-size: 20px 20px;
+      -webkit-mask-image: url(../img/icon/cross.svg);
+      mask-image: url(../img/icon/cross.svg);
+    }
+  }
+
+  .modal-add-cart {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .modal-material {
+    border-radius: 0 !important;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 !important;
+    background-color: $white;
+    overflow-y: scroll;
+    height: 100vh;
+    max-height: 100vh !important;
+    height: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s !important;
+
+    &__text {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &.modal--visible {
+      transform: translateX(0%);
+      transition: transform 0.3s !important;
+    }
+
+    .modal__head {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__accardion-item {
+      border-radius: 0 !important;
+    }
+    &__accardion {
+      border-radius: 0 !important;
+      border-left: none;
+      border-right: none;
+      border-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 25px 20px;
+    border-radius: 10px;
+    &__title {
+      @include medium-15;
+    }
+  }
+  .modal-add-cart {
+    padding: 25px 20px;
+    .modal__head {
+      margin-bottom: 20px;
+    }
+    &__product-content {
+      flex-direction: column;
+    }
+    &__product-img {
+      padding: 17px 20px;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      min-width: 0;
+    }
+
+    &__product-img-box {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    &__product-content {
+      margin-bottom: 20px;
+    }
+
+    &__product-price {
+      margin-bottom: 20px;
+    }
+    &__btn-box {
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
+
+    &__btn-continue {
+      grid-row: 2;
+    }
+  }
+
+  .modal-test {
+    .modal__btn-close {
+      margin-left: 30px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+    input + input {
+      margin-top: 10px;
+    }
+
+    &__btn {
+      margin-top: 15px;
+    }
+  }
+
+  .modal-test-thanks {
+    .modal__head {
+      margin-bottom: 0;
+    }
+
+    &__thanks {
+      @include medium-13;
+      margin-top: 5px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}

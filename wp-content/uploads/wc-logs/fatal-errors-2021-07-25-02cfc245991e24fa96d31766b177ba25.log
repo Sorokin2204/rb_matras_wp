@@ -1,0 +1,33 @@
+2021-07-25T08:36:30+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_image_url() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php:122
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\shortcodes.php(356): WC_Shortcodes::cart()
+#5 [internal function]: do_shortcode_tag()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\shortcodes.php(228): preg_replace_callback()
+#7 D:\OpenServer\OpenSe в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php на строке 122
+
+2021-07-25T09:16:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Product_Variation::get_attribute(), 0 passed in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php on line 62 and exactly 1 expected in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-product-variation.php:135
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php(62): WC_Product_Variation->get_attribute()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-product-variation.php на строке 135
+
+2021-07-25T15:42:49+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-template-functions.php:2810
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\checkout\form-billing.php(40): woocommerce_form_field()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(294): wc_get_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): WC_Checkout->checkout_form_billing()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\checkout\form-checko в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-template-functions.php на строке 2810
+
+2021-07-25T15:43:53+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 711
+
+2021-07-25T15:43:54+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 711
+

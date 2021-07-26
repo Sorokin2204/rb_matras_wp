@@ -1,0 +1,436 @@
+<div class="container">
+  <div class="catalog__inner grid inner">
+    <div class="catalog__reset">
+      <div class="catalog__reset-list">
+        <button class="catalog__reset-all-btn">Сбросить</button>
+        <button class="catalog__reset-btn">Стандарт класс</button>
+        <button class="catalog__reset-btn">разносторонний</button>
+        <button class="catalog__reset-btn">Стандарт класс</button>
+        <button class="catalog__reset-btn">подростковые</button>
+        <button class="catalog__reset-btn">жесткий</button>
+        <button class="catalog__reset-btn">Стандарт класс</button>
+        <button class="catalog__reset-btn">Бизнес класс</button>
+        <button class="catalog__reset-btn">Стандарт класс</button>
+        <button class="catalog__reset-btn">Беспружинный</button>
+      </div>
+    </div>
+    <div class="catalog__sort">
+      <div class="catalog__sort-title">Матрасы</div>
+      <div class="catalog__sort-box">
+        <div class="sort-radio-box">
+          <input
+            type="radio"
+            name="sort_radio"
+            checked
+            class="sort-radio"
+            id="sort_price"
+          />
+          <label for="sort_price" class="label-sort-radio"> По цене </label>
+        </div>
+        <div class="sort-radio-box">
+          <input
+            type="radio"
+            name="sort_radio"
+            class="sort-radio"
+            id="sort_name"
+          />
+          <label for="sort_name" class="label-sort-radio">По названию </label>
+        </div>
+        <div class="sort-radio-box">
+          <input
+            type="radio"
+            name="sort_radio"
+            class="sort-radio"
+            id="sort_population"
+          />
+          <label for="sort_population" class="label-sort-radio"
+            >По популярности
+          </label>
+        </div>
+        <div class="sort-radio-box">
+          <input
+            type="radio"
+            name="sort_radio"
+            class="sort-radio"
+            id="sort_new"
+          />
+          <label for="sort_new" class="label-sort-radio">По новизне </label>
+        </div>
+      </div>
+
+      <div class="catalog__sort-box-mobile">
+        <select class="catalog__sort-select-mobile">
+          <option value="По популярности"></option>
+          <option value="По цене"></option>
+          <option value="По названию"></option>
+        </select>
+        <select class="catalog__sort-select-mobile">
+          <option value="Быстрый фильтр"></option>
+          <option value="Эконом класс"></option>
+          <option value="Стандарт класс"></option>
+          <option value="Премиум класс"></option>
+          <option value="Беспружинные матрасы"></option>
+          <option value="Детские матрасы"></option>
+        </select>
+        <button class="catalog__sort-filter"></button>
+      </div>
+    </div>
+    <aside class="catalog__filter">
+      <div class="catalog__filter-header">
+        <span class="catalog__filter-title">Фильтр</span>
+        <button class="catalog__filter-btn-close"></button>
+      </div>
+      <div class="catalog__filter-list">
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Стоимость, руб
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <div class="catalog__filter-range-box">
+              <div class="catalog__filter-range-input-box">
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="0"
+                    max="258313"
+                    placeholder="от"
+                    id="price-range-slider-input-0"
+                /></label>
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="0"
+                    max="258313"
+                    placeholder="до"
+                    id="price-range-slider-input-1"
+                /></label>
+              </div>
+              <div class="catalog__filter-range-slider-box">
+                <div
+                  class="catalog__filter-range-slider"
+                  id="price-range-slider"
+                ></div>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-min
+                  "
+                  id="price-range-slider-text-0"
+                ></span>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-max
+                  "
+                  id="price-range-slider-text-1"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Ширина, см
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <div class="catalog__filter-range-box">
+              <div class="catalog__filter-range-input-box">
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="60"
+                    max="200"
+                    placeholder="от"
+                    id="width-range-slider-input-0"
+                    value=""
+                    disabled
+                /></label>
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="60"
+                    max="200"
+                    placeholder="до"
+                    id="width-range-slider-input-1"
+                    value=""
+                    disabled
+                /></label>
+              </div>
+              <div class="catalog__filter-range-slider-box">
+                <div
+                  class="catalog__filter-range-slider"
+                  id="width-range-slider"
+                ></div>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-min
+                  "
+                  id="width-range-slider-text-0"
+                ></span>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-max
+                  "
+                  id="width-range-slider-text-1"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Длина, см
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <div class="catalog__filter-range-box">
+              <div class="catalog__filter-range-input-box">
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="120"
+                    max="200"
+                    placeholder="от"
+                    id="height-range-slider-input-0"
+                /></label>
+                <label class="label-range-input">
+                  <input
+                    type="number"
+                    class="range-input"
+                    min="120"
+                    max="200"
+                    placeholder="до"
+                    id="height-range-slider-input-1"
+                /></label>
+              </div>
+              <div class="catalog__filter-range-slider-box">
+                <div
+                  class="catalog__filter-range-slider"
+                  id="height-range-slider"
+                ></div>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-min
+                  "
+                  id="height-range-slider-text-0"
+                ></span>
+                <span
+                  class="
+                    catalog__filter-range-slider-text
+                    catalog__filter-range-slider-text-max
+                  "
+                  id="height-range-slider-text-1"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">Чехол</div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <div class="catalgo__filter-checkbox-box">
+              <label class="label-checkbox"
+                ><input type="checkbox" class="checkbox" />Хлопковый жаккард,
+                несъемный</label
+              >
+              <label class="label-checkbox"
+                ><input
+                  type="checkbox"
+                  class="checkbox checkbox--disable"
+                  disabled
+                />Велюр брендовый, несъемный</label
+              >
+              <label class="label-checkbox"
+                ><input type="checkbox" class="checkbox" />Трикотаж,
+                несъемный</label
+              >
+              <label class="label-checkbox"
+                ><input
+                  type="checkbox"
+                  class="checkbox"
+                  checked
+                  disabled
+                />Трикотаж, съемный</label
+              >
+              <label class="label-checkbox"
+                ><input type="checkbox" class="checkbox" />Велюр брендовый,
+                съемный</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">Тип</div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />Пружинный</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />Беспружинный</label
+            >
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Количество пружин на м²
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />255</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />308</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />380</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />510</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />1100</label
+            >
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Жесткость
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />жесткий</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />разносторонний</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />средняя
+              жесткость</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />мягкий</label
+            >
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Наполнители
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />кокос</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />латекс</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />мемори</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />natural foam</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />bi cocos</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />латекс алоэ вера</label
+            >
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">Возраст</div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />детские</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />подростковые</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />для взрослых</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />для пожилых</label
+            >
+          </div>
+        </div>
+        <div class="catalog__filter-item">
+          <div class="catalog__filter-head" aria-expanded="false">
+            Вес (на 1 спальное место)
+          </div>
+          <div class="catalog__filter-content" aria-hidden="true">
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />до 100 кг</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />до 120 кг</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />до 140 кг</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" class="checkbox" />до 150 кг</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog__fast-filter">
+        <span class="catalog__fast-filter-title">Быстрый фильтр</span>
+        <div class="catalog__fast-filter-content">
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Эконом класс</label
+          >
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Стандарт класс</label
+          >
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Бизнес класс</label
+          >
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Премиум класс</label
+          >
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Беспружинные
+            матрасы</label
+          >
+          <label class="label-checkbox"
+            ><input type="checkbox" class="checkbox" />Детские матрасы</label
+          >
+        </div>
+      </div>
+      <div class="catalog__filter-btn-box">
+        <button class="catalog__filter-btn-apply btn btn--hide-icon">
+          Показать (200)
+        </button>
+        <button
+          class="catalog__filter-btn-reset btn btn--disable btn--hide-icon"
+        >
+          Сбросить
+        </button>
+      </div>
+    </aside>
+    <div class="catalog__content">
+      <div class="catalog__product-list product-list">
+        @@include('_product.html') @@include('_product.html')
+        @@include('_product.html') @@include('_product.html')
+        @@include('_product.html') @@include('_product.html')
+        @@include('_product.html') @@include('_product.html')
+        @@include('_product.html') @@include('_product.html')
+        @@include('_product.html') @@include('_product.html')
+      </div>
+      <button class="catalog__btn-more btn btn-md btn--hide-icon">
+        Показать еще
+      </button>
+    </div>
+  </div>
+</div>

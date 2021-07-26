@@ -1,0 +1,82 @@
+2021-07-24T09:17:49+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_ID() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php:2
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(435): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php на строке 2
+
+2021-07-24T09:17:58+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_ID() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php:2
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(435): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php на строке 2
+
+2021-07-24T09:18:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_ID() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php:2
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(435): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\modals\content-modal-add-cart.php на строке 2
+
+2021-07-24T10:09:48+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 759
+
+2021-07-24T10:09:49+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 759
+
+2021-07-24T10:12:08+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 650
+
+2021-07-24T10:12:08+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 650
+
+2021-07-24T10:14:30+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 651
+
+2021-07-24T10:14:31+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 651
+
+2021-07-24T10:16:14+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 678
+
+2021-07-24T10:16:15+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 678
+
+2021-07-24T10:16:22+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 678
+
+2021-07-24T10:16:23+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 678
+
+2021-07-24T10:17:01+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 643
+
+2021-07-24T10:17:02+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 643
+
+2021-07-24T10:17:10+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 642
+
+2021-07-24T10:17:11+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 642
+
+2021-07-24T10:28:40+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 420
+
+2021-07-24T10:28:40+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 420
+
+2021-07-24T14:55:07+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\mini-cart.php на строке 112
+
+2021-07-24T16:32:14+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 418
+
+2021-07-24T16:32:16+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 418
+
+2021-07-24T16:51:26+00:00 CRITICAL Cannot redeclare is_product_in_cart() (previously declared in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:373) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php на строке 35
+
+2021-07-24T16:57:37+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php на строке 47
+
+2021-07-24T16:57:51+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php на строке 47
+
+2021-07-24T16:59:37+00:00 CRITICAL syntax error, unexpected end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variation-add-to-cart-button.php на строке 47
+

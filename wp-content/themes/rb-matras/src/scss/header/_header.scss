@@ -1,0 +1,241 @@
+///HEADER
+.header {
+  background-color: $white;
+  position: relative;
+  &__inner {
+    position: relative;
+    padding: 30px 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__logo {
+    //margin-right: 126px;
+    margin-right: auto;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    & + & {
+      margin-left: 37px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+
+  &__info-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: $green-light;
+    margin-right: 20px;
+  }
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info-bold {
+    @include medium-15;
+    color: rgba(5, 14, 12, 0.8);
+    margin-bottom: 2px;
+    white-space: nowrap;
+  }
+
+  &__info-text {
+    @include regular-13;
+    white-space: nowrap;
+  }
+
+  &__link-icon-search {
+    -webkit-mask-image: url(../img/icon/search.svg);
+    mask-image: url(../img/icon/search.svg);
+  }
+
+  &__link-icon-compare {
+    -webkit-mask-image: url(../img/icon/compare.svg);
+    mask-image: url(../img/icon/compare.svg);
+  }
+
+  &__link-icon-favorites {
+    width: 24px !important;
+
+    -webkit-mask-image: url(../img/icon/heart.svg);
+    mask-image: url(../img/icon/heart.svg);
+  }
+
+  &__link-icon-cart {
+    -webkit-mask-image: url(../img/icon/buy.svg);
+    mask-image: url(../img/icon/buy.svg);
+  }
+
+  &__info-link {
+    @include medium-13;
+    color: $green;
+    position: relative;
+
+    align-self: flex-start;
+    &::after {
+      position: absolute;
+      display: inline-block;
+      bottom: -3px;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: $green;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    grid-column: 3 span;
+    margin-left: auto;
+  }
+
+  &__btn-icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    & + & {
+      margin-left: 25px;
+    }
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   z-index: 2;
+    //   width: 14px;
+    //   height: 14px;
+    //   background-color: $green;
+    //   top: 0;
+    //   right: 0;
+    // }
+  }
+
+  &__link-icon {
+    width: 22px;
+    height: 22px;
+    background-color: $black;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transition: all 0.2s ease-out;
+      background-color: #28be9a;
+    }
+    &--active {
+      transition: all 0.2s ease-out;
+      background-color: $green;
+    }
+  }
+
+  &__count-icon {
+    @include medium-7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: $green;
+    top: -6px;
+    right: -6px;
+    border-radius: 50%;
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__nav {
+  }
+  &__menu-btn {
+    display: none;
+    @include medium-15;
+    padding: 0px 20px;
+    color: $white;
+    background-color: $green;
+    align-self: stretch;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+
+    margin-top: -12px;
+    margin-bottom: -12px;
+
+    transition: all 0.3s ease-out;
+    &--active {
+      background-color: $green-light;
+      color: $black;
+      .header__menu-btn-burger {
+        div {
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  .list {
+    padding: 20px;
+    transition: all 0.3s ease-out;
+    background-color: $white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    top: 57px;
+    left: -84%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    &__item {
+      @include medium-15;
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__menu-btn-burger {
+    margin-right: 15px;
+
+    div {
+      background-color: $white;
+      border-radius: 5px;
+      height: 3px;
+      &:nth-child(1) {
+        width: 19px;
+      }
+
+      &:nth-child(2) {
+        width: 15px;
+      }
+
+      &:nth-child(3) {
+        width: 23px;
+      }
+    }
+
+    div + div {
+      margin-top: 4px;
+    }
+  }
+}

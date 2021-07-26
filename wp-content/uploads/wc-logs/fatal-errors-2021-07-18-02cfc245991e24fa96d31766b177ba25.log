@@ -1,0 +1,878 @@
+2021-07-18T16:05:45+00:00 CRITICAL Uncaught Error: Call to undefined function get_terms_by() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:167
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:05:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_terms_by() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:167
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:05:47+00:00 CRITICAL Uncaught Error: Call to undefined function get_terms_by() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:167
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:07:15+00:00 CRITICAL syntax error, unexpected '?>', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:07:17+00:00 CRITICAL syntax error, unexpected '?>', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:07:22+00:00 CRITICAL syntax error, unexpected '?>', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 167
+
+2021-07-18T16:29:41+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:29:42+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:29:43+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:31:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:317
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:31:57+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:317
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:31:58+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:317
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:32:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:317
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:32:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:317
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 317
+
+2021-07-18T16:38:33+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:332
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 332
+
+2021-07-18T16:38:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:332
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 332
+
+2021-07-18T16:38:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:332
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 332
+
+2021-07-18T16:38:45+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:332
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 332
+
+2021-07-18T16:38:45+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:332
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 332
+
+2021-07-18T16:39:59+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:325
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 325
+
+2021-07-18T16:40:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:325
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 325
+
+2021-07-18T16:40:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:325
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 325
+
+2021-07-18T16:43:33+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:333
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 333
+
+2021-07-18T16:43:35+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:333
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 333
+
+2021-07-18T16:43:35+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:333
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 333
+
+2021-07-18T16:44:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:333
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 333
+
+2021-07-18T16:44:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:333
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 333
+
+2021-07-18T16:44:18+00:00 CRITICAL syntax error, unexpected ']', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 324
+
+2021-07-18T16:44:19+00:00 CRITICAL syntax error, unexpected ']', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 324
+
+2021-07-18T16:46:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:21+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:23+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:24+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:28+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:29+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:46:29+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:47:28+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:47:28+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:48:22+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:48:23+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:48:25+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:48:25+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:336
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 336
+
+2021-07-18T16:56:36+00:00 CRITICAL syntax error, unexpected 'l' (T_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-18T16:56:36+00:00 CRITICAL syntax error, unexpected 'l' (T_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-18T16:56:37+00:00 CRITICAL syntax error, unexpected 'l' (T_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-18T17:22:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:22:51+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:22:52+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:25+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:26+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:27+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:49+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:23:51+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:24:53+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:24:54+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:25:47+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:25:48+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:25:48+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:26:03+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:26:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:26:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:348
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 348
+
+2021-07-18T17:26:25+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 331
+
+2021-07-18T17:26:26+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 331
+
+2021-07-18T17:26:26+00:00 CRITICAL syntax error, unexpected ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 331
+
+2021-07-18T17:26:41+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 322
+
+2021-07-18T17:31:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:31:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:32:47+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:32:48+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:32:54+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:32:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_available_variations() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T17:36:16+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:344
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 344
+
+2021-07-18T17:36:17+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:344
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 344
+
+2021-07-18T17:36:32+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:344
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 344
+
+2021-07-18T17:36:33+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:344
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 344
+
+2021-07-18T17:42:17+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 345
+
+2021-07-18T17:42:17+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 345
+
+2021-07-18T17:52:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_variation_parent_ids_from_term() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:313
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 313
+
+2021-07-18T17:52:22+00:00 CRITICAL Uncaught Error: Call to undefined function get_variation_parent_ids_from_term() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:313
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 313
+
+2021-07-18T17:52:58+00:00 CRITICAL Uncaught Error: Call to undefined function get_variation_parent_ids_from_term() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:313
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 313
+
+2021-07-18T17:52:58+00:00 CRITICAL Uncaught Error: Call to undefined function get_variation_parent_ids_from_term() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:313
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 313
+
+2021-07-18T19:54:32+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 343
+
+2021-07-18T19:54:32+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 343
+
+2021-07-18T20:16:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::the_title() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:347
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 347
+
+2021-07-18T20:19:08+00:00 CRITICAL syntax error, unexpected ''meta_query'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 324
+
+2021-07-18T20:19:09+00:00 CRITICAL syntax error, unexpected ''meta_query'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 324
+
+2021-07-18T20:30:30+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+
+2021-07-18T20:30:31+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::get_cate() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:346
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(732): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(676): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php(22): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 346
+

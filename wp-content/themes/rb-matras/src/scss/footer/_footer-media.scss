@@ -1,0 +1,133 @@
+@media (max-width: 1174px) {
+  .footer {
+    &__inner {
+      padding: 20px 0;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      &:first-child {
+        position: relative;
+        &::before {
+          content: '';
+          display: block;
+          height: 1px;
+          width: calc(100% + 40px);
+          background-color: #dfdfdf;
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+        order: 4;
+        flex-basis: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+        // border-top: 1px solid #dfdfdf;
+      }
+    }
+
+    &__list-link {
+    }
+
+    &__list-link {
+      max-width: 114px;
+    }
+
+    &__copy {
+      max-width: 220px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    &__col {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      &:nth-child(4) {
+        order: 1;
+        flex-basis: 50%;
+        .footer__info-box:last-child {
+          margin-bottom: 40px;
+        }
+      }
+      &:nth-child(5) {
+        order: 2;
+        flex-basis: 50%;
+        .footer__info-box:last-child {
+          margin-bottom: 40px;
+        }
+      }
+      &:nth-child(2) {
+        order: 3;
+        flex-basis: 50%;
+      }
+      &:nth-child(3) {
+        order: 4;
+        flex-basis: 50%;
+      }
+      &:nth-child(1) {
+        order: 5;
+        flex-basis: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__info-link {
+    }
+
+    &__info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__list-link {
+      max-width: 215px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+@media (max-width: 467px) {
+  .footer {
+    &__col {
+      &:nth-child(4) {
+        .footer__info-box:last-child {
+          margin-bottom: 30px;
+        }
+      }
+      &:nth-child(5) {
+        .footer__info-box:last-child {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:first-child {
+        border-top: 1px solid $brown-light;
+      }
+    }
+
+    &__copy {
+      padding-top: 20px;
+    }
+  }
+}
