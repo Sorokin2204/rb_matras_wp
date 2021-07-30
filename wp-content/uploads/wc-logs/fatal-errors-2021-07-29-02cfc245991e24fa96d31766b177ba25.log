@@ -1,0 +1,34 @@
+2021-07-29T08:54:33+00:00 CRITICAL syntax error, unexpected '$filters' (T_VARIABLE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 467
+
+2021-07-29T08:54:34+00:00 CRITICAL syntax error, unexpected '$filters' (T_VARIABLE) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 467
+
+2021-07-29T09:44:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_custom_logo_uri() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\404.php:6
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\404.php на строке 6
+
+2021-07-29T11:53:07+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 176
+
+2021-07-29T11:53:29+00:00 CRITICAL syntax error, unexpected ')', expecting end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 179
+
+2021-07-29T11:53:33+00:00 CRITICAL syntax error, unexpected ')', expecting end of file в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 179
+
+2021-07-29T13:17:36+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 282
+
+2021-07-29T13:19:39+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 282
+
+2021-07-29T13:21:36+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 282
+
+2021-07-29T13:22:16+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 282
+
+2021-07-29T15:50:54+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php:24
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\front-page.php на строке 24
+

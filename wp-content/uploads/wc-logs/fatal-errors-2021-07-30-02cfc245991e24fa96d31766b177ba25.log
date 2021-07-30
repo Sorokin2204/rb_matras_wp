@@ -1,0 +1,148 @@
+2021-07-30T07:19:55+00:00 CRITICAL syntax error, unexpected '<', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 531
+
+2021-07-30T07:19:56+00:00 CRITICAL syntax error, unexpected '<', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 531
+
+2021-07-30T08:35:04+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:493
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(501): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 493
+
+2021-07-30T08:35:05+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:493
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(501): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 493
+
+2021-07-30T08:38:30+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:38:30+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:38:46+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(22): require_once('D:\\OpenServer\\O...')
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:29+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:30+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:54+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:55+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:57+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:39:58+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:40:47+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:40:56+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+
+2021-07-30T08:40:56+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:497
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(502): test()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-settings.php(546): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-config.php(90): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-load.php(50): require_once('D:\\OpenServer\\O...')
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(13): require_once('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#6 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 497
+

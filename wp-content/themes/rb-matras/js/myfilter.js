@@ -1,6 +1,8 @@
 jQuery(function ($) {
+  $productContainer = $('.catalog__product-list').length
+    ? $('.catalog__product-list')
+    : $('.discount__product-list');
   $('#filter').submit(function () {
-    console.log('FORM WORK');
     var filter = $('#filter');
     $.ajax({
       url: misha_loadmore_params.ajaxurl,
@@ -8,6 +10,8 @@ jQuery(function ($) {
       data: filter.serialize(), // form data
       type: filter.attr('method'), // POST
       beforeSend: function (xhr) {
+        console.log($('.catalog__product-list').length);
+        
         var product_empty = `
         <div class="product product--empty">
   <div class="product__btn-icon-box">
@@ -42,16 +46,18 @@ jQuery(function ($) {
   </div>
 </div>
         `;
-        if ($('.catalog__product-list').html().length == 0) {
+        
+        if ( $productContainer.html().length == 0) {
           for (var i = 0, l = 12; i < l; i++) {
-            $('.catalog__product-list').append(product_empty);
+             $productContainer.append(product_empty);
           }
         } else {
           $('.product').addClass('product--empty');
         }
-        filter.find('button').text('Processing...'); // changing the button label
+        //filter.find('button').text('Processing...'); // changing the button label
       },
       success: function (data) {
+       
         // when filter applied:
         // set the current page to 1
         misha_loadmore_params.current_page = 1;
@@ -63,8 +69,18 @@ jQuery(function ($) {
         misha_loadmore_params.max_page = data.max_page;
 
         //  filter.find('button').text('Apply filter'); // changing the button label back
-        $('.catalog__product-list').html(data.content); // insert data
+         $productContainer.html(data.content); // insert data
+ setCookieFavorite(
+   '.product__btn-icon-compare',
+   '.product',
+   'wordpress_list_compare',
+ );
 
+ setCookieFavorite(
+   '.product__btn-icon-favorites',
+   '.product',
+   'wordpress_list_favorite',
+ );
         if (data.max_page < 2) {
           $('.catalog__btn-more').hide();
         } else {
@@ -90,7 +106,18 @@ jQuery(function ($) {
       success: function (data) {
         if (data) {
           $('.catalog__btn-more').text('More posts');
-          $('.catalog__product-list').append(data); // insert new posts
+           $productContainer.append(data); // insert new posts
+           setCookieFavorite(
+             '.product__btn-icon-compare',
+             '.product',
+             'wordpress_list_compare',
+           );
+
+           setCookieFavorite(
+             '.product__btn-icon-favorites',
+             '.product',
+             'wordpress_list_favorite',
+           );
           misha_loadmore_params.current_page++;
 
           if (

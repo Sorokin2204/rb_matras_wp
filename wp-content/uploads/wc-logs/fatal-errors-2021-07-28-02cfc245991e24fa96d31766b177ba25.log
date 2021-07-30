@@ -1,0 +1,132 @@
+2021-07-28T09:22:42+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:64
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 64
+
+2021-07-28T09:29:08+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:64
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 64
+
+2021-07-28T09:29:20+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:64
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 64
+
+2021-07-28T09:29:24+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:64
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 64
+
+2021-07-28T09:33:15+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 459
+
+2021-07-28T09:35:41+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:64
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 64
+
+2021-07-28T09:37:35+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:65
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 65
+
+2021-07-28T09:38:03+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:65
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 65
+
+2021-07-28T09:38:22+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php:65
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(772): require()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template.php(716): load_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(204): locate_template()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-favorites.php(7): get_template_part()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#6 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#7 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 65
+
+2021-07-28T10:00:34+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 460
+
+2021-07-28T10:00:34+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 460
+
+2021-07-28T10:00:41+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 470
+
+2021-07-28T10:00:42+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 470
+
+2021-07-28T16:15:46+00:00 CRITICAL Uncaught Error: Call to a member function get_variation() on array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php:70
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php на строке 70
+
+2021-07-28T16:20:39+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php на строке 70
+
+2021-07-28T16:56:02+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php:71
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php на строке 71
+
+2021-07-28T17:02:15+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_ID() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php:70
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php на строке 70
+

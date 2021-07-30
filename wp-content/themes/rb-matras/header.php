@@ -27,9 +27,11 @@
                         </div>
                         Меню
                     </button>
-                    <a class="header__logo" href="<?php echo get_home_url() ?>"><img src="<?php echo get_custom_logo_uri() ?>" alt="" /></a>
+                    <a class="header__logo" href="<?php echo get_home_url() ?>"><img
+                            src="<?php echo get_custom_logo_uri() ?>" alt="" /></a>
                     <div class="header__info">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/time.svg" alt="" class="header__info-img" />
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/time.svg" alt=""
+                            class="header__info-img" />
                         <div class="header__info-box">
                             <span class="header__info-bold">
                                 <?php echo the_field('widget_work-time-weekdays', 'widget_general_widget-2') ?></span>
@@ -40,13 +42,16 @@
 
                     <div class="header__info">
                         <div class="header__info-box">
-                            <span class="header__info-bold"><?php echo the_field('widget_work-time-weekend', 'widget_general_widget-2') ?></span>
-                            <span class="header__info-text"><?php echo the_field('widget_work-days-weekend', 'widget_general_widget-2') ?></span>
+                            <span
+                                class="header__info-bold"><?php echo the_field('widget_work-time-weekend', 'widget_general_widget-2') ?></span>
+                            <span
+                                class="header__info-text"><?php echo the_field('widget_work-days-weekend', 'widget_general_widget-2') ?></span>
                         </div>
                     </div>
 
                     <div class="header__info">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/call.svg" alt="" class="header__info-img" />
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/call.svg" alt=""
+                            class="header__info-img" />
                         <div class="header__info-box">
                             <span class="header__info-bold">
                                 <?php echo the_field('widget_phone', 'widget_general_widget-2') ?></span>
@@ -55,16 +60,16 @@
                     </div>
 
                     <div class="header__box">
+
                         <button class="header__btn-icon">
-                            <a class="header__link-icon header__link-icon-search"></a>
-                        </button>
-                        <button class="header__btn-icon">
-                            <a href="../compare.html" class="header__link-icon header__link-icon-compare">
+                            <a href="<?php echo home_url() . '/compare' ?>"
+                                class="header__link-icon header__link-icon-compare">
                             </a>
                             <span class="header__count-icon"></span>
                         </button>
                         <button class="header__btn-icon">
-                            <a href="../favorites.html" class="header__link-icon header__link-icon-favorites"></a>
+                            <a href="<?php echo home_url() . '/favorites' ?>"
+                                class="header__link-icon header__link-icon-favorites"></a>
                             <span class="header__count-icon"></span>
                         </button>
                         <button class="header__btn-icon">

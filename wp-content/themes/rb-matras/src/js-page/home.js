@@ -40,7 +40,7 @@ createAccardion('.catalog__filter-head');
 //   }, 300);
 // });
 
-
+jQuery(function ($) {
   heightrangeSlider.noUiSlider.on('set.one', function () {
     $('#filter').submit();
   });
@@ -55,3 +55,4 @@ createAccardion('.catalog__filter-head');
   $('.checkbox').change(function () {
     $('#filter').submit();
   });
+});

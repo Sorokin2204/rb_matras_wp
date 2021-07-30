@@ -162,6 +162,12 @@
     background-color: $black;
     width: 24px;
     height: 22px;
+    &--active {
+      background-color: #0e9675;
+      -webkit-mask-image: url(../img/icon/heart-fill.svg);
+      mask-image: url(../img/icon/heart-fill.svg);
+      mask-size: cover;
+    }
   }
 
   &__compare-btn {
@@ -174,6 +180,15 @@
     background-color: $black;
     width: 22px;
     height: 22px;
+    &--active {
+      transition: none;
+      background-color: transparent;
+      -webkit-mask-image: none;
+      mask-image: none;
+      background-image: url(../img/icon/compare-fill.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .list {

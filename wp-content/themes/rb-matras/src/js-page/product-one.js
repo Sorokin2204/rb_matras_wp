@@ -78,3 +78,14 @@ const inputVariation = document.querySelector('.variation_id');
 function checkIfVariationInCart() {
   inputVariation.getAttribute('value');
 }
+
+setCookieFavorite(
+  '.product-one__favorites-btn',
+  'form.cart',
+  'wordpress_list_favorite',
+);
+setCookieFavorite(
+  '.product-one__compare-btn',
+  'form.cart',
+  'wordpress_list_compare',
+);

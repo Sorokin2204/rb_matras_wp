@@ -4205,6 +4205,12 @@ a.added_to_cart.wc-forward {
       .product-one__favorites-btn {
         font-size: 12px;
         line-height: 15px; } }
+    .product-one__favorites-btn--active {
+      background-color: #0e9675;
+      -webkit-mask-image: url(../img/icon/heart-fill.svg);
+      mask-image: url(../img/icon/heart-fill.svg);
+      -webkit-mask-size: cover;
+              mask-size: cover; }
   .product-one__compare-btn {
     font-weight: 400;
     font-family: "Rubik", sans-serif;
@@ -4222,6 +4228,14 @@ a.added_to_cart.wc-forward {
       .product-one__compare-btn {
         font-size: 12px;
         line-height: 15px; } }
+    .product-one__compare-btn--active {
+      transition: none;
+      background-color: transparent;
+      -webkit-mask-image: none;
+      mask-image: none;
+      background-image: url(../img/icon/compare-fill.svg);
+      background-repeat: no-repeat;
+      background-size: cover; }
   .product-one .list__item {
     font-weight: 400;
     font-family: "Rubik", sans-serif;

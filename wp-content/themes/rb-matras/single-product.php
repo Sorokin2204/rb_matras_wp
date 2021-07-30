@@ -23,17 +23,21 @@ if (!defined('ABSPATH')) {
 get_header('shop'); ?>
 
 <?php while (have_posts()) : ?>
-    <?php the_post();
-    global $product; ?>
+<?php the_post();
+    global $product;
+    $compare_in_cookie = isset($_COOKIE['wordpress_list_compare']) ? in_array($product->get_id(), explode(',', $_COOKIE['wordpress_list_compare'])) : false;
+    $favorite_in_cookie =
+        isset($_COOKIE['wordpress_list_favorite'])  ? in_array($product->get_id(), explode(',', $_COOKIE['wordpress_list_favorite'])) : false;
+    ?>
 
-    <section class="product-one">
-        <div class="container">
-            <div class="product-one__inner">
-                <div class="product-one__img-box">
-                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="" class="product-one__img" />
-                </div>
-                <div class="product-one__content">
-                    <?php
+<section class="product-one">
+    <div class="container">
+        <div class="product-one__inner">
+            <div class="product-one__img-box">
+                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="" class="product-one__img" />
+            </div>
+            <div class="product-one__content">
+                <?php
                     wp_enqueue_script('wc-add-to-cart-variation');
                     $get_variations = count($product->get_children()) <= apply_filters('woocommerce_ajax_variation_threshold', 30, $product);
                     $available_variations = $get_variations ? $product->get_available_variations() : false;
@@ -43,60 +47,66 @@ get_header('shop'); ?>
                     $attribute_keys  = array_keys($attributes);
                     $variations_json = wp_json_encode($available_variations);
                     $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json) : _wp_specialchars($variations_json, ENT_QUOTES, 'UTF-8', true); ?>
-                    <form class="variations_form cart" action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint($product->get_id()); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. 
+                <form class="variations_form cart"
+                    action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
+                    method="post" enctype='multipart/form-data'
+                    data-product_id="<?php echo absint($product->get_id()); ?>"
+                    data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. 
                                                                                                                                                                                                                                                                                                             ?>">
 
 
-                        <div class="product-one__head">
-                            <h2 class="product-one__title"><?php the_title() ?></h2>
-                            <button type="button" class="product-one__btn-diff" data-path="modal-material">
-                                В чем отличие?
-                            </button>
-                        </div>
-                        <div class="product-one__text">
+                    <div class="product-one__head">
+                        <h2 class="product-one__title"><?php the_title() ?></h2>
+                        <button type="button" class="product-one__btn-diff" data-path="modal-material">
+                            В чем отличие?
+                        </button>
+                    </div>
+                    <div class="product-one__text">
 
-                            <?php echo wpautop($product->get_description()) ?>
-                        </div>
+                        <?php echo wpautop($product->get_description()) ?>
+                    </div>
 
-                        <div class="product-one__tabs">
-                            <ul class="product-one__tabs-list">
-                                <li class="product-one__tabs-item">
-                                    <button type="button" class="product-one__tabs-btn product-one__tabs-btn--active" data-tabs-path="details">
-                                        Детали и размеры
-                                    </button>
-                                </li>
-                                <li class="product-one__tabs-item">
-                                    <button type="button" class="product-one__tabs-btn" data-tabs-path="char">
-                                        Характеристики
-                                    </button>
-                                </li>
-                                <li class="product-one__tabs-item">
-                                    <button type="button" class="product-one__tabs-btn" data-tabs-path="composition">
-                                        Состав
-                                    </button>
-                                </li>
-                            </ul>
+                    <div class="product-one__tabs">
+                        <ul class="product-one__tabs-list">
+                            <li class="product-one__tabs-item">
+                                <button type="button" class="product-one__tabs-btn product-one__tabs-btn--active"
+                                    data-tabs-path="details">
+                                    Детали и размеры
+                                </button>
+                            </li>
+                            <li class="product-one__tabs-item">
+                                <button type="button" class="product-one__tabs-btn" data-tabs-path="char">
+                                    Характеристики
+                                </button>
+                            </li>
+                            <li class="product-one__tabs-item">
+                                <button type="button" class="product-one__tabs-btn" data-tabs-path="composition">
+                                    Состав
+                                </button>
+                            </li>
+                        </ul>
 
-                            <div class="product-one__tabs-content product-one__tabs-content--active" data-tabs-target="details">
-                                <div class="product-one__tabs-content-inner">
+                        <div class="product-one__tabs-content product-one__tabs-content--active"
+                            data-tabs-target="details">
+                            <div class="product-one__tabs-content-inner">
 
-                                    <?php do_action('woocommerce_before_variations_form'); ?>
+                                <?php do_action('woocommerce_before_variations_form'); ?>
 
-                                    <?php if (empty($available_variations) && false !== $available_variations) : ?>
-                                        <p class="stock out-of-stock">
-                                            <?php echo esc_html(apply_filters('woocommerce_out_of_stock_message', __('This product is currently out of stock and unavailable.', 'woocommerce'))); ?>
-                                        </p>
-                                    <?php else : ?>
-                                        <div class="variations">
+                                <?php if (empty($available_variations) && false !== $available_variations) : ?>
+                                <p class="stock out-of-stock">
+                                    <?php echo esc_html(apply_filters('woocommerce_out_of_stock_message', __('This product is currently out of stock and unavailable.', 'woocommerce'))); ?>
+                                </p>
+                                <?php else : ?>
+                                <div class="variations">
 
-                                            <?php foreach ($attributes as $attribute_name => $options) : ?>
+                                    <?php foreach ($attributes as $attribute_name => $options) : ?>
 
-                                                <!-- <td class="label"><label
+                                    <!-- <td class="label"><label
                                                     for="<?php echo esc_attr(sanitize_title($attribute_name)); ?>"><?php echo wc_attribute_label($attribute_name); // WPCS: XSS ok. 
                                                                                                                     ?></label>
                                             </td> -->
 
-                                                <?php
+                                    <?php
                                                 wc_dropdown_variation_attribute_options(
                                                     array(
                                                         'options'   => $options,
@@ -110,15 +120,15 @@ get_header('shop'); ?>
 
                                                 ?>
 
-                                            <?php endforeach; ?>
+                                    <?php endforeach; ?>
 
-                                        </div>
+                                </div>
 
 
-                                    <?php endif; ?>
+                                <?php endif; ?>
 
-                                    <?php do_action('woocommerce_after_variations_form'); ?>
-                                    <!-- 
+                                <?php do_action('woocommerce_after_variations_form'); ?>
+                                <!-- 
                                 <select name="select_size" id="select_size"
                                     class="product-one__select select select--disable">
                                     <option value="80х190"></option>
@@ -152,56 +162,59 @@ get_header('shop'); ?>
                                     <option value="Чехол"></option>
                                     <option value="Велюр брендовый, несъемный"></option>
                                 </select> -->
-                                </div>
-                            </div>
-                            <div class="product-one__tabs-content" data-tabs-target="char">
-                                <div class="product-one__tabs-content-inner">
-                                    <ul class="product-one__list list">
-                                        <li class="list__item">Natural Foam 2,5см</li>
-                                        <li class="list__item">Войлок</li>
-                                        <li class="list__item">Кокос 3см (Н=21)</li>
-                                        <li class="list__item">
-                                            Независимый пакетно – пружинный блок (255 пр./м2)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-one__tabs-content" data-tabs-target="composition">
-                                <div class="product-one__tabs-content-inner">
-                                    <ul class="product-one__list list">
-                                        <li class="list__item">
-                                            <span>Жёсткость:</span> Мягкая/Жесткая
-                                            <button type="button">
-                                                <span class="info">
-                                                    <div class="info-popup">
-                                                        Жесткость матраса с первой и второй стороны
-                                                    </div>
-                                                </span>
-                                            </button>
-                                        </li>
-                                        <li class="list__item"><span>Вес:</span> до 100кг</li>
-                                        <li class="list__item"><span>Зоны жесткости:</span> 5 зон</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-
-                        <div class="product-one__info"><?php do_action('woocommerce_single_variation'); ?>
-
-
-                            <button type="button" data-graph-path="first" class="product-one__test-btn btn btn-md btn--hide-icon btn--outline" data-path="modal-test">
-                                Тест<span>ировать</span>
-                            </button>
-                            <button type="button" class="product-one__favorites-btn"></button>
-                            <button type="button" class="product-one__compare-btn"></button>
+                        <div class="product-one__tabs-content" data-tabs-target="char">
+                            <div class="product-one__tabs-content-inner">
+                                <ul class="product-one__list list">
+                                    <li class="list__item">Natural Foam 2,5см</li>
+                                    <li class="list__item">Войлок</li>
+                                    <li class="list__item">Кокос 3см (Н=21)</li>
+                                    <li class="list__item">
+                                        Независимый пакетно – пружинный блок (255 пр./м2)
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="product-one__tabs-content" data-tabs-target="composition">
+                            <div class="product-one__tabs-content-inner">
+                                <ul class="product-one__list list">
+                                    <li class="list__item">
+                                        <span>Жёсткость:</span> Мягкая/Жесткая
+                                        <button type="button">
+                                            <span class="info">
+                                                <div class="info-popup">
+                                                    Жесткость матраса с первой и второй стороны
+                                                </div>
+                                            </span>
+                                        </button>
+                                    </li>
+                                    <li class="list__item"><span>Вес:</span> до 100кг</li>
+                                    <li class="list__item"><span>Зоны жесткости:</span> 5 зон</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="product-one__info"><?php do_action('woocommerce_single_variation'); ?>
+
+
+                        <button type="button" data-graph-path="first"
+                            class="product-one__test-btn btn btn-md btn--hide-icon btn--outline" data-path="modal-test">
+                            Тест<span>ировать</span>
+                        </button>
+                        <button type="button"
+                            class="product-one__favorites-btn <?php if ($favorite_in_cookie)  echo " product-one__favorites-btn--active" ?>"></button>
+                        <button type="button"
+                            class="product-one__compare-btn <?php if ($compare_in_cookie)  echo " product-one__compare-btn--active" ?>"></button>
+                    </div>
+                </form>
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
 
 <?php endwhile; // end of the loop. 

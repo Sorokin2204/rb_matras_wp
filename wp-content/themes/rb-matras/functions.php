@@ -158,7 +158,10 @@ if (defined('JETPACK__VERSION')) {
 ///THEME FUNCTIONS
 require get_template_directory() . '/inc/general-widget.php';
 
-
+function get_page_name()
+{
+	return str_replace("/", "", $_SERVER['REQUEST_URI']);
+}
 function rb_matras_scripts()
 {
 	global $wp_query;
@@ -184,6 +187,18 @@ function rb_matras_scripts()
 	if (is_checkout()) {
 		wp_enqueue_script('script-ordering', get_template_directory_uri() . '/js/ordering.min.js', array(), _S_VERSION, true);
 	}
+
+	if (is_page('compare')) {
+		wp_enqueue_script('script-compare', get_template_directory_uri() . '/js/compare.min.js', array(), _S_VERSION, true);
+	}
+	if (is_page('favorites')) {
+		wp_enqueue_script('script-favorites', get_template_directory_uri() . '/js/favorites.min.js', array(), _S_VERSION, true);
+	}
+
+	if (is_tax('writer')) {
+		wp_enqueue_script('script-discount', get_template_directory_uri() . '/js/discount.min.js', array(), _S_VERSION, true);
+	}
+
 
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
@@ -267,8 +282,13 @@ function create_book_taxonomies()
 		),
 		'show_ui'       => true,
 		'query_var'     => true,
+		'rewrite' =>  false,
 		//'rewrite'       => array( 'slug' => 'the_writer' ), // свой слаг в URL
 	));
+
+
+	//wp_redirect( home_url('/?page_id=7') ); 	var_dump(get_taxonomy('writer'));
+	//var_dump(get_term_link('discount-andante', 'writer'));
 }
 
 // Utility function to get the parent variable product IDs for a any term of a taxonomy
@@ -347,6 +367,7 @@ add_action('widgets_init', 'rb_matras_widgets_init');
 
 function get_filters()
 {
+
 	$args = array(
 		'post_type'      => 'product',
 		'posts_per_page' => 1,
@@ -389,24 +410,35 @@ function is_product_in_cart($product_id)
 	return false;
 }
 
+
+function get_variation_with_min_price($product)
+{
+	$atrr_arr_sort = $product->get_available_variations();
+	usort($atrr_arr_sort, function ($a, $b) {
+		return $a['dimensions']['width'] <=> $b['dimensions']['width'];
+	});
+	return $atrr_arr_sort[0];
+}
+
 function get_product_html()
 {
 
 	global $product;
 
+	$variation = get_variation_with_min_price($product);
 
-	$atrr_arr_sort = $product->get_available_variations();
+	$compare_in_cookie = isset($_COOKIE['wordpress_list_compare']) ? in_array($product->get_id(), explode(',', $_COOKIE['wordpress_list_compare'])) : false;
+	$favorite_in_cookie =
+		isset($_COOKIE['wordpress_list_favorite'])  ? in_array($product->get_id(), explode(',', $_COOKIE['wordpress_list_favorite'])) : false;
 
-	usort($atrr_arr_sort, function ($a, $b) {
-		return $a['dimensions']['width'] <=> $b['dimensions']['width'];
-	});
-	//var_dump($atrr_arr_sort);
+
+
 	return '
 <div class="product ">
     <div class="product__btn-icon-box">
         <div class="product__sale"></div>
-        <button class="product__btn-icon-compare" data-path="modal-add-cart"></button>
-        <button class="product__btn-icon-favorites" data-path="modal-add-cart"></button>
+        <button class="product__btn-icon-compare ' . (($compare_in_cookie) ? "product__btn-icon-compare--active" : "") . '" data-path="modal-add-cart"></button>
+        <button class="product__btn-icon-favorites ' . (($favorite_in_cookie) ? "product__btn-icon-favorites--active" : "") . '" data-path="modal-add-cart"></button>
     </div>
 
     <div class="product__img-box">
@@ -426,16 +458,16 @@ function get_product_html()
         </li>
         <li class="product__list-item"><span>Вес:</span> ' . get_field('filter_weight') . '</li>
 
-        <li class="product__list-item"><span> Размеры: от </span>' . $atrr_arr_sort[0]['attributes']['attribute_pa_size']  . '</li>
+        <li class="product__list-item"><span> Размеры: от </span>' . $variation['attributes']['attribute_pa_size']  . '</li>
     </ul>
     <div class="product__box">
-        <span class="product__price">' . wc_price($atrr_arr_sort[0]['display_price']) . '</span>
+        <span class="product__price">' . wc_price($variation['display_price']) . '</span>
      
 		    <button type="submit" data-path="modal-add-cart"
         class="product__btn-cart btn btn-sm ' . (is_product_in_cart($product->get_id()) ? 'product__btn-cart--in-cart' : "") . '">' . esc_html($product->single_add_to_cart_text()) . '</button>
  <input type="hidden" name="add-to-cart" value="' .  absint($product->get_id()) . '" />
     <input type="hidden" name="product_id" value="' .  absint($product->get_id()) . '" />
-    <input type="hidden" name="variation_id" class="variation_id" value="' .  $atrr_arr_sort[0]['variation_id'] . '" />
+    <input type="hidden" name="variation_id" class="variation_id" value="' .  $variation['variation_id'] . '" />
 
 
 </div>
@@ -443,25 +475,35 @@ function get_product_html()
 ';
 }
 
+
+
+
+
+
+
 function misha_filter_function()
 {
+	// wp_redirect(home_url('/?page_id=7'));
 	$filters = get_filters();
 
 	$args_child = array(
 		'post_type' => 'product_variation',
 		'post_status' => 'publish',
-
 		'groupby' => 'post_parent',
 		'fields' => 'id=>parent',
-		// 'post_parent__in' => get_variation_parent_ids_from_term("Матрас", 'product_cat', 'name'), // Variations
-		// 'tax_query' => array(
-		// array(
-		// 'taxonomy' => 'product_cat',
-		// 'field' => 'slug',
-		// 'terms' => 'matras'
-		// ),
-		// ),
+
+
 	);
+
+
+	if (isset($_COOKIE['wordpress_list_favorite']) && $_POST['page'] == 'favorites') {
+
+		$args_child['post_parent__in'] = explode(',', $_COOKIE['wordpress_list_favorite']);
+	} else if ($_POST['page'] == 'home') {
+		$args_child['post_parent__in'] = 	get_variation_parent_ids_from_term("Матрас", 'product_cat', 'name');
+	}
+
+
 
 	if (isset($_POST['price_min']) && isset($_POST['price_max'])) {
 		$args_child['meta_query'][] = array(
@@ -471,6 +513,15 @@ function misha_filter_function()
 			'type' => 'NUMERIC'
 		);
 	}
+	if (isset($_POST['width_min']) && isset($_POST['width_max'])) {
+		$args_child['meta_query'][] = array(
+			'key' => '_width',
+			'value' => array((int)$_POST['width_min'], (int)$_POST['width_max']),
+			'compare' => 'BETWEEN',
+			'type' => 'NUMERIC'
+		);
+	}
+
 
 
 	//var_dump($args_child);
@@ -487,6 +538,7 @@ function misha_filter_function()
 			'posts_per_page' => 2,
 			'paged' => 1,
 		);
+
 		foreach ($filters as $filter) {
 			$values = array();
 			foreach ($filter['choices'] as $key => $value) {
@@ -502,18 +554,22 @@ function misha_filter_function()
 				);
 			}
 		}
+
+		if (isset($_POST['discount_term']) && $_POST['page'] == 'discount') {
+			$args_parent['tax_query'][] = array(
+				'taxonomy' => 'writer',
+				'field' => 'slug',
+				'terms' => $_POST['discount_term']
+			);
+		}
 		$query_parent = new WP_Query($args_parent);
 		ob_start(); // start buffering because we do not need to print the posts now
 		while ($query_parent->have_posts()) : $query_parent->the_post();
 
-
-
-
 			//var_dump($atrr_arr_sort);
 			//var_dump($product->get_variation_regular_price('min'));
 			echo get_product_html();
-
-
+		//	print_r($filters);
 		//var_dump(get_field('filter_weight'));
 		// //var_dump( $loop->posts);
 		// foreach ($product->get_available_variations() as $item) {
@@ -542,7 +598,10 @@ function misha_filter_function()
 
 		wp_reset_query();
 	} else {
+		ob_start();
 		echo ('No Resault');
+		$content = ob_get_contents(); // we pass the posts to variable
+		ob_end_clean(); // clear the buffer
 	}
 
 	echo json_encode(array(
@@ -649,7 +708,7 @@ function woocommerce_ajax_add_to_cart()
 
 
 
-////CHECK OUT FUNCTIONS
+////CHECK OUT FUNCTIONS////////////
 
 add_filter('woocommerce_cart_item_thumbnail', 'filter_function_name_4873', 10, 3);
 function filter_function_name_4873($product_image, $cart_item, $cart_item_key)

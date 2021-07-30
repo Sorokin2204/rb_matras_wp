@@ -51,9 +51,25 @@
 // });
 //?.///////////////////////////////////////////////////////////////////
 ////COMMON
+// const queryString = window.location.search;
 
-// const listCheckBox = document.querySelectorAll('.checkbox');
- const filterId = document.getElementById('filter');
+// const urlParams = new URLSearchParams(queryString);
+
+// const page_type = urlParams.get('writer');
+
+// var slide = document
+//   .getElementById(page_type)
+//   .getAttribute('data-swiper-slide-index');
+// //console.log(slide);
+// console.log(slide);
+
+// const list = document.querySelectorAll('.discount__banner-item');
+// const element = document.querySelector('#' + page_type);
+
+// // [].indexOf.call(list, element);
+// console.log([].indexOf.call(list, element));
+// // const listCheckBox = document.querySelectorAll('.checkbox');
+//  const filterId = document.getElementById('filter');
 // listCheckBox.forEach((element) => {
 //   element.addEventListener('change', () => {
 //     filterId.submit();
@@ -204,7 +220,7 @@ function createModal(
 
   listCloseBtnsClassName.forEach((closeBtnClassName) => {
     let menuCloseBtn = document.querySelector(`.${closeBtnClassName}`);
-    menuCloseBtn.addEventListener('click', () => {
+    menuCloseBtn?.addEventListener('click', () => {
       DisableMenu();
     });
   });
@@ -530,151 +546,109 @@ createFullModal();
 
 ///SWITH CUSTOM SCRIPOT FOR CUSTOM PAGE
 
+   var cookies = document.cookie.split(';');
+   var ret = '';
+   for (var i = 1; i <= cookies.length; i++) {
+     ret += i + ' - ' + cookies[i - 1] + '\n';
+   }
+
+console.log(ret);
+
+function setCookie(name, value, options = {}) {
+
+  options = {
+    path: '/',
+    // при необходимости добавьте другие значения по умолчанию
+    ...options
+  };
+
+  if (options.expires instanceof Date) {
+    options.expires = options.expires.toUTCString();
+  }
+
+  let existCookie = getCookie(name); ///GET COOKIE
+  if (existCookie) {
+    /// CHECK EXIST COOKIE
+    existCookie = existCookie.split(','); /// COOKIE ARRAY
+    if (existCookie.indexOf(value) != -1) {
+      /// IF COOKIE HAVE VALUE
+      console.log(existCookie);
+  existCookie =    existCookie.filter((e) => e != value); /// REMOVE THIS VALUE FROM COOKIE
+    } else {
+      existCookie.push(value);
+    }
+    existCookie = existCookie.join(','); /// COOKIE STRING
+  }
+  else { /// ELSE SET COOKIE 
+  existCookie = value;
+  }
+  let updatedCookie =
+    encodeURIComponent(name) + '=' + encodeURIComponent(existCookie);
+
+  for (let optionKey in options) {
+    updatedCookie += "; " + optionKey;
+    let optionValue = options[optionKey];
+    if (optionValue !== true) {
+      updatedCookie += "=" + optionValue;
+    }
+  }
+
+    document.cookie = updatedCookie;
+}
+
+function getProductId(btn, classParent) {
+  return btn
+    .closest(classParent)
+    .querySelector('input[name=product_id]')
+    .getAttribute('value');
+}
+
+function setCookieFavorite(classBtn, classParent, cookieName) {
+  let btns = document.querySelectorAll(classBtn);
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', () => {
+        console.log('CLICK COOKIE');
+      setCookie(cookieName, getProductId(btn, classParent), {
+        'max-age': 3600,
+      });
+      //  console.log(getProductId(btn, classParent));
+
+      console.log(getCookie(cookieName));
+    });
+  });
+}
 
 
+function getCookie(name) {
+  let matches = document.cookie.match(
+    new RegExp(
+      '(?:^|; )' +
+        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') +
+        '=([^;]*)',
+    ),
+  );
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+
+setCookieFavorite(
+  '.product__btn-icon-compare',
+  '.product',
+  'wordpress_list_compare',
+);
+
+setCookieFavorite(
+  '.product__btn-icon-favorites',
+  '.product',
+  'wordpress_list_favorite',
+);
+
+
+ 
 switch (pathName) {
   
   
-  case '/ordering.html':
-    {
-      
-    }
-    break;
-  case '/compare.html':
-    {
-      let emptyCellCount = document.querySelectorAll(
-        '.compare__grid-title--empty',
-      ).length;
-      const grid = document.querySelector('.compare__grid');
-      const emptyCells = document.querySelectorAll(
-        '.compare__grid-cell--empty',
-      );
-      const scrollBtnRight = document.querySelector(
-        '.compare__scroll-btn-right',
-      );
-      const scrollBtnLeft = document.querySelector('.compare__scroll-btn-left');
-      const gridMask = document.querySelector('.compare__grid-mask-blur');
-      let progressBar = document.querySelector('.compare__scroll-progress-bar');
-      const scroll = document.querySelector('.compare__scroll');
-
-      var DesktopCompareMedia = window.matchMedia('(max-width: 1260px)');
-      var TwoProductCompareMedia = window.matchMedia('(max-width: 692px)');
-      var ThreeProductCompareMedia = window.matchMedia('(max-width: 931px)');
-      var FoutProductCompareMedia = window.matchMedia('(max-width: 1173px)');
-      let quantityProductCompare;
-      switch (emptyCellCount) {
-        case 0:
-          {
-            quantityProductCompare = function fourProductCompare() {
-              if (FoutProductCompareMedia.matches) {
-                grid.style.overflow = 'scroll';
-                gridMask.style.display = 'block';
-                scroll.style.display = 'flex';
-              } else {
-                grid.style.overflow = 'scroll';
-                scroll.style.display = 'none';
-                gridMask.style.display = 'none';
-              }
-            };
-          }
-          break;
-
-        case 1:
-          {
-            quantityProductCompare = function threeProductCompare() {
-              if (DesktopCompareMedia.matches) {
-                grid.style.overflow = 'hidden';
-              }
-              if (ThreeProductCompareMedia.matches) {
-                emptyCells.forEach((cell) => (cell.style.display = 'none'));
-                scroll.style.display = 'flex';
-                grid.style.overflow = 'scroll';
-                gridMask.style.display = 'block';
-              } else {
-                emptyCells.forEach((cell) => (cell.style.display = 'block'));
-                scroll.style.display = 'none';
-                grid.style.overflow = 'hidden';
-                gridMask.style.display = 'none';
-              }
-            };
-          }
-          break;
-        case 2:
-          {
-            quantityProductCompare = function twoProductCompare() {
-              if (DesktopCompareMedia.matches) {
-                grid.style.overflow = 'hidden';
-              }
-
-              if (TwoProductCompareMedia.matches) {
-                emptyCells.forEach((cell) => (cell.style.display = 'none'));
-                scroll.style.display = 'flex';
-                grid.style.overflow = 'scroll';
-                gridMask.style.display = 'block';
-              } else {
-                emptyCells.forEach((cell) => (cell.style.display = 'block'));
-                scroll.style.display = 'none';
-                grid.style.overflow = 'hidden';
-                gridMask.style.display = 'none';
-              }
-            };
-          }
-          break;
-        default:
-          break;
-      }
-
-      quantityProductCompare();
-      window.addEventListener('resize', quantityProductCompare);
-
-      scrollBtnLeft.addEventListener('click', (e) => {
-        scrollBtnLeft.style.pointerEvents = 'none';
-        scrollBtnRight.style.pointerEvents = 'none';
-        sideScroll(grid, 'left', 20, 500, 15);
-      });
-      scrollBtnRight.addEventListener('click', (e) => {
-        scrollBtnLeft.style.pointerEvents = 'none';
-        scrollBtnRight.style.pointerEvents = 'none';
-        sideScroll(grid, 'right', 20, 500, 15);
-      });
-
-      grid.addEventListener('scroll', (event) => {
-        let scrolled =
-          (grid.scrollLeft / (grid.scrollWidth - grid.clientWidth)) * 100;
-        progressBar.style.width = scrolled + '%';
-        if (scrolled == 0) {
-          scrollBtnLeft.classList.add('compare__scroll-btn--disabled');
-        } else {
-          scrollBtnLeft.classList.remove('compare__scroll-btn--disabled');
-        }
-
-        if (scrolled == 100) {
-          scrollBtnRight.classList.add('compare__scroll-btn--disabled');
-          gridMask.classList.add('compare__grid-mask-blur--disabled');
-        } else {
-          scrollBtnRight.classList.remove('compare__scroll-btn--disabled');
-          gridMask.classList.remove('compare__grid-mask-blur--disabled');
-        }
-      });
-
-      function sideScroll(element, direction, speed, distance, step) {
-        scrollAmount = 0;
-        var slideTimer = setInterval(function () {
-          if (direction == 'left') {
-            element.scrollLeft -= step;
-          } else {
-            element.scrollLeft += step;
-          }
-          scrollAmount += step;
-          if (scrollAmount >= distance) {
-            scrollBtnLeft.style.pointerEvents = 'auto';
-            scrollBtnRight.style.pointerEvents = 'auto';
-            window.clearInterval(slideTimer);
-          }
-        }, speed);
-      }
-    }
-    break;
   case '/catalog-other.html':
     {
       const catalogOtherListProduct = document.querySelector(
@@ -686,20 +660,7 @@ switch (pathName) {
       catalogOtherTitle.innerHTML = 'Подушки';
     }
     break;
-  case '/favorites.html': {
-    const catalogOtherListProduct = document.querySelector(
-      '.catalog__product-list',
-    );
-    const listFavoritesBtn = document.querySelectorAll(
-      '.product__btn-icon-favorites',
-    );
-    listFavoritesBtn.forEach((btn) => {
-      btn.classList.add('product__btn-icon-favorites--active');
-    });
-    const favoritesTitle = document.querySelector('.catalog__sort-title');
-    favoritesTitle.innerHTML = 'Избранное';
-    catalogOtherListProduct.classList.add('product-list--full');
-  }
+ 
   default:
     break;
 }
@@ -736,13 +697,4 @@ jQuery(function ($) {
     bounds: 'house',
     constraints: $street,
   });
-
-  // $('.address').suggestions({
-  //   token: 'cca83bc374dc49ffae9d0ac5361a1fdbd38a0ab9',
-  //   type: 'ADDRESS',
-  //   /* Вызывается, когда пользователь выбирает одну из подсказок */
-  //   onSelect: function (suggestion) {
-  //     console.log(suggestion);
-  //   },
-  // });
 });
