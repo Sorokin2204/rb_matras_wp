@@ -144,6 +144,30 @@
                             </div>
                         </div>
 
+                        <?php
+
+
+                        // var_dump(get_field('filler_block-type', 'pa_filler' . '_' . $terms[0]->term_id));
+                        // var_dump($terms) 
+                        ?>
+
+                        <?php
+                        $fillers = get_fillers();
+                        ?>
+                        <?php foreach ($fillers as $filler) { ?>
+                            <div class="catalog__filter-item">
+                                <div class="catalog__filter-head" aria-expanded="false">
+                                    <?php echo $filler['label'] ?>
+                                </div>
+                                <div class="catalog__filter-content" aria-hidden="true">
+                                    <?php foreach ($filler['choices'] as $key => $value) { ?>
+                                        <label class="label-checkbox"><input type="checkbox" class="checkbox" name='<?php echo $key ?>' value='<?php echo $key ?>' /><?php echo $value ?></label>
+                                    <?php } ?>
+
+                                </div>
+                            </div>
+                        <?php } ?>
+
 
                         <?php $filters = get_filters() ?>
                         <?php foreach ($filters as $filter) { ?>

@@ -2,6 +2,9 @@ jQuery(function ($) {
   $productContainer = $('.catalog__product-list').length
     ? $('.catalog__product-list')
     : $('.discount__product-list');
+     let fillerBtn = document.querySelector(
+       '.product-one__tabs-btn[data-tabs-path="char"]',
+     );
   $('#filter').submit(function () {
     var filter = $('#filter');
     $.ajax({
@@ -136,6 +139,32 @@ jQuery(function ($) {
 
   var listProductChoice = [];
   $('form.variations_form').on('found_variation', function (event, variation) {
+
+
+let filler_slug = variation["attributes"]["attribute_pa_filler"];
+let filler_select = document.querySelector(
+  `.all-filler option[value=${filler_slug}]`
+);
+if(filler_select) {
+    fillerBtn.disabled = false;
+  const filler_block = document.querySelector('.product-one__list');
+let filler_value = filler_select.text;
+filler_value = filler_value.split(' + ');
+
+console.log(filler_value);
+filler_block.innerHTML = '';
+filler_value.forEach((el) => {
+  let li = document.createElement('li');
+  li.classList.add('list__item');
+  li.innerHTML = el;
+  filler_block.appendChild(li);
+}); } else {
+ 
+  fillerBtn.disabled = true;
+fillerBtn.style.color = '#b9b9b9';
+  
+}
+
     if (listProductChoice.length == 0) {
       productSelectInit();
     } else {
@@ -152,6 +181,7 @@ jQuery(function ($) {
           indexOption < listProductSelect[indexSelect].options.length;
           indexOption++
         ) {
+          
           newOptions.push({
             value: listProductSelect[indexSelect].options[indexOption].value,
             label: listProductSelect[indexSelect].options[indexOption].label,
@@ -221,7 +251,7 @@ function addToCart(e,btnObj,classNameParent) {
        
      },
      complete: function (response) {
-     
+     console.log('ADDDDDD');
        $mini_cart_product = $(`input[name=cart_product_id][value=${product_id}]`).closest('.mini-cart__product');
          $input = console.log($mini_cart_product);
          $('.modal-add-cart__product-img').attr(

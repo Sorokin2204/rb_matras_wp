@@ -2369,6 +2369,9 @@ input::-webkit-inner-spin-button {
 a.added_to_cart.wc-forward {
   display: none; }
 
+.all-filler {
+  display: none; }
+
 .product {
   display: flex;
   flex-direction: column;
@@ -4944,6 +4947,7 @@ a.added_to_cart.wc-forward {
     flex: 4; }
   .ordering-product__title {
     display: inline-block;
+    color: #050e0c;
     font-weight: 400;
     font-family: "Rubik", sans-serif;
     font-size: 20px;
@@ -6111,6 +6115,7 @@ a.added_to_cart.wc-forward {
     font-family: "Rubik", sans-serif;
     font-size: 15px;
     line-height: 18px;
+    color: #050e0c;
     margin-bottom: 10px;
     display: inline-block; }
     @media (min-width: 1440px) {

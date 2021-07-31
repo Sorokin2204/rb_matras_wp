@@ -195,7 +195,7 @@ function rb_matras_scripts()
 		wp_enqueue_script('script-favorites', get_template_directory_uri() . '/js/favorites.min.js', array(), _S_VERSION, true);
 	}
 
-	if (is_tax('writer')) {
+	if (is_tax('discount')) {
 		wp_enqueue_script('script-discount', get_template_directory_uri() . '/js/discount.min.js', array(), _S_VERSION, true);
 	}
 
@@ -261,7 +261,7 @@ function create_book_taxonomies()
 {
 
 	// Добавляем НЕ древовидную таксономию 'writer' (как метки)
-	register_taxonomy('writer', 'product', array(
+	register_taxonomy('discount', 'product', array(
 		'hierarchical'  => false,
 		'labels'        => array(
 			'name'                        => _x('Акции', 'taxonomy general name'),
@@ -393,6 +393,16 @@ function get_filters()
 	wp_reset_query();
 }
 
+function get_fillers()
+{
+	$fillers_acf_key = array('field_610461f17ccae', 'field_61054f5b0ece2');
+	$fillers = array();
+	foreach ($fillers_acf_key as $fillers_acf_value) {
+		array_push($fillers, get_field_object($fillers_acf_value));
+	}
+	return $fillers;
+}
+
 
 add_action('wp_ajax_myfilter', 'misha_filter_function');
 add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
@@ -432,11 +442,13 @@ function get_product_html()
 		isset($_COOKIE['wordpress_list_favorite'])  ? in_array($product->get_id(), explode(',', $_COOKIE['wordpress_list_favorite'])) : false;
 
 
-
+	$has_term = has_term("", "discount");
+	//$product_attr = get_post_meta(absint($product->get_id()), '_product_attributes');
 	return '
-<div class="product ">
+
+<div class="product ' . ($has_term  ? "product--sale" : "") . '">
     <div class="product__btn-icon-box">
-        <div class="product__sale"></div>
+        <div class="product__sale">' . ($has_term  ? get_field('discount_percent', 'discount_' . wc_get_product_term_ids(get_the_ID(), 'discount')[0]) : "")   . '%' . '</div>
         <button class="product__btn-icon-compare ' . (($compare_in_cookie) ? "product__btn-icon-compare--active" : "") . '" data-path="modal-add-cart"></button>
         <button class="product__btn-icon-favorites ' . (($favorite_in_cookie) ? "product__btn-icon-favorites--active" : "") . '" data-path="modal-add-cart"></button>
     </div>
@@ -461,7 +473,11 @@ function get_product_html()
         <li class="product__list-item"><span> Размеры: от </span>' . $variation['attributes']['attribute_pa_size']  . '</li>
     </ul>
     <div class="product__box">
-        <span class="product__price">' . wc_price($variation['display_price']) . '</span>
+	' . ($has_term ? '<div class="product__price-box">
+      <span class="product__sale-price">' . wc_price($variation['display_regular_price']) . '</span>
+      <span class="product__price">' . wc_price($variation['display_price']) . '</span>
+    </div>' : '<span class="product__price">' . wc_price($variation['display_price']) . '</span>')  . '
+        
      
 		    <button type="submit" data-path="modal-add-cart"
         class="product__btn-cart btn btn-sm ' . (is_product_in_cart($product->get_id()) ? 'product__btn-cart--in-cart' : "") . '">' . esc_html($product->single_add_to_cart_text()) . '</button>
@@ -485,6 +501,10 @@ function misha_filter_function()
 {
 	// wp_redirect(home_url('/?page_id=7'));
 	$filters = get_filters();
+	$fillers = get_fillers();
+
+	$found_fillers = array();
+
 
 	$args_child = array(
 		'post_type' => 'product_variation',
@@ -492,8 +512,74 @@ function misha_filter_function()
 		'groupby' => 'post_parent',
 		'fields' => 'id=>parent',
 
+		// 'meta_query' => array(
+		// 	array(
+		// 		'key' => 'attribute_pa_filler',
+		// 		'value' => 61,
+		// 		'compare' => 'IN',
+		// 	)
+		// )
+
+		// 'tax_query'      => array(array(
+		// 	'taxonomy'        => 'pa_filler',
+		// 	'field'           => 'term_id',
+		// 	'terms'           =>  61,
+		// ))
 
 	);
+
+
+
+	$args_filler = array(
+		'taxonomy' => 'pa_filler',
+		'hide_empty' => false,
+		'fields'   => 'id=>slug',
+		// 'meta_query' => array(
+		// 	array(
+		// 		'key'     => 'filler_block-type',
+		// 		'value'   => array("510"),
+		// 		'compare' => 'IN'
+		// 	)
+		// )
+
+	);
+
+	foreach ($fillers as $filler) {
+		$values = array();
+		foreach ($filler['choices'] as $key => $value) {
+			if (isset($_POST[$key])) {
+				array_push($values, $key);
+			}
+		}
+		if (!empty($values)) {
+			$args_filler['meta_query'][] = array(
+				'key' => $filler['name'],
+				'value' => $values,
+				'compare' => 'IN'
+			);
+		}
+	}
+
+	if (array_key_exists('meta_query', $args_filler)) {
+		$found_fillers = get_terms($args_filler);
+
+		if (!empty($found_fillers)) {
+			$args_child['meta_query'][] = array(
+
+				'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
+				'value'   => 	$found_fillers, // Term slugs only
+				'compare' => 'IN',
+			);
+		} else {
+			$args_child['meta_query'][] = array(
+
+				'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
+				'value'   => 	'', // Term slugs only
+				'compare' => 'EXIST',
+			);
+		}
+	}
+
 
 
 	if (isset($_COOKIE['wordpress_list_favorite']) && $_POST['page'] == 'favorites') {
@@ -557,7 +643,7 @@ function misha_filter_function()
 
 		if (isset($_POST['discount_term']) && $_POST['page'] == 'discount') {
 			$args_parent['tax_query'][] = array(
-				'taxonomy' => 'writer',
+				'taxonomy' => 'discount',
 				'field' => 'slug',
 				'terms' => $_POST['discount_term']
 			);
@@ -568,6 +654,7 @@ function misha_filter_function()
 
 			//var_dump($atrr_arr_sort);
 			//var_dump($product->get_variation_regular_price('min'));
+			//	print_r(empty($found_fillers));
 			echo get_product_html();
 		//	print_r($filters);
 		//var_dump(get_field('filter_weight'));

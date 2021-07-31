@@ -71,6 +71,7 @@
 
   &__product-title {
     @include medium-15;
+    color: $black;
     margin-bottom: 10px;
     display: inline-block;
   }

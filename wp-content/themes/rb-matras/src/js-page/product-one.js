@@ -89,3 +89,7 @@ setCookieFavorite(
   'form.cart',
   'wordpress_list_compare',
 );
+
+
+
+

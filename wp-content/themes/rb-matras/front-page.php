@@ -23,8 +23,8 @@ get_header();
                 <div class="banner__wrapper swiper-wrapper">
                     <?php
                     // get the current taxonomy term
-                    $tax_name = 'writer';
-                    $discounts = get_terms('writer', array('hide_empty' => false, 'parent' => 0));
+                    $tax_name = 'discount';
+                    $discounts = get_terms('discount', array('hide_empty' => false, 'parent' => 0));
                     $all_count_discount = count($discounts);
                     $count_discount = 1;
                     for ($i = 0; $i < $all_count_discount; $i++) {
@@ -48,23 +48,26 @@ get_header();
                     foreach ($discounts as $key) {
                         $term_id = $tax_name . '_' . $key->term_id;
                     ?>
-                        <div class="banner__item swiper-slide" style="background-image: url(<?php echo get_field('discount_img-home-desktop', $term_id) ?> )">
-                            <div class="container grid">
-                                <div class="banner__item-inner">
-                                    <span class="banner__item-date"><?php echo '0' . $count_discount . ' / ' . '0' . $all_count_discount ?></span>
-                                    <h1 class="banner__item-title">
-                                        <?php echo str_replace(array('[', ']'), array('<span>', '</span>'), $key->name)  ?>
+                    <div class="banner__item swiper-slide"
+                        style="background-image: url(<?php echo get_field('discount_img-home-desktop', $term_id) ?> )">
+                        <div class="container grid">
+                            <div class="banner__item-inner">
+                                <span
+                                    class="banner__item-date"><?php echo '0' . $count_discount . ' / ' . '0' . $all_count_discount ?></span>
+                                <h1 class="banner__item-title">
+                                    <?php echo str_replace(array('[', ']'), array('<span>', '</span>'), $key->name)  ?>
 
-                                    </h1>
-                                    <span class="banner__item-subtitle">
-                                        <?php echo get_field('discount_subtitle', $term_id) ?></span>
-                                    <a href="<?php echo get_term_link($key->slug, $tax_name) ?>" class="banner__item-btn btn btn-lg">Смотреть подробнее</a>
-                                </div>
+                                </h1>
+                                <span class="banner__item-subtitle">
+                                    <?php echo get_field('discount_subtitle', $term_id) ?></span>
+                                <a href="<?php echo get_term_link($key->slug, $tax_name) ?>"
+                                    class="banner__item-btn btn btn-lg">Смотреть подробнее</a>
                             </div>
                         </div>
+                    </div>
 
-                        <?php $count_discount++; ?>
-                        <!-- var_dump(get_term_link($key->slug, 'writer'));
+                    <?php $count_discount++; ?>
+                    <!-- var_dump(get_term_link($key->slug, 'writer'));
                     var_dump(get_field('discount_subtitle', $term_id));
                     var_dump(get_field('discount_img-home-desktop', $term_id));
                     var_dump(get_field('discount_img-discount-desktop', $term_id));

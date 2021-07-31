@@ -3,7 +3,7 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-const page_type = urlParams.get('writer');
+const page_type = urlParams.get('discount');
 
 const list = document.querySelectorAll('.discount__banner-item');
 const element = document.querySelector('#' + page_type);
@@ -41,7 +41,7 @@ var swiperDiscount = new Swiper('.swiper-container-discount', {
       let index_currentSlide = swiper.activeIndex,
         currentSlide = swiper.slides[index_currentSlide];
       discout_term_input.setAttribute('value', currentSlide.id);
-      history.pushState(null, null, '?' + 'writer=' + currentSlide.id);
+      history.pushState(null, null, '?' + 'discount=' + currentSlide.id);
       jQuery(function ($) {
         $('#filter').submit();
       });

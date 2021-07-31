@@ -135,6 +135,7 @@
 
   &__title {
     display: inline-block;
+    color: $black;
     @include regular-20;
     margin-bottom: 15px;
     flex-basis: 100%;

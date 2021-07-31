@@ -15,8 +15,8 @@
 
                         <?php
                         // get the current taxonomy term
-                        $tax_name = 'writer';
-                        $discounts = get_terms('writer', array('hide_empty' => false, 'parent' => 0));
+                        $tax_name = 'discount';
+                        $discounts = get_terms('discount', array('hide_empty' => false, 'parent' => 0));
                         $all_count_discount = count($discounts);
                         $count_discount = 1;
                         for ($i = 0; $i < $all_count_discount; $i++) {
@@ -43,27 +43,23 @@
 
 
 
-                        <div class="discount__banner-item swiper-slide swiper-slide-discount"
-                            id='<?php echo $key->slug ?>'>
-                            <div class="discount__banner-content">
-                                <picture>
-                                    <source srcset="<?php echo get_field('discount_img-discount-tablet', $term_id) ?>"
-                                        media="(max-width: 769px)" />
-                                    <img class="discount__banner-img"
-                                        src="<?php echo get_field('discount_img-discount-desktop', $term_id) ?>"
-                                        alt="" />
-                                </picture>
-                                <h1 class="discount__banner-title">
-                                    <?php echo str_replace(array('[', ']'), array('<span>', '</span>'), $key->name)  ?>
-                                </h1>
-                                <span class="discount__banner-subtitle">
-                                    <?php echo get_field('discount_subtitle', $term_id) ?></span>
+                            <div class="discount__banner-item swiper-slide swiper-slide-discount" id='<?php echo $key->slug ?>'>
+                                <div class="discount__banner-content">
+                                    <picture>
+                                        <source srcset="<?php echo get_field('discount_img-discount-tablet', $term_id) ?>" media="(max-width: 769px)" />
+                                        <img class="discount__banner-img" src="<?php echo get_field('discount_img-discount-desktop', $term_id) ?>" alt="" />
+                                    </picture>
+                                    <h1 class="discount__banner-title">
+                                        <?php echo str_replace(array('[', ']'), array('<span>', '</span>'), $key->name)  ?>
+                                    </h1>
+                                    <span class="discount__banner-subtitle">
+                                        <?php echo get_field('discount_subtitle', $term_id) ?></span>
+                                </div>
                             </div>
-                        </div>
 
 
 
-                        <?php $count_discount++; ?>
+                            <?php $count_discount++; ?>
 
                         <?php  }  ?>
                     </div>
@@ -86,7 +82,7 @@
                                                             echo 'home';
                                                         } else if (is_page('favorites')) {
                                                             echo 'favorites';
-                                                        } else if (is_tax('writer')) {
+                                                        } else if (is_tax('discount')) {
                                                             echo 'discount';
                                                         }
                                                         ?>">
@@ -101,10 +97,10 @@
     </div>
 </section>
 <script>
-// document.querySelector('.BUTTON').addEventListener('click', function() {
+    // document.querySelector('.BUTTON').addEventListener('click', function() {
 
-//     history.pushState(null, null, "?" + 'lofo');
+    //     history.pushState(null, null, "?" + 'lofo');
 
-// })
+    // })
 </script>
 <?php get_footer() ?>
