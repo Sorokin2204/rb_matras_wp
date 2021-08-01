@@ -1,0 +1,56 @@
+2021-08-01T10:37:15+00:00 CRITICAL Cannot redeclare change_wp_nav_menu() (previously declared in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:362) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 371
+
+2021-08-01T10:39:16+00:00 CRITICAL Cannot redeclare change_wp_nav_menu() (previously declared in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:362) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 371
+
+2021-08-01T10:50:02+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 346
+
+2021-08-01T10:50:03+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 346
+
+2021-08-01T10:57:43+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): atg_menu_classes()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-walker-nav-menu.php(153): apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(144): Walker_Nav_Menu->start_el()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(244): Walker->display_element()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(608): Walker->walk()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php(75): wp_nav_menu()
+#8 D:\OpenServer\OpenServer в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 345
+
+2021-08-01T10:57:54+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): atg_menu_classes()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-walker-nav-menu.php(153): apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(144): Walker_Nav_Menu->start_el()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(244): Walker->display_element()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(608): Walker->walk()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php(75): wp_nav_menu()
+#8 D:\OpenServer\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 345
+
+2021-08-01T10:57:59+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): atg_menu_classes()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-walker-nav-menu.php(153): apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(144): Walker_Nav_Menu->start_el()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(244): Walker->display_element()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(608): Walker->walk()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php(75): wp_nav_menu()
+#8 D:\OpenServer\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 345
+
+2021-08-01T10:58:04+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:345
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): atg_menu_classes()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-walker-nav-menu.php(153): apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(144): Walker_Nav_Menu->start_el()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(244): Walker->display_element()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(608): Walker->walk()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php(75): wp_nav_menu()
+#8 D:\OpenServer\OpenServer\ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 345
+

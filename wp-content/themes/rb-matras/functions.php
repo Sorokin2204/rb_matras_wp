@@ -247,6 +247,7 @@ global $filters;
 $filters = get_filters();
 function rb_matras_setup()
 {
+	add_theme_support('woocommerce');
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__('Главное меню', 'rb-matras'),
@@ -338,9 +339,45 @@ function rb_matras_widgets_init()
 }
 add_action('widgets_init', 'rb_matras_widgets_init');
 
+function atg_menu_classes($classes, $item, $args, $depth)
+{
+	//var_dump($item);
+	if ($args->theme_location == 'menu-primary') {
 
+		if ($depth == 1) $classes[] = 'list__item';
+		else if ($depth == 0) {
+			$classes[] = 'nav__item';
+		}
+		if ($item->url == '#') {
+			$classes[] = 'nav__item--submenu';
+		}
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 4);
 
+function add_menu_link_class($atts, $item, $args, $depth)
+{
+	//var_dump($item);
+	if (property_exists($args, 'link_class')) {
+		$atts['class'] = $args->link_class;
+	}
+	return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 4);
 
+add_filter('nav_menu_submenu_css_class', 'change_wp_nav_menu', 10, 3);
+
+// 2 вариант - только у меню, прикрепленное к области меню header-menu
+function change_wp_nav_menu($classes, $args, $depth)
+{
+
+	if ($args->theme_location == 'menu-primary') {
+		$classes[] = 'list';
+	}
+
+	return $classes;
+}
 // function misha_my_load_more_scripts()
 // {
 
@@ -499,19 +536,12 @@ function get_product_html()
 
 function misha_filter_function()
 {
-	// wp_redirect(home_url('/?page_id=7'));
-	$filters = get_filters();
-	$fillers = get_fillers();
-
-	$found_fillers = array();
-
 
 	$args_child = array(
 		'post_type' => 'product_variation',
 		'post_status' => 'publish',
 		'groupby' => 'post_parent',
 		'fields' => 'id=>parent',
-
 		// 'meta_query' => array(
 		// 	array(
 		// 		'key' => 'attribute_pa_filler',
@@ -519,104 +549,91 @@ function misha_filter_function()
 		// 		'compare' => 'IN',
 		// 	)
 		// )
-
-		// 'tax_query'      => array(array(
-		// 	'taxonomy'        => 'pa_filler',
-		// 	'field'           => 'term_id',
-		// 	'terms'           =>  61,
-		// ))
-
 	);
-
-
-
-	$args_filler = array(
-		'taxonomy' => 'pa_filler',
-		'hide_empty' => false,
-		'fields'   => 'id=>slug',
-		// 'meta_query' => array(
-		// 	array(
-		// 		'key'     => 'filler_block-type',
-		// 		'value'   => array("510"),
-		// 		'compare' => 'IN'
-		// 	)
-		// )
-
-	);
-
-	foreach ($fillers as $filler) {
-		$values = array();
-		foreach ($filler['choices'] as $key => $value) {
-			if (isset($_POST[$key])) {
-				array_push($values, $key);
-			}
-		}
-		if (!empty($values)) {
-			$args_filler['meta_query'][] = array(
-				'key' => $filler['name'],
-				'value' => $values,
-				'compare' => 'IN'
-			);
-		}
-	}
-
-	if (array_key_exists('meta_query', $args_filler)) {
-		$found_fillers = get_terms($args_filler);
-
-		if (!empty($found_fillers)) {
-			$args_child['meta_query'][] = array(
-
-				'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
-				'value'   => 	$found_fillers, // Term slugs only
-				'compare' => 'IN',
-			);
-		} else {
-			$args_child['meta_query'][] = array(
-
-				'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
-				'value'   => 	'', // Term slugs only
-				'compare' => 'EXIST',
-			);
-		}
-	}
-
-
 
 	if (isset($_COOKIE['wordpress_list_favorite']) && $_POST['page'] == 'favorites') {
 
 		$args_child['post_parent__in'] = explode(',', $_COOKIE['wordpress_list_favorite']);
 	} else if ($_POST['page'] == 'home') {
 		$args_child['post_parent__in'] = 	get_variation_parent_ids_from_term("Матрас", 'product_cat', 'name');
-	}
+		$filters = get_filters();
+		$fillers = get_fillers();
+		$found_fillers = array();
+		$args_filler = array(
+			'taxonomy' => 'pa_filler',
+			'hide_empty' => false,
+			'fields'   => 'id=>slug',
+			// 'meta_query' => array(
+			// 	array(
+			// 		'key'     => 'filler_block-type',
+			// 		'value'   => array("510"),
+			// 		'compare' => 'IN'
+			// 	)
+			// )
 
-
-
-	if (isset($_POST['price_min']) && isset($_POST['price_max'])) {
-		$args_child['meta_query'][] = array(
-			'key' => '_price',
-			'value' => array((int)$_POST['price_min'], (int)$_POST['price_max']),
-			'compare' => 'BETWEEN',
-			'type' => 'NUMERIC'
 		);
+
+		foreach ($fillers as $filler) {
+			$values = array();
+			foreach ($filler['choices'] as $key => $value) {
+				if (isset($_POST[$key])) {
+					array_push($values, $key);
+				}
+			}
+			if (!empty($values)) {
+				$args_filler['meta_query'][] = array(
+					'key' => $filler['name'],
+					'value' => $values,
+					'compare' => 'IN'
+				);
+			}
+		}
+
+		if (array_key_exists('meta_query', $args_filler)) {
+			$found_fillers = get_terms($args_filler);
+
+			if (!empty($found_fillers)) {
+				$args_child['meta_query'][] = array(
+
+					'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
+					'value'   => 	$found_fillers, // Term slugs only
+					'compare' => 'IN',
+				);
+			} else {
+				$args_child['meta_query'][] = array(
+
+					'key'     => 'attribute_' . 'pa_filler', // Product variation attribute
+					'value'   => 	'', // Term slugs only
+					'compare' => 'EXIST',
+				);
+			}
+		}
+		if (isset($_POST['price_min']) && isset($_POST['price_max'])) {
+			$args_child['meta_query'][] = array(
+				'key' => '_price',
+				'value' => array((int)$_POST['price_min'], (int)$_POST['price_max']),
+				'compare' => 'BETWEEN',
+				'type' => 'NUMERIC'
+			);
+		}
+		if (isset($_POST['width_min']) && isset($_POST['width_max'])) {
+			$args_child['meta_query'][] = array(
+				'key' => '_width',
+				'value' => array((int)$_POST['width_min'], (int)$_POST['width_max']),
+				'compare' => 'BETWEEN',
+				'type' => 'NUMERIC'
+			);
+		}
 	}
-	if (isset($_POST['width_min']) && isset($_POST['width_max'])) {
-		$args_child['meta_query'][] = array(
-			'key' => '_width',
-			'value' => array((int)$_POST['width_min'], (int)$_POST['width_max']),
-			'compare' => 'BETWEEN',
-			'type' => 'NUMERIC'
-		);
-	}
 
 
 
-	//var_dump($args_child);
+
+
 	$query_child = new WP_Query($args_child);
 
 	$parent_ids = wp_list_pluck($query_child->posts, 'post_parent');
 
-
-	// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	if (!empty($parent_ids)) {
 		$args_parent = array(
 			'post_type' => 'product',

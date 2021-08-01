@@ -1,8 +1,8 @@
 <div class="container">
     <div class="catalog__inner grid inner">
-        <!-- <div class="catalog__reset">
-            <div class="catalog__reset-list">
-                <button class="catalog__reset-all-btn">Сбросить</button>
+        <div class="catalog__reset">
+            <div class="catalog__reset-list"></div>
+            <!-- <button class="catalog__reset-all-btn">Сбросить</button>
                 <button class="catalog__reset-btn">Стандарт класс</button>
                 <button class="catalog__reset-btn">разносторонний</button>
                 <button class="catalog__reset-btn">Стандарт класс</button>
@@ -11,9 +11,8 @@
                 <button class="catalog__reset-btn">Стандарт класс</button>
                 <button class="catalog__reset-btn">Бизнес класс</button>
                 <button class="catalog__reset-btn">Стандарт класс</button>
-                <button class="catalog__reset-btn">Беспружинный</button>
-            </div>
-        </div> -->
+                <button class="catalog__reset-btn">Беспружинный</button> -->
+        </div>
         <div class="catalog__sort">
             <div class="catalog__sort-title">Матрасы</div>
             <div class="catalog__sort-box">

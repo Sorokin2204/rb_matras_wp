@@ -309,7 +309,14 @@ function createFullModal() {
   });
 }
 function Header() {
+  const emptyLink  = document.querySelector('.nav__link[href="#"]');
+
+console.log(emptyLink);
   const header = document.querySelector('.header');
+  var buttonEmptyLink = document.createElement('button');
+  buttonEmptyLink.classList.add('nav__btn');
+  buttonEmptyLink.innerHTML = emptyLink.innerHTML;
+  emptyLink.parentNode.replaceChild(buttonEmptyLink, emptyLink);
   if (window.innerWidth <= 1060) {
     createAccardion('.nav__btn');
     window.addEventListener('scroll', () => {
