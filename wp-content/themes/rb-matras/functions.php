@@ -180,10 +180,15 @@ function rb_matras_scripts()
 		wp_enqueue_script('script-product', get_template_directory_uri() . '/js/product-one.min.js', array(), _S_VERSION, true);
 	}
 	if (is_front_page()) {
-
 		wp_enqueue_script('script-home', get_template_directory_uri() . '/js/home.min.js', array('jquery'), time(), true);
 	}
-
+	if (is_tax('product_cat')) {
+		if (get_queried_object()->slug == 'matras') {
+			wp_enqueue_script('script-home', get_template_directory_uri() . '/js/home.min.js', array('jquery'), time(), true);
+		} else {
+			wp_enqueue_script('script-catalog-other', get_template_directory_uri() . '/js/catalog-other.min.js', array(), time(), true);
+		}
+	}
 	if (is_checkout()) {
 		wp_enqueue_script('script-ordering', get_template_directory_uri() . '/js/ordering.min.js', array(), _S_VERSION, true);
 	}
@@ -215,6 +220,16 @@ function rb_matras_scripts()
 	wp_enqueue_script('misha_scripts');
 }
 add_action('wp_enqueue_scripts', 'rb_matras_scripts');
+
+add_action('admin_enqueue_scripts', function () {
+	wp_enqueue_script(
+		'my-wp-admin',
+		get_stylesheet_directory_uri() . '/js/admin.min.js',
+		array(),
+		_S_VERSION,
+		true
+	);
+}, 99);
 
 
 function get_custom_logo_uri()
@@ -480,13 +495,14 @@ function get_product_html()
 
 
 	$has_term = has_term("", "discount");
+	$is_matras_term = has_term("matras", "product_cat");
 	//$product_attr = get_post_meta(absint($product->get_id()), '_product_attributes');
 	return '
 
 <div class="product ' . ($has_term  ? "product--sale" : "") . '">
     <div class="product__btn-icon-box">
         <div class="product__sale">' . ($has_term  ? get_field('discount_percent', 'discount_' . wc_get_product_term_ids(get_the_ID(), 'discount')[0]) : "")   . '%' . '</div>
-        <button class="product__btn-icon-compare ' . (($compare_in_cookie) ? "product__btn-icon-compare--active" : "") . '" data-path="modal-add-cart"></button>
+      ' . ($is_matras_term  ? '<button class="product__btn-icon-compare ' . (($compare_in_cookie) ? "product__btn-icon-compare--active" : "") . '" data-path="modal-add-cart"></button>' : "") . '  
         <button class="product__btn-icon-favorites ' . (($favorite_in_cookie) ? "product__btn-icon-favorites--active" : "") . '" data-path="modal-add-cart"></button>
     </div>
 
@@ -494,8 +510,7 @@ function get_product_html()
         <img src="' . get_the_post_thumbnail_url() . '" alt="" class="product__img" />
     </div>
     <a href="' . get_permalink() . '" class="product__title">' . get_the_title() . '</a>
-    <ul class="product__list">
-        <li class="product__list-item">
+    <ul class="product__list">' . (!empty(get_field('filter_hardness')) ? ' <li class="product__list-item">
             <span> Жёсткость:</span> ' . get_field('filter_hardness') . '
             <button>
                 <span class="info">
@@ -504,8 +519,11 @@ function get_product_html()
                     </div>
                 </span>
             </button>
-        </li>
-        <li class="product__list-item"><span>Вес:</span> ' . get_field('filter_weight') . '</li>
+        </li>' : "")  . '
+       
+' . (!empty(get_field('filter_weight')) ? ' <li class="product__list-item"><span>Вес:</span> ' . get_field('filter_weight') . '</li>' : "")  . '
+
+
 
         <li class="product__list-item"><span> Размеры: от </span>' . $variation['attributes']['attribute_pa_size']  . '</li>
     </ul>
@@ -517,7 +535,7 @@ function get_product_html()
         
      
 		    <button type="submit" data-path="modal-add-cart"
-        class="product__btn-cart btn btn-sm ' . (is_product_in_cart($product->get_id()) ? 'product__btn-cart--in-cart' : "") . '">' . esc_html($product->single_add_to_cart_text()) . '</button>
+        class="product__btn-cart btn btn-sm ' . (is_product_in_cart($product->get_id()) ? 'product__btn-cart--in-cart' : "") . '">' . (is_product_in_cart($product->get_id()) ? 'В корзине' : esc_html($product->single_add_to_cart_text()))  . '</button>
  <input type="hidden" name="add-to-cart" value="' .  absint($product->get_id()) . '" />
     <input type="hidden" name="product_id" value="' .  absint($product->get_id()) . '" />
     <input type="hidden" name="variation_id" class="variation_id" value="' .  $variation['variation_id'] . '" />
@@ -554,7 +572,7 @@ function misha_filter_function()
 	if (isset($_COOKIE['wordpress_list_favorite']) && $_POST['page'] == 'favorites') {
 
 		$args_child['post_parent__in'] = explode(',', $_COOKIE['wordpress_list_favorite']);
-	} else if ($_POST['page'] == 'home') {
+	} else if ($_POST['page'] == 'home' || (isset($_POST['tax_name']) && $_POST['tax_name'] == 'Матрас')) {
 		$args_child['post_parent__in'] = 	get_variation_parent_ids_from_term("Матрас", 'product_cat', 'name');
 		$filters = get_filters();
 		$fillers = get_fillers();
@@ -624,15 +642,19 @@ function misha_filter_function()
 				'type' => 'NUMERIC'
 			);
 		}
+	} else if (isset($_POST['tax_name'])) {
+		$args_child['post_parent__in'] = 	get_variation_parent_ids_from_term($_POST['tax_name'], 'product_cat', 'name');
 	}
 
 
 
+	if (!empty($args_child['post_parent__in'])  || $_POST['page'] == 'discount') {
+		$query_child = new WP_Query($args_child);
+
+		$parent_ids = wp_list_pluck($query_child->posts, 'post_parent');
+	}
 
 
-	$query_child = new WP_Query($args_child);
-
-	$parent_ids = wp_list_pluck($query_child->posts, 'post_parent');
 
 	if (!empty($parent_ids)) {
 		$args_parent = array(
@@ -671,7 +693,7 @@ function misha_filter_function()
 
 			//var_dump($atrr_arr_sort);
 			//var_dump($product->get_variation_regular_price('min'));
-			//	print_r(empty($found_fillers));
+			//print_r($args_child);
 			echo get_product_html();
 		//	print_r($filters);
 		//var_dump(get_field('filter_weight'));
@@ -809,7 +831,22 @@ function woocommerce_ajax_add_to_cart()
 
 
 
+add_filter('woocommerce_add_to_cart_fragments', 'misha_add_to_cart_fragment');
 
+function misha_add_to_cart_fragment($fragments)
+{
+
+	global $woocommerce;
+	// var_dump($fragments);
+	$fragments['.header__count-icon--cart'] = '<span class="header__count-icon header__count-icon--cart">' . (WC()->cart->get_cart_contents_count() != 0 ? WC()->cart->get_cart_contents_count() : "") . '</span>';
+	return $fragments;
+}
+
+////ADMIN PANEL//////////////////////
+add_action('pa_filler_pre_add_form', 'action_function_name_5825');
+function action_function_name_5825($taxonomy)
+{
+}
 
 
 ////CHECK OUT FUNCTIONS////////////

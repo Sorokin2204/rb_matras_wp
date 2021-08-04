@@ -118,6 +118,10 @@ get_header();
     </div>
 </section>
 
+<div class="modals">
+    <div class="modal-overlay"><?php get_template_part('template-parts/modals/content-modal-add-cart'); ?></div>
+</div>
+
 <div class="catalog-footer">
     <div class="catalog__overlay"></div>
     <section class="catalog"><?php get_template_part('template-parts/content-catalog'); ?></section>

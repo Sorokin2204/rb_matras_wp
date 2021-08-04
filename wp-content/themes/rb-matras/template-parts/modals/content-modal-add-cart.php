@@ -1,5 +1,5 @@
 <?php global $product;
-var_dump($product->get_id()) ?>
+?>
 <div class="modal modal-add-cart" data-target="modal-add-cart">
     <div class="modal__head">
         <h3 class="modal__title">Товар добавлен в корзину!</h3>

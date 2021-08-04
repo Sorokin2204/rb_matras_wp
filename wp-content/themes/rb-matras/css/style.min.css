@@ -2519,20 +2519,8 @@ a.added_to_cart.wc-forward {
       .product__title {
         font-size: 15px;
         line-height: 18px; } }
-    .product__title::before {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      bottom: 2px;
-      left: 0;
-      opacity: 0;
-      visibility: hidden;
-      height: 1px;
-      width: 100%;
-      background-color: #0e9675;
-      transition: all 0.3s ease-out; }
   .product__list {
-    margin-bottom: 20px; }
+    margin-bottom: 11px; }
   .product__list-item {
     font-weight: 400;
     font-family: "Rubik", sans-serif;
@@ -2580,7 +2568,8 @@ a.added_to_cart.wc-forward {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #000; }
+    color: #000;
+    margin-top: auto; }
   .product__sale-price {
     visibility: hidden;
     font-weight: 400;
@@ -2623,21 +2612,12 @@ a.added_to_cart.wc-forward {
       margin-left: 23px;
       margin-top: 8px;
       margin-bottom: 8px;
-      transition: none; }
+      transition: none;
+      text-decoration: underline; }
       @media (min-width: 1440px) {
         .product__btn-cart--in-cart {
           font-size: 15px;
           line-height: 18px; } }
-      .product__btn-cart--in-cart::after {
-        transition: none;
-        content: '';
-        background-color: #050e0c;
-        display: inline-block;
-        height: 1px;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0; }
       .product__btn-cart--in-cart::before {
         transition: none;
         content: '';

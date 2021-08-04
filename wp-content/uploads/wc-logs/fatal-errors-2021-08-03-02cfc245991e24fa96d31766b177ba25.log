@@ -1,0 +1,44 @@
+2021-08-03T09:23:51+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\template-parts\content-catalog.php на строке 17
+
+2021-08-03T11:08:49+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 529
+
+2021-08-03T11:09:12+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 528
+
+2021-08-03T11:09:12+00:00 CRITICAL syntax error, unexpected ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 528
+
+2021-08-03T11:10:50+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T11:12:51+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T11:14:52+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T11:16:53+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T11:18:54+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T11:20:55+00:00 CRITICAL syntax error, unexpected ':', expecting ';' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 498
+
+2021-08-03T12:03:04+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_field_object(), 0 passed in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php on line 176 and at least 1 expected in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:110
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(176): get_field_object()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php на строке 110
+
+2021-08-03T12:03:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_field_object(), 0 passed in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php on line 176 and at least 1 expected in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:110
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\single-product.php(176): get_field_object()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#3 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php на строке 110
+
+2021-08-03T15:52:27+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 185
+
+2021-08-03T15:52:28+00:00 CRITICAL syntax error, unexpected ')' в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 185
+
+2021-08-03T17:19:19+00:00 CRITICAL Cannot use isset() on the result of an expression (you can use "null !== expression" instead) в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php на строке 69
+

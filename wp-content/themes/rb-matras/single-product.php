@@ -46,7 +46,9 @@ get_header('shop'); ?>
 
           $attribute_keys  = array_keys($attributes);
           $variations_json = wp_json_encode($available_variations);
-          $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json) : _wp_specialchars($variations_json, ENT_QUOTES, 'UTF-8', true); ?>
+          $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json) : _wp_specialchars($variations_json, ENT_QUOTES, 'UTF-8', true);
+          $fields = get_fields(get_the_ID());
+          $is_matras_term = has_term("matras", "product_cat"); ?>
                 <form class="variations_form cart"
                     action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
                     method="post" enctype='multipart/form-data'
@@ -80,7 +82,8 @@ get_header('shop'); ?>
                                 </button>
                             </li>
                             <li class="product-one__tabs-item">
-                                <button type="button" class="product-one__tabs-btn" data-tabs-path="composition">
+                                <button type="button" class="product-one__tabs-btn" data-tabs-path="composition"
+                                    <?php if (empty($fields)) echo 'style="color: #b9b9b9;"disabled '   ?>>
                                     Состав
                                 </button>
                             </li>
@@ -172,9 +175,21 @@ get_header('shop'); ?>
                             </div>
                         </div>
                         <div class="product-one__tabs-content" data-tabs-target="composition">
+
                             <div class="product-one__tabs-content-inner">
+
                                 <ul class="product-one__list list">
-                                    <li class="list__item">
+                                    <?php
+                    foreach ($fields as $key => $value) {
+                      if (!empty($value)) {
+                        $field_label = get_field_object($key)['label']; ?>
+                                    <li class="list__item"><span><?php echo $field_label . ': ' ?></span>
+                                        <?php echo $value ?>
+                                    </li>
+                                    <?php } ?>
+
+                                    <?php  }  ?>
+                                    <!-- <li class="list__item">
                                         <span>Жёсткость:</span> Мягкая/Жесткая
                                         <button type="button">
                                             <span class="info">
@@ -185,7 +200,7 @@ get_header('shop'); ?>
                                         </button>
                                     </li>
                                     <li class="list__item"><span>Вес:</span> до 100кг</li>
-                                    <li class="list__item"><span>Зоны жесткости:</span> 5 зон</li>
+                                    <li class="list__item"><span>Зоны жесткости:</span> 5 зон</li> -->
                                 </ul>
                             </div>
                         </div>
@@ -200,8 +215,10 @@ get_header('shop'); ?>
                         </button>
                         <button type="button"
                             class="product-one__favorites-btn <?php if ($favorite_in_cookie)  echo " product-one__favorites-btn--active" ?>"></button>
+                        <?php if ($is_matras_term) { ?>
                         <button type="button"
                             class="product-one__compare-btn <?php if ($compare_in_cookie)  echo " product-one__compare-btn--active" ?>"></button>
+                        <?php } ?>
                     </div>
                 </form>
             </div>

@@ -76,7 +76,6 @@
 //   });
 // });
 
-var pathName = window.location.pathname;
 ///CREATE ACCARDION
 function createAccardion(
   headAccardionclassName,
@@ -310,8 +309,6 @@ function createFullModal() {
 }
 function Header() {
   const emptyLink  = document.querySelector('.nav__link[href="#"]');
-
-console.log(emptyLink);
   const header = document.querySelector('.header');
   var buttonEmptyLink = document.createElement('button');
   buttonEmptyLink.classList.add('nav__btn');
@@ -386,33 +383,33 @@ console.log(emptyLink);
     }
   }
 
-  function setActiveNavLink() {
-    let navBox;
-    if (window.innerWidth <= 1060) {
-      navBox = document.querySelector('.header__nav--mobile');
-    } else {
-      navBox = document.querySelector('.header__nav');
-    }
-    const listNavLink = navBox.querySelectorAll('.nav__link');
-    listNavLink.forEach((navLink) => {
-      navAttr = navLink.getAttribute('href').substring(2);
-      if (navAttr == pathName) {
-        navLink.classList.add('nav__link--active');
-      }
-    });
-  }
+  // function setActiveNavLink() {
+  //   let navBox;
+  //   if (window.innerWidth <= 1060) {
+  //     navBox = document.querySelector('.header__nav--mobile');
+  //   } else {
+  //     navBox = document.querySelector('.header__nav');
+  //   }
+  //   const listNavLink = navBox.querySelectorAll('.nav__link');
+  //   listNavLink.forEach((navLink) => {
+  //     navAttr = navLink.getAttribute('href').substring(2);
+  //     if (navAttr == pathName) {
+  //       navLink.classList.add('nav__link--active');
+  //     }
+  //   });
+  // }
 
-  function setActiveIconLink() {
-    const listNavIcon = document.querySelectorAll('.header__link-icon');
-    listNavIcon.forEach((navIcon) => {
-      navAttr = navIcon.getAttribute('href')?.substring(2);
-      if (navAttr == pathName) {
-        navIcon.classList.add('header__link-icon--active');
-      }
-    });
-  }
-  setActiveIconLink();
-  setActiveNavLink();
+  // function setActiveIconLink() {
+  //   const listNavIcon = document.querySelectorAll('.header__link-icon');
+  //   listNavIcon.forEach((navIcon) => {
+  //     navAttr = navIcon.getAttribute('href')?.substring(2);
+  //     if (navAttr == pathName) {
+  //       navIcon.classList.add('header__link-icon--active');
+  //     }
+  //   });
+  // }
+ // setActiveIconLink();
+  //etActiveNavLink();
 }
 
 function Product() {
@@ -459,42 +456,7 @@ function Product() {
   //     }
   //   });
   // });
-  ///FAVORITES
-  const listProductBtnFavorite = document.querySelectorAll(
-    '.product__btn-icon-favorites',
-  );
-  const countIconBtnFavorites = document.querySelector(
-    '.header__link-icon-favorites ~ .header__count-icon',
-  );
-  var countFavorites = 0;
-  listProductBtnFavorite.forEach((productBtnFavorite) => {
-    productBtnFavorite?.addEventListener('click', () => {
-      if (
-        !productBtnFavorite.classList.contains(
-          'product__btn-icon-favorites--active',
-        )
-      ) {
-        modalTitleAddCart.innerHTML = 'Товар добавлен в избранное';
-        modalLinkAddCart.setAttribute('href', '../favorites.html');
-        modalLinkAddCart.innerHTML = 'Перейти в избранное';
-        countFavorites++;
-        countIconBtnFavorites.innerHTML = countFavorites;
-        setTimeout(() => {
-          productBtnFavorite.removeAttribute('data-path');
-        }, 200);
-      } else {
-        countFavorites--;
-        countIconBtnFavorites.innerHTML = countFavorites;
-        setTimeout(() => {
-          productBtnFavorite.setAttribute('data-path', 'modal-add-cart');
-        }, 200);
-      }
-      if (countFavorites == 0) countIconBtnFavorites.innerHTML = '';
-      productBtnFavorite.classList.toggle(
-        'product__btn-icon-favorites--active',
-      );
-    });
-  });
+ 
   ///COMPARE
   const listProductBtnCompare = document.querySelectorAll(
     '.product__btn-icon-compare',
@@ -531,6 +493,47 @@ function Product() {
   });
 }
 
+
+function AddToFavorite() {
+  ///FAVORITES
+  const listProductBtnFavorite = document.querySelectorAll(
+    '.product__btn-icon-favorites',
+  );
+  const countIconBtnFavorites = document.querySelector(
+    '.header__link-icon-favorites ~ .header__count-icon',
+  );
+  var countFavorites = +countIconBtnFavorites.innerHTML;
+  listProductBtnFavorite.forEach((productBtnFavorite) => {
+    productBtnFavorite?.addEventListener('click', () => {
+      if (
+        !productBtnFavorite.classList.contains(
+          'product__btn-icon-favorites--active',
+        )
+      ) {
+        // modalTitleAddCart.innerHTML = 'Товар добавлен в избранное';
+        // modalLinkAddCart.setAttribute('href', '../favorites.html');
+        // modalLinkAddCart.innerHTML = 'Перейти в избранное';
+        countFavorites++;
+        countIconBtnFavorites.innerHTML = countFavorites;
+        // setTimeout(() => {
+        //   productBtnFavorite.removeAttribute('data-path');
+        // }, 200);
+      } else {
+        countFavorites--;
+        countIconBtnFavorites.innerHTML = countFavorites;
+        // setTimeout(() => {
+        //   productBtnFavorite.setAttribute('data-path', 'modal-add-cart');
+        // }, 200);
+      }
+      if (countFavorites == 0) countIconBtnFavorites.innerHTML = '';
+      productBtnFavorite.classList.toggle(
+        'product__btn-icon-favorites--active',
+      );
+    });
+  });
+}
+
+
 createTab('product-one');
 createTab('test');
 createAccardion('.accardion__head');
@@ -544,12 +547,6 @@ Header();
 createFullModal();
 ////END COMMON
 
-// const listForms = document.querySelectorAll('form');
-// listForms?.forEach((form) => {
-//   form.onsubmit = function (e) {
-//     e.preventDefault();
-//   };
-// });
 
 ///SWITH CUSTOM SCRIPOT FOR CUSTOM PAGE
 
@@ -606,26 +603,37 @@ function setCookie(name, value, options = {}) {
 function getProductId(btn, classParent) {
   return btn
     .closest(classParent)
-    .querySelector('input[name=product_id]')
-    .getAttribute('value');
+    .find('input[name=product_id]')
+    .attr('value');
 }
 
-function setCookieFavorite(classBtn, classParent, cookieName) {
-  let btns = document.querySelectorAll(classBtn);
+// function setCookieFavorite(classBtn, classParent, cookieName) {
+//   // let btns = document.querySelectorAll(classBtn);
 
-  btns.forEach(function (btn) {
-    btn.addEventListener('click', () => {
-        console.log('CLICK COOKIE');
-      setCookie(cookieName, getProductId(btn, classParent), {
-        'max-age': 3600,
-      });
-      //  console.log(getProductId(btn, classParent));
+//   //btns.forEach(function (btn) {
+//     classBtn.addEventListener('click', () => {
+//       console.log('CLICK COOKIE');
+//       setCookie(cookieName, getProductId(classBtn, classParent), {
+//         'max-age': 3600,
+//       });
+//       //  console.log(getProductId(btn, classParent));
 
-      console.log(getCookie(cookieName));
-    });
-  });
-}
+//       console.log(getCookie(cookieName));
+//     });
+//   //});
+// }
 
+
+function getCountFromCookie(name) { 
+    let existCookie = getCookie(name); ///GET COOKIE
+  if (existCookie) {
+    /// CHECK EXIST COOKIE
+    existCookie = existCookie.split(','); /// COOKIE ARRAY
+    return existCookie.length;
+  } else {
+    return 0;
+  }
+ }
 
 function getCookie(name) {
   let matches = document.cookie.match(
@@ -639,41 +647,89 @@ function getCookie(name) {
 }
 
 
-setCookieFavorite(
-  '.product__btn-icon-compare',
-  '.product',
-  'wordpress_list_compare',
-);
+// setCookieFavorite(
+//   '.product__btn-icon-compare',
+//   '.product',
+//   'wordpress_list_compare',
+// );
 
-setCookieFavorite(
-  '.product__btn-icon-favorites',
-  '.product',
-  'wordpress_list_favorite',
-);
-
-
- 
-switch (pathName) {
-  
-  
-  case '/catalog-other.html':
-    {
-      const catalogOtherListProduct = document.querySelector(
-        '.catalog__product-list',
-      );
-      const catalogOtherTitle = document.querySelector('.catalog__sort-title');
-
-      catalogOtherListProduct.classList.add('product-list--full');
-      catalogOtherTitle.innerHTML = 'Подушки';
-    }
-    break;
- 
-  default:
-    break;
-}
+// setCookieFavorite(
+//   '.product__btn-icon-favorites',
+//   '.product',
+//   'wordpress_list_favorite',
+// );
 
 
+  const countIconBtnFavorites = document.querySelector(
+    '.header__link-icon-favorites ~ .header__count-icon',
+  );
+    const countIconBtnCompare = document.querySelector(
+      '.header__link-icon-compare ~ .header__count-icon',
+    );
+  var countFavorites = +countIconBtnFavorites.innerHTML;
+  var countCompare = +countIconBtnCompare.innerHTML;
 jQuery(function ($) {
+$('.product-list').on(
+  'click',
+  '.product__btn-icon-favorites',
+  function (event) {
+     setCookie('wordpress_list_favorite', getProductId($(this), '.product'), {
+       'max-age': 3600,
+     });
+ if (
+   !$(this).hasClass('product__btn-icon-favorites--active')
+ ) {
+   // modalTitleAddCart.innerHTML = 'Товар добавлен в избранное';
+   // modalLinkAddCart.setAttribute('href', '../favorites.html');
+   // modalLinkAddCart.innerHTML = 'Перейти в избранное';
+   countFavorites++;
+   countIconBtnFavorites.innerHTML = countFavorites;
+   // setTimeout(() => {
+   //   productBtnFavorite.removeAttribute('data-path');
+   // }, 200);
+ } else {
+   countFavorites--;
+   countIconBtnFavorites.innerHTML = countFavorites;
+   // setTimeout(() => {
+   //   productBtnFavorite.setAttribute('data-path', 'modal-add-cart');
+   // }, 200);
+ }
+ if (countFavorites == 0) countIconBtnFavorites.innerHTML = '';
+ $(this).toggleClass('product__btn-icon-favorites--active');
+  },
+);
+
+$('.product-list').on(
+  'click',
+  '.product__btn-icon-compare',
+  function (event) {
+    setCookie('wordpress_list_compare', getProductId($(this), '.product'), {
+      'max-age': 3600,
+    });
+    if (!$(this).hasClass('product__btn-icon-compare--active')) {
+      // modalTitleAddCart.innerHTML = 'Товар добавлен в избранное';
+      // modalLinkAddCart.setAttribute('href', '../favorites.html');
+      // modalLinkAddCart.innerHTML = 'Перейти в избранное';
+      countCompare++;
+      countIconBtnCompare.innerHTML = countCompare;
+      // setTimeout(() => {
+      //   productBtnFavorite.removeAttribute('data-path');
+      // }, 200);
+    } else {
+      countCompare--;
+      countIconBtnCompare.innerHTML = countCompare;
+      // setTimeout(() => {
+      //   productBtnFavorite.setAttribute('data-path', 'modal-add-cart');
+      // }, 200);
+    }
+    if (countCompare == 0) countIconBtnCompare.innerHTML = '';
+    $(this).toggleClass('product__btn-icon-compare--active');
+  },
+);
+
+
+
+
   token = 'cca83bc374dc49ffae9d0ac5361a1fdbd38a0ab9';
   type = "ADDRESS";
   var $city = $('.city');
