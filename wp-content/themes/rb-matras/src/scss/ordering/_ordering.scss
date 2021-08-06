@@ -249,7 +249,12 @@
     max-width: 323px;
   }
 
+  .product__btn-cart--in-cart {
+    padding: 0;
+    margin-left: 32px;
+  }
   &__title {
+    color: $black;
     display: inline-block;
     @include medium-15;
     flex-basis: 100%;
@@ -358,7 +363,7 @@
   &__payment {
     display: grid;
     //grid-template-columns: minmax(393px, 594px) 1fr;
-    grid-template-columns: 56% auto;
+    grid-template-columns: 60% auto;
     grid-gap: 45px;
   }
 
@@ -393,6 +398,11 @@
       border: 1px solid transparent;
       background-color: $green;
       color: $white;
+    }
+    &:disabled + label {
+      background-color: #dfdfdf;
+      border: 1px solid #dfdfdf;
+      color: #505654;
     }
   }
 

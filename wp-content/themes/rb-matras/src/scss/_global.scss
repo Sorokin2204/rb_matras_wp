@@ -445,12 +445,12 @@ a {
   position: relative;
   display: block;
   transition: all 0.3s;
-  &::before {
+  &:first-child::before {
     content: '';
     display: block;
     position: absolute;
     top: 0;
-    left: -10px;
+    left: 0px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -458,7 +458,7 @@ a {
     border-color: $gray transparent transparent transparent;
     transform: rotate(180deg);
   }
-  &::after {
+  &:last-of-type:after {
     content: '';
     display: block;
     position: absolute;
@@ -468,25 +468,28 @@ a {
     height: 0;
     border-style: solid;
     border-width: 7px 5px 0 5px;
-    border-color: #87cbba transparent transparent transparent;
+    border-color: $gray transparent transparent transparent;
+    // border-color: #87cbba transparent transparent transparent;
     transition: all 0.3s;
   }
+
   &:checked {
     transition: all 0.3s;
-
-    &::after {
+    & ~ label {
+      transition: all 0.3s;
+      color: rgba(5, 14, 12, 0.8);
+    }
+  }
+  &:first-child:checked {
+    &::before {
       transition: all 0.3s;
       border-color: $green transparent transparent transparent;
     }
-    & + label {
-      transition: all 0.3s;
-      color: rgba(5, 14, 12, 0.8);
-    }
   }
-  &:indeterminate {
-    & + label {
+  &:last-of-type:checked {
+    &::after {
       transition: all 0.3s;
-      color: rgba(5, 14, 12, 0.8);
+      border-color: $green transparent transparent transparent;
     }
   }
 }
@@ -903,5 +906,17 @@ a.added_to_cart.wc-forward {
 }
 
 .all-filler {
+  display: none;
+}
+
+.woocommerce-notices-wrapper {
+  display: none;
+}
+
+#payment {
+  display: none;
+}
+
+.woocommerce-form-coupon-toggle {
   display: none;
 }

@@ -46,6 +46,8 @@
   }
 
   &__input {
+    width: auto;
+    min-width: 0;
     background-color: $white;
     border: 1px solid #d8d4d4;
     &::placeholder {
@@ -55,5 +57,8 @@
 
   &__btn {
     border-radius: 5px;
+  }
+  .ajax-loader {
+    display: none;
   }
 }

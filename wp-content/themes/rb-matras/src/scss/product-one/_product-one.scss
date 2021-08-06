@@ -143,6 +143,10 @@
     padding: 10px 25px;
     box-shadow: none;
   }
+  & .product__btn-cart--in-cart {
+    padding: 0;
+    margin-right: 20px;
+  }
 
   &__test-btn {
     padding: 10px 25px;

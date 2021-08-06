@@ -49,10 +49,13 @@ do_action('woocommerce_before_cart'); ?>
                 <option value="<?php echo $_product->get_attribute('pa_size') ?>"></option>
 
             </select>
+            <?php if ($_product->get_attribute('pa_case')) { ?>
             <select class="ordering-product__select" data-name-option="Чехол: ">
                 <option value="<?php echo $_product->get_attribute('pa_case') ?>"></option>
 
             </select>
+            <?php } ?>
+
         </div>
         <div class="ordering-product__price-box">
             <span class="ordering-product__price-text">Стоимость</span>
@@ -86,7 +89,114 @@ do_action('woocommerce_before_cart'); ?>
     <?php do_action('woocommerce_after_cart_contents'); ?>
     <?php do_action('woocommerce_after_cart_table'); ?>
 </form>
+<div class="ordering-discount">
+    <div class="ordering-discount__head">
+        <h3 class="ordering-discount__head-title">
+            Больше товаров - больше скидка!
+        </h3>
+        <p class="ordering-discount__head-text">
+            За каждую единицу товара дополнительная скидка: за 2 - 2%; за 3 -
+            3%; за 4 и более - 6%;
+        </p>
+    </div>
 
+    <ul class="ordering-discount__list">
+        <?php $args_discount = array(
+            'post_type' => 'product',
+            'posts_per_page' => 2,
+            //  'orderby' => 'rand',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'slug',
+                    'terms' => 'pillows-and-blankets'
+                )
+            ),
+        );
+        $query_discount = new WP_Query($args_discount);
+        //var_dump($query_discount);
+        while ($query_discount->have_posts()) : $query_discount->the_post();
+            global $product;
+            $variation = get_variation_with_min_price($product); ?>
+        <li class="ordering-discount__list-item">
+            <div class="ordering-discount__img-box">
+                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="" class="ordering-discount__img" />
+            </div>
+            <div class="ordering-discount__content">
+                <a href='<?php echo get_permalink() ?>' class="ordering-discount__title">
+                    <?php echo get_the_title() ?>
+                </a>
+                <span class="ordering-discount__price"><?php echo wc_price($variation['display_price']) ?></span>
+                <select class="ordering-discount__select" data-name-option="Размер: ">
+                    <option value="<?php echo $variation['attributes']['attribute_pa_size'] ?>"></option>
+                </select>
+                <?php if (is_product_in_cart($product->get_id())) { ?>
+                <button class="ordering-discount__btn-add btn btn-sm product__btn-cart--in-cart">
+                    Добавлен
+                </button>
+                <?php } else { ?>
+                <button class="ordering-discount__btn-add btn btn-sm">
+                    Добавить
+                </button>
+                <?php } ?>
+
+                <input type="hidden" name="add-to-cart" value="<?php echo absint($product->get_id()) ?>" />
+                <input type="hidden" name="quantity" value="1" />
+                <input type="hidden" name="product_id" value="<?php echo absint($product->get_id()) ?>" />
+                <input type="hidden" name="variation_id" class="variation_id"
+                    value="<?php echo  $variation['variation_id'] ?>" />
+
+            </div>
+        </li>
+        <?php endwhile;
+        wp_reset_query(); ?>
+        <!-- 
+        <li class="ordering-discount__list-item">
+            <div class="ordering-discount__img-box">
+                <img src="img/product_02.webp" alt="" class="ordering-discount__img" />
+            </div>
+            <div class="ordering-discount__content">
+                <span class="ordering-discount__title">
+                    Подушка ортопедическая "Лебяжий пух"
+                </span>
+                <span class="ordering-discount__price">1 684 р.</span>
+                <select class="ordering-discount__select" data-name-option="Размер: ">
+                    <option value="80х190"></option>
+                    <option value="90х190"></option>
+                    <option value="120х190"></option>
+                    <option value="140х190"></option>
+                    <option value="160х190"></option>
+                    <option value="180х190"></option>
+                </select>
+                <button class="ordering-discount__btn-add btn btn-sm">
+                    Добавить
+                </button>
+            </div>
+        </li>
+        <li class="ordering-discount__list-item">
+            <div class="ordering-discount__img-box">
+                <img src="img/product_02.webp" alt="" class="ordering-discount__img" />
+            </div>
+            <div class="ordering-discount__content">
+                <span class="ordering-discount__title">
+                    Подушка ортопедическая "Лебяжий пух"
+                </span>
+                <span class="ordering-discount__price">1 684 р.</span>
+                <select class="ordering-discount__select" data-name-option="Размер: ">
+                    <option value="80х190"></option>
+                    <option value="90х190"></option>
+                    <option value="120х190"></option>
+                    <option value="140х190"></option>
+                    <option value="160х190"></option>
+                    <option value="180х190"></option>
+                </select>
+                <button class="ordering-discount__btn-add btn btn-sm">
+                    Добавить
+                </button>
+            </div>
+        </li> -->
+    </ul>
+</div>
 <?php do_action('woocommerce_before_cart_collaterals'); ?>
 
 <div class="cart-collaterals">

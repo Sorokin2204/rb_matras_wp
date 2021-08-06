@@ -9,7 +9,7 @@ if (function_exists('yoast_breadcrumb')) {
     <div class="container compare__container">
         <div class="compare__inner inner">
             <h2 class="compare__title-h2 title-h2"><?php single_post_title(); ?></h2>
-            <?php if (isset($_COOKIE['wordpress_list_compare'])) { ?>
+            <?php if (isset($_COOKIE['wordpress_list_compare']) && !empty($_COOKIE['wordpress_list_compare'])) { ?>
             <div class="compare__grid-mask">
                 <div class="compare__grid-mask-blur"></div>
                 <div class="compare__grid">
@@ -58,25 +58,34 @@ if (function_exists('yoast_breadcrumb')) {
                     <div class="compare__grid-title"><?php echo  get_the_title() ?></div>
                     <div class="compare__grid-data">
                         <ul class="compare__grid-list list list">
-                            <li class="list__item">Natural Foam 2,5см</li>
-                            <li class="list__item">Войлок</li>
-                            <li class="list__item">Независимые пружины (255 пр./м2)</li>
-                            <li class="list__item">Кокос 3см (Н=21)</li>
+                            <?php $filler_name = get_term_by('slug', $variation['attributes']['attribute_pa_filler'], 'pa_filler')->name;
+                                        $filler_array_name = explode(' + ', $filler_name); ?>
+                            <?php foreach ($filler_array_name as $sub_name) { ?>
+                            <li class="list__item"><?php echo $sub_name ?></li>
+                            <?php } ?>
+
                         </ul>
                     </div>
                     <div class="compare__grid-data"><?php the_field('filter_hardness') ?></div>
                     <div class="compare__grid-data"><?php echo $variation['dimensions']['width'] . ' см'  ?></div>
                     <div class="compare__grid-data"><?php the_field('filter_weight') ?></div>
                     <div class="compare__grid-data">5 зон</div>
-                    <div class="compare__grid-data"><?php
-                                                                ?></div>
+                    <div class="compare__grid-data">
+                        <?php echo get_term_by('slug', $variation['attributes']['attribute_pa_case'], 'pa_case')->name ?>
+                    </div>
                     <div class="compare__grid-data">Есть на складе</div>
                     <div class="compare__grid-price">
                         <span> <?php echo wc_price($variation['display_price']) ?></span>
-                        <button class="compare__grid-btn-cart btn btn--hide-icon" data-path="modal-add-cart">
+                        <button
+                            class="compare__grid-btn-cart btn btn--hide-icon <?php if (is_product_in_cart($product->get_id()))  echo 'product__btn-cart--in-cart'  ?>"
+                            data-path="modal-add-cart">
                             В корзину
                         </button>
+                        <input type="hidden" name="quantity" value="1" />
+                        <input type="hidden" name="add-to-cart" value="<?php echo absint($product->get_id()) ?>" />
                         <input type="hidden" name="product_id" value="<?php echo absint($product->get_id()) ?>" />
+                        <input type="hidden" name="variation_id" class="variation_id"
+                            value="<?php echo $variation['variation_id'] ?>" />
                         <a href="<?php echo home_url() . '/compare' ?>" class="compare__grid-btn-remove btn--hide-icon">
                             Удалить
                         </a>

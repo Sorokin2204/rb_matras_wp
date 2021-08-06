@@ -1,0 +1,94 @@
+2021-08-05T07:02:08+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:502
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(698): get_product_html()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 502
+
+2021-08-05T07:02:16+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:502
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php(698): get_product_html()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#5 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 502
+
+2021-08-05T14:19:45+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:693
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 693
+
+2021-08-05T14:20:51+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:693
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 693
+
+2021-08-05T14:21:45+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:694
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 694
+
+2021-08-05T14:53:20+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:721
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 721
+
+2021-08-05T14:54:07+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:721
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 721
+
+2021-08-05T14:55:15+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:721
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): misha_filter_function()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-admin\admin-ajax.php(187): do_action()
+#4 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 721
+
+2021-08-05T15:04:22+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:219
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): rb_matras_scripts()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\script-loader.php(2083): do_action()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): wp_enqueue_scripts()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(470): WP_Hook->do_action()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\general-template.php(3015): do_action()
+#8 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb- в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 219
+
+2021-08-05T15:57:46+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php:61
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\template-loader.php(106): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-blog-header.php(19): require_once('D:\\OpenServer\\O...')
+#2 D:\OpenServer\OpenServer\domains\rbmatras\index.php(17): require('D:\\OpenServer\\O...')
+#3 {main}
+  thrown в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\page-compare.php на строке 61
+

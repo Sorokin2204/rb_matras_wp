@@ -1941,19 +1941,19 @@ a {
   position: relative;
   display: block;
   transition: all 0.3s; }
-  .sort-radio::before {
+  .sort-radio:first-child::before {
     content: '';
     display: block;
     position: absolute;
     top: 0;
-    left: -10px;
+    left: 0px;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 7px 5px 0 5px;
     border-color: #afafaf transparent transparent transparent;
     transform: rotate(180deg); }
-  .sort-radio::after {
+  .sort-radio:last-of-type:after {
     content: '';
     display: block;
     position: absolute;
@@ -1963,19 +1963,19 @@ a {
     height: 0;
     border-style: solid;
     border-width: 7px 5px 0 5px;
-    border-color: #87cbba transparent transparent transparent;
+    border-color: #afafaf transparent transparent transparent;
     transition: all 0.3s; }
   .sort-radio:checked {
     transition: all 0.3s; }
-    .sort-radio:checked::after {
-      transition: all 0.3s;
-      border-color: #0e9675 transparent transparent transparent; }
-    .sort-radio:checked + label {
+    .sort-radio:checked ~ label {
       transition: all 0.3s;
       color: rgba(5, 14, 12, 0.8); }
-  .sort-radio:indeterminate + label {
+  .sort-radio:first-child:checked::before {
     transition: all 0.3s;
-    color: rgba(5, 14, 12, 0.8); }
+    border-color: #0e9675 transparent transparent transparent; }
+  .sort-radio:last-of-type:checked::after {
+    transition: all 0.3s;
+    border-color: #0e9675 transparent transparent transparent; }
 
 .sort-radio-box {
   display: flex;
@@ -2370,6 +2370,15 @@ a.added_to_cart.wc-forward {
   display: none; }
 
 .all-filler {
+  display: none; }
+
+.woocommerce-notices-wrapper {
+  display: none; }
+
+#payment {
+  display: none; }
+
+.woocommerce-form-coupon-toggle {
   display: none; }
 
 .product {
@@ -2878,7 +2887,7 @@ a.added_to_cart.wc-forward {
   .catalog__product-list {
     margin-bottom: 30px; }
   .catalog__btn-more {
-    display: block;
+    display: none;
     margin: 0 auto;
     padding-right: 20px; }
   .catalog__overlay {
@@ -4167,6 +4176,9 @@ a.added_to_cart.wc-forward {
     margin-right: 15px;
     padding: 10px 25px;
     box-shadow: none; }
+  .product-one .product__btn-cart--in-cart {
+    padding: 0;
+    margin-right: 20px; }
   .product-one__test-btn {
     padding: 10px 25px;
     box-shadow: none;
@@ -4608,6 +4620,9 @@ a.added_to_cart.wc-forward {
 .compare__grid-btn-cart {
   padding: 9px 17px;
   border-radius: 5px; }
+
+.compare .product__btn-cart--in-cart {
+  padding: 0; }
 
 .compare__grid-btn-remove {
   align-self: flex-end;
@@ -5051,7 +5066,11 @@ a.added_to_cart.wc-forward {
     flex-wrap: wrap;
     align-items: flex-start;
     max-width: 323px; }
+  .ordering-discount .product__btn-cart--in-cart {
+    padding: 0;
+    margin-left: 32px; }
   .ordering-discount__title {
+    color: #050e0c;
     display: inline-block;
     font-weight: 500;
     font-family: "Rubik", sans-serif;
@@ -5130,7 +5149,7 @@ a.added_to_cart.wc-forward {
     grid-gap: 30px; }
   .ordering-steps__payment {
     display: grid;
-    grid-template-columns: 56% auto;
+    grid-template-columns: 60% auto;
     grid-gap: 45px; }
   .ordering-steps__payment-type-list {
     display: inline-flex;
@@ -5156,6 +5175,10 @@ a.added_to_cart.wc-forward {
       border: 1px solid transparent;
       background-color: #0e9675;
       color: #fefefe; }
+    .ordering-steps input[type='radio']:disabled + label {
+      background-color: #dfdfdf;
+      border: 1px solid #dfdfdf;
+      color: #505654; }
   .ordering-steps input[type='text'],
   .ordering-steps input[type='email'],
   .ordering-steps input[type='tel'] {
@@ -6674,6 +6697,8 @@ a.added_to_cart.wc-forward {
     border-radius: 2px;
     margin-top: 0; }
   .need-help__input {
+    width: auto;
+    min-width: 0;
     background-color: #fefefe;
     border: 1px solid #d8d4d4; }
     .need-help__input::-moz-placeholder {
@@ -6684,6 +6709,8 @@ a.added_to_cart.wc-forward {
       color: #d8d4d4; }
   .need-help__btn {
     border-radius: 5px; }
+  .need-help .ajax-loader {
+    display: none; }
 
 @media (max-width: 1030px) {
   .need-help {

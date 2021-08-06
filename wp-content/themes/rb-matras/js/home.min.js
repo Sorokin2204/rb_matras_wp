@@ -44,7 +44,6 @@ createAccardion('.catalog__filter-head');
 jQuery(function ($) {
   heightrangeSlider.noUiSlider.on('set.one', 
 resetFilterSlider  );
-
   pricerangeSlider.noUiSlider.on('set.one', 
 resetFilterSlider );
   widthrangeSlider.noUiSlider.on('set.one', 
@@ -119,6 +118,13 @@ function resetFilterSlider(slider,obj) {
 
 }
 
+$('.catalog__reset').on('click', '.catalog__reset-all-btn', function () { 
+  heightrangeSlider.noUiSlider.reset();
+  pricerangeSlider.noUiSlider.reset();
+  widthrangeSlider.noUiSlider.reset();
+  $('.checkbox').prop('checked', false);
+ });
+
   $('.checkbox').change(function (qwer) {
   ;
    let text = $(this).closest('.label-checkbox').text();
@@ -162,4 +168,6 @@ function resetFilterSlider(slider,obj) {
  
     $('#filter').submit();
   });
+
+
 });

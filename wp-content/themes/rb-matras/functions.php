@@ -373,9 +373,12 @@ add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 4);
 
 function add_menu_link_class($atts, $item, $args, $depth)
 {
-	//var_dump($item);
+	$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	if (property_exists($args, 'link_class')) {
 		$atts['class'] = $args->link_class;
+	}
+	if ($item->url == $actual_link) {
+		$atts['class'] .=  ' nav__link--active';
 	}
 	return $atts;
 }
@@ -475,9 +478,10 @@ function is_product_in_cart($product_id)
 
 function get_variation_with_min_price($product)
 {
+
 	$atrr_arr_sort = $product->get_available_variations();
 	usort($atrr_arr_sort, function ($a, $b) {
-		return $a['dimensions']['width'] <=> $b['dimensions']['width'];
+		return $a['display_price'] <=> $b['display_price'];
 	});
 	return $atrr_arr_sort[0];
 }
@@ -498,7 +502,6 @@ function get_product_html()
 	$is_matras_term = has_term("matras", "product_cat");
 	//$product_attr = get_post_meta(absint($product->get_id()), '_product_attributes');
 	return '
-
 <div class="product ' . ($has_term  ? "product--sale" : "") . '">
     <div class="product__btn-icon-box">
         <div class="product__sale">' . ($has_term  ? get_field('discount_percent', 'discount_' . wc_get_product_term_ids(get_the_ID(), 'discount')[0]) : "")   . '%' . '</div>
@@ -662,6 +665,7 @@ function misha_filter_function()
 			'post__in' => $parent_ids,
 			'posts_per_page' => 2,
 			'paged' => 1,
+
 		);
 
 		foreach ($filters as $filter) {
@@ -687,6 +691,29 @@ function misha_filter_function()
 				'terms' => $_POST['discount_term']
 			);
 		}
+		if (isset($_POST['sort'])) {
+
+			if (strpos($_POST['sort'], 'sort_price') !== false) {
+				$args_parent['orderby'] = 'meta_value_num';
+				$args_parent['meta_key'] = '_price';
+			}
+			if (strpos($_POST['sort'], 'sort_title') !== false) {
+				$args_parent['orderby'] = 'title';
+			}
+			if (strpos($_POST['sort'], 'sort_popularity') !== false) {
+				$args_parent['orderby'] = 'meta_value_num';
+				$args_parent['meta_key'] = 'total_sales';
+			}
+			if (strpos($_POST['sort'], 'sort_date') !== false) {
+				$args_parent['orderby'] = 'date';
+			}
+
+			if (strpos($_POST['sort'], 'asc') !== false) {
+				$args_parent['order'] = 'ASC';
+			} else if (strpos($_POST['sort'], 'desc') !== false) {
+				$args_parent['order'] = 'DESC';
+			}
+		}
 		$query_parent = new WP_Query($args_parent);
 		ob_start(); // start buffering because we do not need to print the posts now
 		while ($query_parent->have_posts()) : $query_parent->the_post();
@@ -694,6 +721,8 @@ function misha_filter_function()
 			//var_dump($atrr_arr_sort);
 			//var_dump($product->get_variation_regular_price('min'));
 			//print_r($args_child);
+
+			//print_r($_POST['sort']);
 			echo get_product_html();
 		//	print_r($filters);
 		//var_dump(get_field('filter_weight'));
@@ -971,6 +1000,38 @@ add_filter('woocommerce_form_field_email', 'filter_woocommerce_form_field_text',
 remove_action('woocommerce_checkout_order_review', 'woocommerce_order_review', 10);
 remove_action('woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form');
 add_action('woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form');
+
+
+add_action('template_redirect', 'woo_custom_redirect_after_purchase');
+function woo_custom_redirect_after_purchase()
+{
+	global $wp;
+	if (is_checkout() && !empty($wp->query_vars['order-received'])) {
+		wp_redirect('http://rbmatras.loc/order-accepted');
+		exit;
+	}
+}
+
+// define the woocommerce_cart_item_removed callback 
+function action_woocommerce_cart_item_removed($cart_item_key, $instance)
+{
+	var_dump(' ');
+};
+
+// add the action 
+add_action('woocommerce_cart_item_removed', 'action_woocommerce_cart_item_removed', 10, 2);
+
+//////////////////////////////////////// CONTACT FORM 7 ////////////////////////////////////////
+
+add_filter('wpcf7_form_elements', function ($content) {
+	$content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+	return $content;
+});
+
+
+
+
 
 // Remove product in the cart using ajax
 // function warp_ajax_product_remove()

@@ -131,8 +131,9 @@ function sideScroll(element, direction, speed, distance, step) {
 }
 
 
-setCookieFavorite(
-  '.compare__grid-btn-remove',
-  '.compare__grid-price',
-  'wordpress_list_compare',
-);
+// setCookieFavorite(
+//   '.compare__grid-btn-remove',
+//   '.compare__grid-price',
+//   'wordpress_list_compare',
+// );
+

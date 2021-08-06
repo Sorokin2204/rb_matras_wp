@@ -27,11 +27,9 @@
                         </div>
                         Меню
                     </button>
-                    <a class="header__logo" href="<?php echo get_home_url() ?>"><img
-                            src="<?php echo get_custom_logo_uri() ?>" alt="" /></a>
+                    <a class="header__logo" href="<?php echo get_home_url() ?>"><img src="<?php echo get_custom_logo_uri() ?>" alt="" /></a>
                     <div class="header__info">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/time.svg" alt=""
-                            class="header__info-img" />
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/time.svg" alt="" class="header__info-img" />
                         <div class="header__info-box">
                             <span class="header__info-bold">
                                 <?php echo the_field('widget_work-time-weekdays', 'widget_general_widget-2') ?></span>
@@ -42,16 +40,13 @@
 
                     <div class="header__info">
                         <div class="header__info-box">
-                            <span
-                                class="header__info-bold"><?php echo the_field('widget_work-time-weekend', 'widget_general_widget-2') ?></span>
-                            <span
-                                class="header__info-text"><?php echo the_field('widget_work-days-weekend', 'widget_general_widget-2') ?></span>
+                            <span class="header__info-bold"><?php echo the_field('widget_work-time-weekend', 'widget_general_widget-2') ?></span>
+                            <span class="header__info-text"><?php echo the_field('widget_work-days-weekend', 'widget_general_widget-2') ?></span>
                         </div>
                     </div>
 
                     <div class="header__info">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/call.svg" alt=""
-                            class="header__info-img" />
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/call.svg" alt="" class="header__info-img" />
                         <div class="header__info-box">
                             <span class="header__info-bold">
                                 <?php echo the_field('widget_phone', 'widget_general_widget-2') ?></span>
@@ -62,23 +57,18 @@
                     <div class="header__box">
 
                         <button class="header__btn-icon">
-                            <a href="<?php echo home_url() . '/compare' ?>"
-                                class="header__link-icon header__link-icon-compare">
+                            <a href="<?php echo home_url() . '/compare' ?>" class="header__link-icon header__link-icon-compare">
                             </a>
                             <?php  ?>
-                            <span
-                                class="header__count-icon"><?php if (isset($_COOKIE['wordpress_list_compare'])) if (!empty($_COOKIE['wordpress_list_compare'][0])) echo count(explode(',', $_COOKIE['wordpress_list_compare'])) ?></span>
+                            <span class="header__count-icon"><?php if (isset($_COOKIE['wordpress_list_compare'])) if (!empty($_COOKIE['wordpress_list_compare'][0])) echo count(explode(',', $_COOKIE['wordpress_list_compare'])) ?></span>
                         </button>
                         <button class="header__btn-icon">
-                            <a href="<?php echo home_url() . '/favorites' ?>"
-                                class="header__link-icon header__link-icon-favorites"></a>
-                            <span
-                                class="header__count-icon"><?php if (isset($_COOKIE['wordpress_list_favorite'])) if (!empty($_COOKIE['wordpress_list_favorite'][0])) echo count(explode(',', $_COOKIE['wordpress_list_favorite'])) ?></span>
+                            <a href="<?php echo home_url() . '/favorites' ?>" class="header__link-icon header__link-icon-favorites"></a>
+                            <span class="header__count-icon"><?php if (isset($_COOKIE['wordpress_list_favorite'])) if (!empty($_COOKIE['wordpress_list_favorite'][0])) echo count(explode(',', $_COOKIE['wordpress_list_favorite'])) ?></span>
                         </button>
                         <button class="header__btn-icon">
                             <a class="header__link-icon header__link-icon-cart"></a>
-                            <span
-                                class="header__count-icon header__count-icon--cart"><?php echo (WC()->cart->get_cart_contents_count() != 0 ?  WC()->cart->get_cart_contents_count() : "") ?></span>
+                            <span class="header__count-icon header__count-icon--cart"><?php echo (WC()->cart->get_cart_contents_count() != 0 ?  WC()->cart->get_cart_contents_count() : "") ?></span>
                         </button>
                     </div>
                 </div>
@@ -143,6 +133,17 @@
             </div>
         </div>
         <div class="overlay"></div>
+        <?php wp_nav_menu([
+            'theme_location' => 'menu-primary',
+            'container'       => 'nav',
+            'container_class' => 'header__nav--mobile nav--mobile',
+            'items_wrap'      => '<div class="nav__box">
+                <div class="nav__head">
+                    <div class="nav__title">Меню</div>
+                    <button class="nav__close-btn"></button>
+                </div> <ul id="%1$s" class="nav__list">%3$s</ul></div>',
+            'link_class'   => 'nav__link'
+        ]) ?>
         <!-- <nav class="header__nav--mobile nav--mobile">
             <div class="nav__box">
                 <div class="nav__head">

@@ -39,22 +39,6 @@ function initSwiperProductSimilar() {
   }
 }
 
-// const ProductBtnFavorite = document.querySelector(
-//   '.product-one__favorites-btn',
-// );
-// const ProductBtnCompare = document.querySelector(
-//   '.product-one__compare-btn',
-// );
-
-// ProductBtnFavorite?.addEventListener('click', () => {
-//   ProductBtnFavorite.classList.toggle(
-//     'product__btn-icon-favorites--active',
-//   );
-// });
-
-// ProductBtnCompare?.addEventListener('click', () => {
-//   ProductBtnCompare.classList.toggle('product__btn-icon-compare--active');
-// });
 
 initSwiperProductSimilar();
 window.addEventListener('resize', initSwiperProductSimilar);
@@ -79,17 +63,53 @@ function checkIfVariationInCart() {
   inputVariation.getAttribute('value');
 }
 
-setCookieFavorite(
-  '.product-one__favorites-btn',
-  'form.cart',
-  'wordpress_list_favorite',
-);
-setCookieFavorite(
-  '.product-one__compare-btn',
-  'form.cart',
-  'wordpress_list_compare',
-);
 
+jQuery(function ($) {
+  $('.product-one__favorites-btn').click(function () {
+    changeStateProduct(
+      $(this),
+      'wordpress_list_favorite',
+      'form.cart',
+      'product-one__favorites-btn--active',
+      countIconBtnFavorites,
+    );
+    });
+     $('.product-one__compare-btn').click(function () {
+       changeStateProduct(
+         $(this),
+         'wordpress_list_compare',
+         'form.cart',
+         'product-one__compare-btn--active',
+         countIconBtnCompare,
+       );
+     });
 
+     $('.product-similar__wrapper').on(
+       'click',
+       '.product__btn-icon-compare',
+       function (event) {
+         changeStateProduct(
+           $(this),
+           'wordpress_list_compare',
+           '.product',
+           'product__btn-icon-compare--active',
+           countIconBtnCompare,
+         );
+       },
+     );
+     
 
-
+     $('.product-similar__wrapper').on(
+       'click',
+       '.product__btn-icon-favorites',
+       function (event) {
+         changeStateProduct(
+           $(this),
+           'wordpress_list_favorite',
+           '.product',
+           'product__btn-icon-favorites--active',
+           countIconBtnFavorites,
+         );
+       },
+     );
+});

@@ -26,12 +26,12 @@ defined('ABSPATH') || exit;
             <h3 class="ordering-steps__title">1. Информация о покупателе</h3>
             <div class="ordering-steps__info">
                 <?php
-				$fields = $checkout->get_checkout_fields('billing');
-				//var_dump($fields);
-				foreach ($fields as $key => $field) {
-					//	var_dump($field);
-					if ($key == 'billing_first_name' || $key == 'billing_phone' || $key == 'billing_email') {
-				?>
+                $fields = $checkout->get_checkout_fields('billing');
+                //var_dump($fields);
+                foreach ($fields as $key => $field) {
+                    //	var_dump($field);
+                    if ($key == 'billing_first_name' || $key == 'billing_phone' || $key == 'billing_email') {
+                ?>
 
                 <div class="ordering-steps__info-name input-box">
                     <?php woocommerce_form_field($key, $field, $checkout->get_value($key)); ?>
@@ -40,9 +40,9 @@ defined('ABSPATH') || exit;
                 </div>
 
                 <?php
-					}
-				}
-				?>
+                    }
+                }
+                ?>
 
                 <!-- <div class="ordering-steps__info-name input-box">
 					<input type="text" class="input" placeholder="Имя*" name="info-name" required />
@@ -66,12 +66,12 @@ defined('ABSPATH') || exit;
             <div class="ordering-steps__delivery">
 
                 <?php
-				$fields = $checkout->get_checkout_fields('billing');
-				//var_dump($fields);
-				foreach ($fields as $key => $field) {
-					//	var_dump($key);
-					if ($key == 'billing_city' || $key == 'billing_address_1' || $key == 'billing_address_2' || $key == 'billing_address_3') {
-				?>
+                $fields = $checkout->get_checkout_fields('billing');
+                //var_dump($fields);
+                foreach ($fields as $key => $field) {
+                    //	var_dump($key);
+                    if ($key == 'billing_city' || $key == 'billing_address_1' || $key == 'billing_address_2' || $key == 'billing_address_3') {
+                ?>
 
                 <div class="ordering-steps__delivery-input input-box">
                     <?php woocommerce_form_field($key, $field, $checkout->get_value($key)); ?>
@@ -80,9 +80,9 @@ defined('ABSPATH') || exit;
                 </div>
 
                 <?php
-					}
-				}
-				?>
+                    }
+                }
+                ?>
 
                 <!-- <div class="ordering-steps__delivery-input input-box">
 					<input type="text" class="input city" placeholder="Город*" name="delivery-city" value="" onchange="this.setAttribute('value', this.value);" />
@@ -107,16 +107,13 @@ defined('ABSPATH') || exit;
                 <div class="ordering-steps__payment-type">
                     <h3 class="ordering-steps__title">3. Оплата</h3>
                     <div class="ordering-steps__payment-type-list">
-                        <input type="radio" name="payment_radio" id="payment_online-pay" />
-                        <label for="payment_online-pay">Онлайн оплата</label>
-                        <input type="radio" name="payment_radio" id="payment_cash" />
+                        <input type="radio" name="payment_radio" checked id="payment_cash" />
                         <label for="payment_cash">Наличными при доставке</label>
-                        <input type="radio" name="payment_radio" id="payment_parts" />
-                        <label for="payment_parts">Покупка частями</label>
-                        <input type="radio" name="payment_radio" id="payment_credit" />
-                        <label for="payment_credit">В кредит без предоплаты</label>
-                        <input type="radio" name="payment_radio" id="payment_installment" />
+                        <input type="radio" name="payment_radio" id="payment_installment" disabled />
                         <label for="payment_installment">Рассрочка от Сбербанка</label>
+                        <input type="radio" name="payment_radio" id="payment_online-pay" disabled />
+                        <label for="payment_online-pay">Онлайн оплата</label>
+
                     </div>
                 </div>
                 <div class="ordering-steps__payment-comment">
@@ -164,19 +161,19 @@ defined('ABSPATH') || exit;
     <div class="ordering-footer__total">
         <ul class="ordering-footer__total-list">
             <li class="ordering-footer__total-list-item">
-                <span>Сумма заказа:</span>25 426 р.
+                <span>Сумма заказа:</span><?php wc_cart_totals_order_total_html(); ?>
             </li>
-            <li class="ordering-footer__total-list-item">
+            <!-- <li class="ordering-footer__total-list-item">
                 <span>Доставка:</span>500 р.
             </li>
             <li class="ordering-footer__total-list-item">
                 <span>Скидка:</span>0 р.
-            </li>
+            </li> -->
             <li class="ordering-footer__total-list-item">
                 <span>Итого:</span><?php wc_cart_totals_order_total_html(); ?>
             </li>
         </ul> <?php echo apply_filters('woocommerce_order_button_html', '<button type="submit" class="ordering-footer__btn btn" name="woocommerce_checkout_place_order" id="place_order" value="Оформить заказ" data-value="Оформить заказ">Оформить заказ</button>'); // @codingStandardsIgnoreLine 
-				?>
+                ?>
 
     </div>
 </div>

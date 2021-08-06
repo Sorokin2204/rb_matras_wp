@@ -6,8 +6,10 @@
             вопросы.
         </p>
     </div>
-    <form class="need-help__form">
-        <input type="text" name="delivery_name" placeholder="Ваше имя*" class="need-help__input input" />
+
+    <?php echo  do_shortcode('[contact-form-7 id="99" title="Нужна помощь" html_class="need-help__form"]') ?>
+
+    <!-- <input type="text" name="delivery_name" placeholder="Ваше имя*" class="need-help__input input" />
         <input type="tel" name="delivery_tel" placeholder="Номер телефона*" class="need-help__input input" />
         <label class="need-help__label">
             <input class="need-help__checkbox checkbox" type="checkbox" name="delivary_agree" id="delivary_agree" />Даю
@@ -15,6 +17,6 @@
         </label>
         <button class="need-help__btn btn" type="submit" data-path="modal-test-thanks">
             Заказать звонок
-        </button>
-    </form>
+        </button> -->
+
 </div>

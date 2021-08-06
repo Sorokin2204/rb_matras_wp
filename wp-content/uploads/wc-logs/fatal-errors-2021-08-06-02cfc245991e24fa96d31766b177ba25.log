@@ -1,0 +1,23 @@
+2021-08-06T09:29:09+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php:378
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-hook.php(303): add_menu_link_class()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\plugin.php(189): WP_Hook->apply_filters()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-walker-nav-menu.php(202): apply_filters()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(144): Walker_Nav_Menu->start_el()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\class-wp-walker.php(244): Walker->display_element()
+#5 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(608): Walker->walk()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree()
+#7 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\header.php(86): wp_nav_menu()
+#8 D:\OpenServer\OpenServ в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\functions.php на строке 378
+
+2021-08-06T15:51:33+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php:115
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template()
+#2 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output()
+#3 D:\OpenServer\OpenServer\domains\rbmatras\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper()
+#4 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\shortcodes.php(356): WC_Shortcodes::cart()
+#5 [internal function]: do_shortcode_tag()
+#6 D:\OpenServer\OpenServer\domains\rbmatras\wp-includes\shortcodes.php(228): preg_replace_callback()
+#7 D:\OpenServer\OpenServer\domains\rbm в D:\OpenServer\OpenServer\domains\rbmatras\wp-content\themes\rb-matras\woocommerce\cart\cart.php на строке 115
+

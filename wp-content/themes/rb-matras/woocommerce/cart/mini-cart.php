@@ -32,17 +32,17 @@ do_action('woocommerce_before_mini_cart'); ?>
     </div>
 
     <?php
-		do_action('woocommerce_before_mini_cart_contents');
+        do_action('woocommerce_before_mini_cart_contents');
 
-		foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
-			$_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
-			$product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
-			if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key)) {
-				$product_name      = apply_filters('woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key);
-				$thumbnail         = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
-				$product_price     = apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_price($_product), $cart_item, $cart_item_key);
-				$product_permalink = apply_filters('woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink($cart_item) : '', $cart_item, $cart_item_key);
-		?>
+        foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+            $_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
+            $product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
+            if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key)) {
+                $product_name      = apply_filters('woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key);
+                $thumbnail         = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+                $product_price     = apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_price($_product), $cart_item, $cart_item_key);
+                $product_permalink = apply_filters('woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink($cart_item) : '', $cart_item, $cart_item_key);
+        ?>
     <div class="mini-cart__product">
         <div class="mini-cart__product-content">
             <div class="mini-cart__product-img-box">
@@ -50,7 +50,8 @@ do_action('woocommerce_before_mini_cart'); ?>
                     class="mini-cart__product-img" />
             </div>
             <div class="mini-cart__product-box">
-                <span class="mini-cart__product-title"><?php echo $product_name ?></span>
+                <a href='<?php echo $_product->get_permalink($cart_item) ?>'
+                    class="mini-cart__product-title"><?php echo $product_name ?></a>
                 <ul class="mini-cart__product-list">
                     <li class="mini-cart__product-list-item">
                         <span>Жёсткость:</span> <?php echo get_field('filter_hardness', $product_id) ?>
@@ -76,19 +77,19 @@ do_action('woocommerce_before_mini_cart'); ?>
         </div>
         <div class="mini-cart__product-price-box">
             <?php
-						echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							'woocommerce_cart_item_remove_link',
-							sprintf(
-								'<a href="%s" class=" remove_from_cart_button mini-cart__product-btn-remove" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">Удалить</a>',
-								esc_url(wc_get_cart_remove_url($cart_item_key)),
-								esc_attr__('Remove this item', 'woocommerce'),
-								esc_attr($product_id),
-								esc_attr($cart_item_key),
-								esc_attr($_product->get_sku())
-							),
-							$cart_item_key
-						);
-						?>
+                        echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                            'woocommerce_cart_item_remove_link',
+                            sprintf(
+                                '<a href="%s" class=" remove_from_cart_button mini-cart__product-btn-remove" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">Удалить</a>',
+                                esc_url(wc_get_cart_remove_url($cart_item_key)),
+                                esc_attr__('Remove this item', 'woocommerce'),
+                                esc_attr($product_id),
+                                esc_attr($cart_item_key),
+                                esc_attr($_product->get_sku())
+                            ),
+                            $cart_item_key
+                        );
+                        ?>
 
             <!-- <button class="mini-cart__product-btn-remove">Удалить</button> -->
             <span class="mini-cart__product-price"><?php echo $product_price ?></span>
@@ -96,7 +97,7 @@ do_action('woocommerce_before_mini_cart'); ?>
         <input type="hidden" name="cart_product_id" value='<?php echo $product_id ?>'>
     </div>
     <?php }
-		} ?>
+        } ?>
     <div class="mini-cart__total">
         <span class="mini-cart__total-title">Итого:</span>
         <span class="mini-cart__total-price"><?php echo WC()->cart->get_cart_subtotal() ?></span>

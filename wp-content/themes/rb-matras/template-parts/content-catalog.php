@@ -1,5 +1,7 @@
 <div class="container">
+
     <div class="catalog__inner grid inner">
+
         <div class="catalog__reset">
             <div class="catalog__reset-list"></div>
             <!-- <button class="catalog__reset-all-btn">Сбросить</button>
@@ -23,21 +25,26 @@
             <div class="catalog__sort-title"><?php echo  $taxonomy_name; ?></div>
             <div class="catalog__sort-box">
                 <div class="sort-radio-box">
-                    <input type="radio" name="sort_radio" checked class="sort-radio" id="sort_price" />
-                    <label for="sort_price" class="label-sort-radio"> По цене </label>
+                    <input type="radio" name="sort" class="sort-radio" value='sort_price_desc' id="sort_price_desc" form='filter' />
+                    <input type="radio" name="sort" class="sort-radio" value='sort_price_asc' id="sort_price_asc" form='filter' />
+                    <label for="sort_price_asc" class="label-sort-radio"> По цене </label>
                 </div>
                 <div class="sort-radio-box">
-                    <input type="radio" name="sort_radio" class="sort-radio" id="sort_name" />
-                    <label for="sort_name" class="label-sort-radio">По названию </label>
+                    <input type="radio" name="sort" class="sort-radio" value='sort_title_desc' id="sort_title_desc" form='filter' />
+                    <input type="radio" name="sort" class="sort-radio" value='sort_title_asc' id="sort_title_asc" form='filter' />
+                    <label for="sort_title_asc" class="label-sort-radio">По названию </label>
                 </div>
                 <div class="sort-radio-box">
-                    <input type="radio" name="sort_radio" class="sort-radio" id="sort_population" />
-                    <label for="sort_population" class="label-sort-radio">По популярности
+                    <input type="radio" name="sort" checked class="sort-radio" value='sort_popularity_desc' id="sort_popularity_desc" form='filter' />
+                    <input type="radio" name="sort" class="sort-radio" value='sort_popularity_asc' id="sort_popularity_asc" form='filter' />
+                    <label for="sort_popularity_asc" class="label-sort-radio">По популярности
                     </label>
                 </div>
                 <div class="sort-radio-box">
-                    <input type="radio" name="sort_radio" class="sort-radio" id="sort_new" />
-                    <label for="sort_new" class="label-sort-radio">По новизне </label>
+
+                    <input type="radio" name="sort" class="sort-radio" value='sort_date_desc' id="sort_date_desc" form='filter' />
+                    <input type="radio" name="sort" class="sort-radio" value='sort_date_asc' id="sort_date_asc" form='filter' />
+                    <label for="sort_date_asc" class="label-sort-radio">По новизне </label>
                 </div>
             </div>
 
@@ -64,139 +71,130 @@
                 <button class="catalog__filter-btn-close"></button>
             </div>
             <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
-
                 <?php if (is_page('favorites')) { ?>
 
                 <?php } else if (is_front_page() || $taxonomy_name == "Матрас") { ?>
-                <div class="catalog__filter-list">
-                    <div class="catalog__filter-item">
-                        <div class="catalog__filter-head" aria-expanded="false">
-                            Стоимость, руб
-                        </div>
-                        <div class="catalog__filter-content" aria-hidden="true">
-                            <div class="catalog__filter-range-box">
-                                <div class="catalog__filter-range-input-box">
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="0" max="258313" placeholder="от"
-                                            id="price-range-slider-input-0" name='price_min' /></label>
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="0" max="258313" placeholder="до"
-                                            id="price-range-slider-input-1" name='price_max' /></label>
-                                </div>
-                                <div class="catalog__filter-range-slider-box">
-                                    <div class="catalog__filter-range-slider" id="price-range-slider"></div>
-                                    <span class="
+                    <div class="catalog__filter-list">
+                        <div class="catalog__filter-item">
+                            <div class="catalog__filter-head" aria-expanded="false">
+                                Стоимость, руб
+                            </div>
+                            <div class="catalog__filter-content" aria-hidden="true">
+                                <div class="catalog__filter-range-box">
+                                    <div class="catalog__filter-range-input-box">
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="0" max="258313" placeholder="от" id="price-range-slider-input-0" name='price_min' /></label>
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="0" max="258313" placeholder="до" id="price-range-slider-input-1" name='price_max' /></label>
+                                    </div>
+                                    <div class="catalog__filter-range-slider-box">
+                                        <div class="catalog__filter-range-slider" id="price-range-slider"></div>
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-min
                       " id="price-range-slider-text-0"></span>
-                                    <span class="
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-max
                       " id="price-range-slider-text-1"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="catalog__filter-item">
-                        <div class="catalog__filter-head" aria-expanded="false">
-                            Ширина, см
-                        </div>
-                        <div class="catalog__filter-content" aria-hidden="true">
-                            <div class="catalog__filter-range-box">
-                                <div class="catalog__filter-range-input-box">
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="60" max="200" placeholder="от"
-                                            id="width-range-slider-input-0" name='width_min' /></label>
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="60" max="200" placeholder="до"
-                                            id="width-range-slider-input-1" name='width_max' /></label>
-                                </div>
-                                <div class="catalog__filter-range-slider-box">
-                                    <div class="catalog__filter-range-slider" id="width-range-slider"></div>
-                                    <span class="
+                        <div class="catalog__filter-item">
+                            <div class="catalog__filter-head" aria-expanded="false">
+                                Ширина, см
+                            </div>
+                            <div class="catalog__filter-content" aria-hidden="true">
+                                <div class="catalog__filter-range-box">
+                                    <div class="catalog__filter-range-input-box">
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="60" max="200" placeholder="от" id="width-range-slider-input-0" name='width_min' /></label>
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="60" max="200" placeholder="до" id="width-range-slider-input-1" name='width_max' /></label>
+                                    </div>
+                                    <div class="catalog__filter-range-slider-box">
+                                        <div class="catalog__filter-range-slider" id="width-range-slider"></div>
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-min
                       " id="width-range-slider-text-0"></span>
-                                    <span class="
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-max
                       " id="width-range-slider-text-1"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="catalog__filter-item">
-                        <div class="catalog__filter-head" aria-expanded="false">
-                            Длина, см
-                        </div>
-                        <div class="catalog__filter-content" aria-hidden="true">
-                            <div class="catalog__filter-range-box">
-                                <div class="catalog__filter-range-input-box">
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="120" max="200" placeholder="от"
-                                            id="height-range-slider-input-0" name='height_min' /></label>
-                                    <label class="label-range-input">
-                                        <input type="number" class="range-input" min="120" max="200" placeholder="до"
-                                            id="height-range-slider-input-1" name='height_max' /></label>
-                                </div>
-                                <div class="catalog__filter-range-slider-box">
-                                    <div class="catalog__filter-range-slider" id="height-range-slider"></div>
-                                    <span class="
+                        <div class="catalog__filter-item">
+                            <div class="catalog__filter-head" aria-expanded="false">
+                                Длина, см
+                            </div>
+                            <div class="catalog__filter-content" aria-hidden="true">
+                                <div class="catalog__filter-range-box">
+                                    <div class="catalog__filter-range-input-box">
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="120" max="200" placeholder="от" id="height-range-slider-input-0" name='height_min' /></label>
+                                        <label class="label-range-input">
+                                            <input type="number" class="range-input" min="120" max="200" placeholder="до" id="height-range-slider-input-1" name='height_max' /></label>
+                                    </div>
+                                    <div class="catalog__filter-range-slider-box">
+                                        <div class="catalog__filter-range-slider" id="height-range-slider"></div>
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-min
                       " id="height-range-slider-text-0"></span>
-                                    <span class="
+                                        <span class="
                         catalog__filter-range-slider-text
                         catalog__filter-range-slider-text-max
                       " id="height-range-slider-text-1"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <?php
+                        <?php
 
 
                         // var_dump(get_field('filler_block-type', 'pa_filler' . '_' . $terms[0]->term_id));
                         // var_dump($terms) 
                         ?>
 
-                    <?php
+                        <?php
                         $fillers = get_fillers();
                         ?>
-                    <?php foreach ($fillers as $filler) { ?>
-                    <div class="catalog__filter-item">
-                        <div class="catalog__filter-head" aria-expanded="false">
-                            <?php echo $filler['label'] ?>
-                        </div>
-                        <div class="catalog__filter-content" aria-hidden="true">
-                            <?php foreach ($filler['choices'] as $key => $value) { ?>
-                            <label class="label-checkbox"><input type="checkbox" class="checkbox"
-                                    name='<?php echo $key ?>' value='<?php echo $key ?>' /><?php echo $value ?></label>
-                            <?php } ?>
+                        <?php foreach ($fillers as $filler) { ?>
+                            <div class="catalog__filter-item">
+                                <div class="catalog__filter-head" aria-expanded="false">
+                                    <?php echo $filler['label'] ?>
+                                </div>
+                                <div class="catalog__filter-content" aria-hidden="true">
+                                    <?php foreach ($filler['choices'] as $key => $value) { ?>
+                                        <label class="label-checkbox"><input type="checkbox" class="checkbox" name='<?php echo $key ?>' value='<?php echo $key ?>' /><?php echo $value ?></label>
+                                    <?php } ?>
 
-                        </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+
+
+                        <?php $filters = get_filters() ?>
+                        <?php foreach ($filters as $filter) { ?>
+                            <div class="catalog__filter-item">
+                                <div class="catalog__filter-head" aria-expanded="false">
+                                    <?php echo $filter['label'] ?>
+                                </div>
+                                <div class="catalog__filter-content" aria-hidden="true">
+                                    <?php foreach ($filter['choices'] as $key => $value) { ?>
+                                        <label class="label-checkbox"><input type="checkbox" class="checkbox" name='<?php echo $key ?>' value='<?php echo $key ?>' /><?php echo $value ?></label>
+                                    <?php } ?>
+
+                                </div>
+                            </div>
+                        <?php } ?>
                     </div>
-                    <?php } ?>
-
-
-                    <?php $filters = get_filters() ?>
-                    <?php foreach ($filters as $filter) { ?>
-                    <div class="catalog__filter-item">
-                        <div class="catalog__filter-head" aria-expanded="false">
-                            <?php echo $filter['label'] ?>
-                        </div>
-                        <div class="catalog__filter-content" aria-hidden="true">
-                            <?php foreach ($filter['choices'] as $key => $value) { ?>
-                            <label class="label-checkbox"><input type="checkbox" class="checkbox"
-                                    name='<?php echo $key ?>' value='<?php echo $key ?>' /><?php echo $value ?></label>
-                            <?php } ?>
-
-                        </div>
-                    </div>
-                    <?php } ?>
-                </div>
                 <?php } ?>
 
 
@@ -209,28 +207,29 @@
                                                         }
                                                         ?>">
 
-            </form>
 
-            <div class="catalog__fast-filter">
-                <span class="catalog__fast-filter-title">Быстрый фильтр</span>
-                <div class="catalog__fast-filter-content">
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Эконом класс</label>
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Стандарт класс</label>
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Бизнес класс</label>
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Премиум класс</label>
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Беспружинные
-                        матрасы</label>
-                    <label class="label-checkbox"><input type="checkbox" class="checkbox" />Детские матрасы</label>
+
+                <div class="catalog__fast-filter">
+                    <span class="catalog__fast-filter-title">Быстрый фильтр</span>
+                    <div class="catalog__fast-filter-content">
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Эконом класс</label>
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Стандарт класс</label>
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Бизнес класс</label>
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Премиум класс</label>
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Беспружинные
+                            матрасы</label>
+                        <label class="label-checkbox"><input type="checkbox" class="checkbox" />Детские матрасы</label>
+                    </div>
                 </div>
-            </div>
-            <div class="catalog__filter-btn-box">
-                <!-- <button class="catalog__filter-btn-apply btn btn--hide-icon">
+                <div class="catalog__filter-btn-box">
+                    <!-- <button class="catalog__filter-btn-apply btn btn--hide-icon">
                     Показать (200)
                 </button> -->
-                <button class="catalog__filter-btn-reset btn btn--disable btn--hide-icon">
-                    Сбросить
-                </button>
-            </div>
+                    <button class="catalog__filter-btn-reset btn btn--disable btn--hide-icon">
+                        Сбросить
+                    </button>
+                </div>
+            </form>
         </aside>
         <div class="catalog__content">
             <div class="catalog__product-list product-list"></div>
@@ -238,7 +237,9 @@
                 Показать еще
             </button>
         </div>
+
     </div>
+
 </div>
 
 
